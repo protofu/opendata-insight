@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>전제 기록 — 주 54시간 넘게 일하는 취업자, 42.5% → 9.4%</title>
+<meta name="description" content="주 54시간 넘게 일하는 취업자는 2000년 42.5%에서 2025년 9.4%가 됐다.">
+<meta property="og:title" content="전제 기록 — 주 54시간 넘게 일하는 취업자, 42.5% → 9.4%">
+<meta property="og:description" content="주 54시간 넘게 일하는 취업자는 2000년 42.5%에서 2025년 9.4%가 됐다.">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span>데이터 한 컷</a>
+  <nav><a href="../index.html">글</a><a href="../data.html">데이터</a><a href="../about.html">원칙</a></nav>
+</header>
+<main>
+<article class="story premises-page"><p class="kicker"><a href="index.html">← 주 54시간 넘게 일하는 취업자, 42.5% → 9.4%</a></p><p class="stamp">전제 기록 · 데이터를 받기 전에 작성</p><h1>전제 선언 (데이터 받기 전, 2026-10-30 작성)</h1>
+<h2>질문</h2>
+<p>취업자의 주당 평균 취업시간은 2000년부터 2025년까지 얼마나 줄었나? 주 54시간 넘게 일하는 사람과 주 17시간 이하로 일하는 사람의 비중은 어떻게 바뀌었나?</p>
+<h2>비교군 존재 확인</h2>
+<ul>
+<li>경제활동인구조사 '취업시간별 취업자'(DT_1DA7011S), 연간 1980~2025, 주당평균취업시간·시간대별 취업자.</li>
+</ul>
+<h2>받기 전에 확인한 것 (meta)</h2>
+<ul>
+<li>시간대별 취업자 수는 조사 주간에 공휴일이 있으면 영향을 받는다(연간 값은 월 평균이라 덜함).</li>
+<li>2000~2017년 값은 2015 등록센서스 기준 추계인구로 소급 변경됨(2018년).</li>
+<li>일시휴직자는 시간대 구분에 들어가지 않는다(별도 항목) → 비중 분모는 '계'로 하되, 시간대 합 + 일시휴직자 = 계인지 확인.</li>
+<li>1~14/15~35/36~52/53+ 새 구분은 기간이 짧을 수 있다 → 오래된 구분(1~17, 18~35, 36~44, 45~53, 54+)을 쓴다.</li>
+</ul>
+<h2>데이터</h2>
+<ul>
+<li>KOSIS DT_1DA7011S (국가데이터처 「경제활동인구조사」), 연간 2000~2025</li>
+</ul>
+<h2>전제</h2>
+<ol>
+<li>비중 = 시간대별 취업자 ÷ 취업자 계.</li>
+<li>'취업시간'은 조사 주간에 실제 일한 시간(주된 + 부업 포함 여부는 통계표 정의를 따른다).</li>
+<li>원인(주 52시간제, 산업 구성, 단시간 일자리)은 판단하지 않는다.</li>
+</ol>
+<h2>완료 기준</h2>
+<ul>
+<li>시간대 합 + 일시휴직 = 계 확인, 2025 평균시간 보도 대조</li>
+<li>차트 1~2개, 글 1편, 한계</li>
+</ul></article>
+</main>
+<footer class="site-footer">
+  <p>모든 수치는 공개된 원자료로 다시 계산했습니다. 패턴을 보여줄 뿐 원인을 단정하지 않으며, 투자·진로 권유가 아닙니다.</p>
+</footer>
+</body>
+</html>
