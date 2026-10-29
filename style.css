@@ -102,7 +102,8 @@ main { max-width: var(--wide); margin: 0 auto; padding-block: 0 72px; padding-le
        color: var(--surface); background: var(--accent-2); vertical-align: 0.08em; letter-spacing: 0; }
 
 /* 주제 칩 (홈 거르기) */
-.topic-bar { display: flex; gap: 8px; margin: 0 0 20px; padding: 0 0 4px; overflow-x: auto; scrollbar-width: none;
+/* 넓은 화면: 칩이 많아지면 줄바꿈 / 좁은 화면(아래 미디어쿼리): 한 줄 가로 스크롤 */
+.topic-bar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; padding: 0 0 4px; scrollbar-width: none;
              -webkit-overflow-scrolling: touch; }
 .topic-bar::-webkit-scrollbar { display: none; }
 .topic-bar[hidden] { display: none; }
@@ -205,7 +206,7 @@ main { max-width: var(--wide); margin: 0 auto; padding-block: 0 72px; padding-le
   .story table { min-width: 540px; }
   .story.wide table { min-width: 640px; }
   /* 카드 밀도: 썸네일을 낮게, 여백을 줄임 */
-  .topic-bar { margin-right: calc(-1 * var(--gutter-r)); padding-right: 24px;
+  .topic-bar { flex-wrap: nowrap; overflow-x: auto; margin-right: calc(-1 * var(--gutter-r)); padding-right: 24px;
                -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
                        mask-image: linear-gradient(to right, #000 85%, transparent); }
   .cards { gap: 14px; }
