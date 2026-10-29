@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>서울 21개 구는 &#x27;20대만 들어오는 동네&#x27;였다</title>
+<meta name="description" content="서울 전체: 20대는 들어오고 나머지는 나갔다.">
+<meta property="og:title" content="서울 21개 구는 &#x27;20대만 들어오는 동네&#x27;였다">
+<meta property="og:description" content="서울 전체: 20대는 들어오고 나머지는 나갔다.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://protofu.github.io/opendata-insight/2026-10_seoul-20s-only/chart_seoul_gu_20s_vs_others_2015_2025.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span>데이터 한 컷</a>
+  <nav><a href="../index.html">글</a><a href="../data.html">데이터</a><a href="../about.html">원칙</a></nav>
+</header>
+<main>
+<article class="story">
+<header class="story-head"><p class="kicker">인구이동</p>
+<h1>서울 21개 구는 &#x27;20대만 들어오는 동네&#x27;였다</h1>
+<p class="sub">2015~2025년 연령별 순이동</p>
+</header>
+<p><img alt="차트" src="chart_seoul_gu_20s_vs_others_2015_2025.png" /></p>
+<section class="sec sec-question"><h2>질문</h2>
+<p>서울 자치구에 20대가 들어올 때, 다른 연령도 함께 들어오나?</p>
+</section><section class="sec"><h2>사용 데이터와 출처</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>데이터</th>
+<th>출처</th>
+<th>쓰임</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>서울특별시 시군구 각세별 이동자수 (KOSIS DT_1B26B02)</td>
+<td>국가데이터처 「국내인구이동통계」</td>
+<td>연령별 전입·전출·순이동</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>수집일: 2026-10-27 (KOSIS 오픈API)</li>
+<li>계산: 구별로 2015~2025년 11년간 순이동(전입 − 전출)을 더함. "20대 외"는 전체 연령 순이동에서 20~29세를 뺀 값(0~19세, 30세 이상).</li>
+<li>검증: 11개 연도 모두 25개 구 합계 = 서울 전체 (차이 0명).</li>
+</ul>
+</section><section class="sec sec-meta"><h2>기준일</h2>
+<p>2015년 1월 1일 ~ 2025년 12월 31일 전입신고 기준</p>
+</section><section class="sec"><h2>인사이트</h2>
+<p><strong>1. 서울 전체: 20대는 들어오고 나머지는 나갔다.</strong> 11년간 서울 전체 순이동은 −84만 5천 명이다. 이 중 20대는 +41만 2천 명, 20대 외 연령은 −125만 7천 명이다.</p>
+<p><strong>2. 25개 구 중 21곳이 같은 모양이다.</strong> 11년 누적으로 20대는 순유입이고, 20대 외 연령은 순유출이다. 관악구가 가장 극단적이다. 20대는 +9만 2천 명이 들어왔고, 20대 외 연령은 −12만 5천 명이 나갔다.</p>
+<p><strong>3. 예외 1: 강동구는 모든 연령이 들어왔다.</strong> 20대(+1만 2천 명)와 20대 외 연령(+3천 5백 명)이 모두 순유입인 곳은 강동구뿐이다. 연도별로 보면 2019~2020년과 2024~2025년에는 0~9세부터 60세 이상까지 모든 연령대가 함께 순유입이었다. 2015~2018년에는 모든 연령대가 순유출이었다. 20대만의 흐름이 아니라 구 전체가 움직인 파도에 가깝다.</p>
+<p><strong>4. 예외 2: 노원·양천·도봉은 모든 연령이 나갔다.</strong> 20대도, 20대 외 연령도 11년 누적 순유출이다. 이 세 구는 11년 중 20대가 순유입이었던 해가 한 번도 없다.</p>
+<p><strong>5. 마포구는 전형적인 "20대만" 구다.</strong> 11년 내내 20대는 순유입, 30대 이상과 0~9세는 순유출이었다. 다만 20대 유입 폭은 2018년 +3,968명에서 2025년 +1,813명으로 줄었다.</p>
+</section><section class="sec sec-limits"><h2>한계</h2><p class="sec-note">이 데이터로 말할 수 없는 것</p>
+<ul>
+<li><strong>주민등록 신고 기준.</strong> 실제 거주 이동과 다를 수 있다. 특히 20대는 주소를 옮기지 않고 사는 경우가 있다.</li>
+<li><strong>인원 기준이다.</strong> 구마다 인구 규모가 달라 인원만으로 구를 비교하면 큰 구가 두드러진다. 20대 외 연령의 인구 대비 비율은 이번에 계산하지 않았다.</li>
+<li><strong>"20대 외"는 넓은 묶음이다.</strong> 0~19세와 30세 이상을 합쳐서, 그 안의 연령대별 차이(예: 30대 가족 이동)는 가려진다.</li>
+<li><strong>누적값은 시기 변화를 가린다.</strong> 강동구처럼 순유출에서 순유입으로 바뀐 구는 누적값만 보면 변화가 보이지 않는다.</li>
+<li><strong>같은 사람이 여러 번 셀 수 있다.</strong> 이동은 사람 수가 아니라 신고 건수 기준이다.</li>
+<li><strong>원인은 말하지 않는다.</strong> 대학, 일자리, 집값, 대규모 입주 등과의 관계는 이 데이터로 확인할 수 없다. 강동구의 연령 전체 유입 시기가 특정 주택 공급 시기와 겹치는지는 별도 자료로 확인해야 한다.</li>
+</ul>
+</section><section class="sec sec-premises"><h2>전제 기록</h2><p class="sec-note">데이터를 보기 전에 적어둔 것, 그리고 보고 나서 바꾼 것</p>
+<ul>
+<li>기간 2015~2025년은 첫 글의 비교 기간과 맞춤 (결과 보기 전 결정).</li>
+<li>유형 구분 기준(20대 누적 부호 × 20대 외 누적 부호)은 결과를 본 뒤에 정했다. 강동구와 마포구 연도별 표를 보고 "함께 움직이는 구 / 20대만 움직이는 구"라는 질문이 생겼기 때문이다. <strong>탐색 중에 생긴 질문임을 밝혀 둔다.</strong></li>
+</ul></section>
+</article>
+</main>
+<footer class="site-footer">
+  <p>모든 수치는 공개된 원자료로 다시 계산했습니다. 패턴을 보여줄 뿐 원인을 단정하지 않으며, 투자·진로 권유가 아닙니다.</p>
+</footer>
+</body>
+</html>

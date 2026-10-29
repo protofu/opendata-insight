@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>전제 기록 — 디지털카메라는 줄고, 태블릿은 늘었다</title>
+<meta name="description" content="가구당 디지털카메라는 10년 새 0.55대에서 0.15대로 줄었다(2010→2020, 약 73% 감소).">
+<meta property="og:title" content="전제 기록 — 디지털카메라는 줄고, 태블릿은 늘었다">
+<meta property="og:description" content="가구당 디지털카메라는 10년 새 0.55대에서 0.15대로 줄었다(2010→2020, 약 73% 감소).">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span>데이터 한 컷</a>
+  <nav><a href="../index.html">글</a><a href="../data.html">데이터</a><a href="../about.html">원칙</a></nav>
+</header>
+<main>
+<article class="story premises-page"><p class="kicker"><a href="index.html">← 디지털카메라는 줄고, 태블릿은 늘었다</a></p><p class="stamp">전제 기록 · 데이터를 받기 전에 작성</p><h1>전제 선언 (데이터 받기 전, 2026-10-29 작성)</h1>
+<h2>질문</h2>
+<p>스마트폰 시대에 디지털 카메라를 가진 가구는 얼마나 줄었나? 다른 기기(캠코더, 노트북, 태블릿, 데스크톱 등)와 비교하면 어떤가?</p>
+<h2>비교군 존재 확인</h2>
+<ul>
+<li>같은 표의 "가구매체별"에 디지털 카메라, 디지털 캠코더, 데스크톱PC, 노트북, 태블릿PC 등 21개 기기가 있음 (메타 조회로 확인).</li>
+</ul>
+<h2>데이터</h2>
+<ul>
+<li>KOSIS DT_001 「가구매체 보유현황」 (방송통신위원회 「방송매체이용행태조사」, orgId 164), 2009~2025 연간</li>
+<li>보조(받기만): 한국미디어패널조사 DT_405001_H039 촬영기기 보유 여부 (카메라·액션캠·드론, 2021~2025) — 교차 확인용</li>
+</ul>
+<h2>전제</h2>
+<ol>
+<li>보유율 = 해당 기기를 1대 이상 가진 가구 비율(%). 표에 적힌 값을 그대로 쓴다(재계산 불가).</li>
+<li>표본조사다. 1~2%p 차이는 표본 오차일 수 있어 "해마다 등락"보다 긴 흐름만 말한다.</li>
+<li>기기 정의·문항이 연도마다 바뀌었을 수 있다(예: 기기 목록 추가). 값이 갑자기 튀는 해는 정의 변경을 의심하고 기록한다.</li>
+<li>"스마트폰 때문에 줄었다"는 인과는 단정하지 않는다. 스마트폰 보유율과 같은 시기에 움직였다는 패턴만 말한다.</li>
+<li>가구 단위다. 사람 단위 보유·이용과 다르다.</li>
+</ol>
+<h2>완료 기준</h2>
+<ul>
+<li>2개 조사(방통위, 미디어패널)의 카메라 보유율을 같은 연도에서 교차 확인하고 차이를 설명</li>
+<li>차트 1~2개, 글 1편(공통 틀), 한계</li>
+</ul>
+<h2>전제 변경 기록 (데이터 확인 후, 2026-10-29)</h2>
+<ul>
+<li><strong>전제 1 변경</strong>: 방통위 DT_001 값은 보유율(%)이 아니라 <strong>가구당 평균 보유 대수(대)</strong>였다(TV 1.3대 등으로 확인). → 방통위는 대수로, 보유율은 미디어패널(H039)로 본다.</li>
+<li>방통위의 디지털 카메라·캠코더 문항은 <strong>2020년까지만</strong> 있다. 미디어패널은 2021년부터라 두 조사가 겹치는 해가 없다. → 같은 연도 교차 확인 대신, 미디어패널 보유 대수 분포(H040)로 2021년 가구당 대수를 근사(0.13대)해 방통위 2020년(0.15대)과 이어지는지 확인했다.</li>
+<li>2009년 카메라·게임기 값 0은 미조사로 보고 결측 처리(전제 3).</li>
+<li>미디어패널의 '카메라'는 필름·디지털·즉석사진기를 모두 포함(H042 종류 구분) → 방통위 '디지털 카메라'와 범위가 약간 다르다.</li>
+</ul></article>
+</main>
+<footer class="site-footer">
+  <p>모든 수치는 공개된 원자료로 다시 계산했습니다. 패턴을 보여줄 뿐 원인을 단정하지 않으며, 투자·진로 권유가 아닙니다.</p>
+</footer>
+</body>
+</html>

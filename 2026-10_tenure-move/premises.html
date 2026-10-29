@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>전제 기록 — 입사 1년 미만, 1년 뒤 같은 직장에 남은 사람은 46%</title>
+<meta name="description" content="근속 1년 미만인 사람 중 1년 뒤 같은 직장에 남은 사람은 절반이 안 된다(45.8%).">
+<meta property="og:title" content="전제 기록 — 입사 1년 미만, 1년 뒤 같은 직장에 남은 사람은 46%">
+<meta property="og:description" content="근속 1년 미만인 사람 중 1년 뒤 같은 직장에 남은 사람은 절반이 안 된다(45.8%).">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"></span>데이터 한 컷</a>
+  <nav><a href="../index.html">글</a><a href="../data.html">데이터</a><a href="../about.html">원칙</a></nav>
+</header>
+<main>
+<article class="story premises-page"><p class="kicker"><a href="index.html">← 입사 1년 미만, 1년 뒤 같은 직장에 남은 사람은 46%</a></p><p class="stamp">전제 기록 · 데이터를 받기 전에 작성</p><h1>전제 선언 (데이터 받기 전, 2026-10-29 작성)</h1>
+<h2>질문</h2>
+<p>같은 직장에 오래 다닌 사람일수록 덜 옮기나? 근속 1년 미만인 사람은 1년 뒤 몇 %가 다른 일자리로 옮기고, 10년 이상인 사람은 몇 %인가? 연령대별로는 어떤가?</p>
+<h2>비교군 존재 확인</h2>
+<ul>
+<li>DT_1JTJ_A009의 근속기간(변동전) 6구간 × 이동유형(진입·유지·이동·미등록) × 연령 5구간 (메타 조회로 확인). 근속기간끼리, 연령끼리 같은 정의로 비교 가능.</li>
+<li>표 주석 확인(kosis_notes): 근속기간은 비교년도(옮기기 전) 기준, 연령은 기준년도 기준. 총계 = 기준년도 등록취업자(진입+유지+이동), 미등록자는 비교년도에 일했으나 기준년도엔 미등록.</li>
+</ul>
+<h2>데이터</h2>
+<ul>
+<li>KOSIS DT_1JTJ_A009 「연령별·근속기간별(변동전) 일자리 이동」 (국가데이터처 「일자리이동통계」), 2017~2024, 단위 천 명</li>
+</ul>
+<h2>전제</h2>
+<ol>
+<li>이동률 = 이동자 ÷ (유지자 + 이동자 + 미등록자). 분모는 "비교년도에 그 근속기간으로 일하던 사람 전체". 같은 분모로 미등록률(일을 그만둔 비율)도 계산.</li>
+<li>"1년내이동"만 쓴다 (사이클 2와 같은 이유: 2~5년은 누적).</li>
+<li>근속 "없음"(비교년도에 일자리 없음 = 진입자)은 이동률 계산에서 뺀다.</li>
+<li>천 명 단위 → 합계 오차 ±2~3 허용.</li>
+<li>근속이 길수록 나이도 많다 → 근속 효과와 나이 효과가 섞인다. 연령대 안에서 근속별로도 본다.</li>
+<li>이동에는 자발적 이직과 비자발적 이동이 섞여 있다. "오래 다니면 안 옮긴다"는 인과를 말하지 않는다.</li>
+</ol>
+<h2>완료 기준</h2>
+<ul>
+<li>근속 구간 합 ≈ 총계, 연령 합 ≈ 총계 확인</li>
+<li>보도자료 등 외부 수치 1개 교차 확인 (예: 2024년 이동자 384.8만, 유지자 1,892만)</li>
+<li>차트 1~2개, 글 1편, 한계</li>
+</ul></article>
+</main>
+<footer class="site-footer">
+  <p>모든 수치는 공개된 원자료로 다시 계산했습니다. 패턴을 보여줄 뿐 원인을 단정하지 않으며, 투자·진로 권유가 아닙니다.</p>
+</footer>
+</body>
+</html>
