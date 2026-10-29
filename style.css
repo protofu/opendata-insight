@@ -116,6 +116,30 @@ main { max-width: var(--wide); margin: 0 auto; padding-block: 0 72px; padding-le
 .chip[aria-current] span { color: var(--bg); opacity: .7; }
 .card[hidden] { display: none; }
 
+/* 데이터 페이지: 글별 접이식 묶음 */
+.ds-tools { margin: 20px 0 8px; text-align: right; }
+.ds-tools[hidden] { display: none; }
+.ds-toggle { font: inherit; font-size: 0.85rem; font-weight: 600; color: var(--ink-2); background: var(--surface);
+             border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; cursor: pointer; }
+.ds-toggle:hover { border-color: var(--ink); color: var(--ink); }
+.ds-toggle:focus-visible, .ds-group summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ds-group { border-top: 1px solid var(--line); }
+.ds-group:last-of-type { border-bottom: 1px solid var(--line); }
+.ds-group summary { display: flex; align-items: baseline; gap: 10px; padding: 14px 0; cursor: pointer; list-style: none; }
+.ds-group summary::-webkit-details-marker { display: none; }
+.ds-group summary::before { content: ""; flex: none; width: 7px; height: 7px; margin-right: 2px; border-right: 2px solid var(--muted);
+                            border-bottom: 2px solid var(--muted); transform: translateY(-3px) rotate(-45deg); transition: transform .15s; }
+.ds-group[open] summary::before { transform: translateY(-5px) rotate(45deg); }
+.ds-title { font-weight: 600; letter-spacing: -0.015em; line-height: 1.45; }
+.ds-group summary:hover .ds-title { color: var(--link); }
+.ds-count { flex: none; margin-left: auto; color: var(--muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+.ds-list { list-style: none; margin: 0; padding: 0 0 4px 19px; }
+.story .ds-list li { font-size: 0.95rem; margin: 0 0 10px; line-height: 1.5; }
+.story .ds-source { margin: -4px 0 10px 19px; color: var(--ink-2); font-size: 0.85rem; }
+.ds-meta { display: block; color: var(--muted); font-size: 0.82rem; }
+.story .ds-go { margin: 0 0 14px 19px; font-size: 0.88rem; }
+.ds-go a { font-weight: 600; text-decoration: none; }
+
 /* 지난 글: 촘촘한 목록 (왼쪽 대표 숫자, 오른쪽 제목) */
 .archive { margin-top: 48px; }
 .archive[hidden], .cards[hidden] { display: none; }
