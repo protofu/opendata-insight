@@ -101,6 +101,10 @@ main { max-width: var(--wide); margin: 0 auto; padding-block: 0 72px; padding-le
 .new { display: inline-block; margin-right: 8px; padding: 0 7px; border-radius: 4px; font-size: 0.72rem; font-weight: 700;
        color: var(--surface); background: var(--accent-2); vertical-align: 0.08em; letter-spacing: 0; }
 
+/* 시리즈 배지 (예: '화제'): 카드 머리에서 주제 줄 앞에 */
+.series { display: inline-block; margin-right: 8px; padding: 0 7px; border-radius: 4px; font-size: 0.72rem; font-weight: 700;
+          color: var(--link); border: 1px solid var(--link); line-height: 1.5; vertical-align: 0.08em; letter-spacing: 0; }
+
 /* 주제 칩 (홈 거르기) */
 /* 넓은 화면: 칩이 많아지면 줄바꿈 / 좁은 화면(아래 미디어쿼리): 한 줄 가로 스크롤 */
 .topic-bar { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; padding: 0 0 4px; scrollbar-width: none;
