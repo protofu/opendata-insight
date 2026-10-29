@@ -194,6 +194,16 @@ main { max-width: var(--wide); margin: 0 auto; padding-block: 0 72px; padding-le
 .story li + li { margin-top: 4px; }
 .story strong { color: var(--ink); }
 .story img { margin: 24px auto; width: 100%; max-width: 640px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--chart-bg); }
+.chart-link { display: flow-root; position: relative; cursor: zoom-in; } /* flow-root: 이미지 여백이 링크 상자 안에 남게 */
+.chart-link:focus-visible { outline: none; }
+.chart-link:focus-visible img { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* 좁은 화면: 차트 오른쪽 아래에 '크게 보기' 표시 */
+@media (max-width: 560px) {
+  /* 이미지 아래 여백(24px) 안에 → 차트 내용을 가리지 않음 */
+  .chart-link::after { content: "크게 보기 ↗"; position: absolute; right: 0; bottom: 0; font-size: 0.72rem; font-weight: 600;
+                       color: #52514e; background: rgba(252, 252, 251, .92); border: 1px solid #e1e0d9; border-radius: 999px;
+                       padding: 1px 8px; pointer-events: none; }
+}
 .story code { font-size: 0.88em; background: var(--note-bg); border: 1px solid var(--line); padding: 1px 5px; border-radius: 4px; }
 .story td, .story th { font-variant-numeric: tabular-nums; }
 .story blockquote { margin: 16px 0; padding: 4px 0 4px 16px; border-left: 3px solid var(--line); color: var(--ink-2); }
