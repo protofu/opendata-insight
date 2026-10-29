@@ -136,6 +136,8 @@ main { max-width: var(--wide); margin: 0 auto; padding-block: 0 72px; padding-le
 .ds-list { list-style: none; margin: 0; padding: 0 0 4px 19px; }
 .story .ds-list li { font-size: 0.95rem; margin: 0 0 10px; line-height: 1.5; }
 .story .ds-source { margin: -4px 0 10px 19px; color: var(--ink-2); font-size: 0.85rem; }
+.ds-stem { display: block; color: var(--ink); }
+.ds-links { display: block; line-height: 1.7; }
 .ds-meta { display: block; color: var(--muted); font-size: 0.82rem; }
 .story .ds-go { margin: 0 0 14px 19px; font-size: 0.88rem; }
 .ds-go a { font-weight: 600; text-decoration: none; }
