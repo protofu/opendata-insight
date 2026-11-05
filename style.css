@@ -363,3 +363,24 @@ main { max-width: var(--wide); margin: 0 auto; padding-block: 0 72px; padding-le
   .story .ev-title { padding: 14px 16px 10px; }
   .evidence { margin-inline: -4px; }
 }
+
+/* ---------- 카테고리: 상단 메뉴 줄 · 홈 섹션 · 카테고리 페이지 ---------- */
+.cat-bar { max-width: var(--wide); margin: 0 auto; padding: 10px var(--gutter-r) 10px var(--gutter-l); display: flex; gap: 6px;
+           overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--line); }
+.cat-bar::-webkit-scrollbar { display: none; }
+.cat-bar a { flex: none; padding: 5px 12px; border-radius: 999px; font-size: 0.9rem; font-weight: 600; color: var(--ink-2);
+             text-decoration: none; white-space: nowrap; }
+.cat-bar a:hover { background: var(--note-bg); color: var(--ink); }
+.cat-bar a[aria-current] { background: var(--ink); color: var(--bg); }
+.cat-sec { margin: 0 0 44px; }
+.cat-h { display: flex; align-items: baseline; gap: 10px; font-size: 1.25rem; letter-spacing: -0.02em; margin: 0 0 14px;
+         padding-top: 14px; border-top: 2px solid var(--line-strong); }
+.cat-h a { color: var(--ink); text-decoration: none; }
+.cat-h a:hover { color: var(--link); }
+.cat-h span { font-size: 0.85rem; font-weight: 500; color: var(--muted); }
+.cat-more { display: inline-block; margin-top: 14px; font-weight: 700; font-size: 0.95rem; text-decoration: none; }
+.cat-intro { padding-bottom: 24px; }
+.cat-intro .kicker { margin-bottom: 6px; }
+@media (max-width: 560px) {
+  .cat-bar { -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); mask-image: linear-gradient(to right, #000 85%, transparent); }
+}
