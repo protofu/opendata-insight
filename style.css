@@ -195,7 +195,7 @@ main { max-width: var(--wide); margin: 0 auto; padding-block: 0 72px; padding-le
 .story h1, .card h2, .intro h1 { text-wrap: balance; }
 .story-head { padding-bottom: 20px; border-bottom: 2px solid var(--line-strong); margin-bottom: 8px; }
 .story h1 { font-size: clamp(1.7rem, 5vw, 2.5rem); line-height: 1.25; margin: 8px 0 10px; letter-spacing: -0.03em; }
-.story .sub { color: var(--ink-2); margin: 0; font-size: 1.05rem; }
+.story .sub { color: var(--muted); margin: 0; font-size: 0.88rem; line-height: 1.5; }
 .story h2 { font-size: 1.3rem; line-height: 1.4; margin: 48px 0 10px; letter-spacing: -0.02em; }
 .story h3 { font-size: 1.08rem; margin: 28px 0 6px; }
 .story p, .story li { font-size: 1.04rem; }
