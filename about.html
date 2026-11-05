@@ -4,51 +4,79 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
-<title>원칙 — 데이터 한 컷</title>
-<meta name="description" content="흩어진 공공데이터로 질문 하나에 차트 한 장. 출처와 한계를 함께 공개합니다.">
-<meta property="og:title" content="원칙 — 데이터 한 컷">
-<meta property="og:description" content="흩어진 공공데이터로 질문 하나에 차트 한 장. 출처와 한계를 함께 공개합니다.">
+<title>소개 — 데이터 한 컷</title>
+<meta name="description" content="데이터 한 컷은 어떤 곳인지, 숫자를 어떻게 다루는지 적어 둔 페이지예요.">
+<meta property="og:title" content="소개 — 데이터 한 컷">
+<meta property="og:description" content="데이터 한 컷은 어떤 곳인지, 숫자를 어떻게 다루는지 적어 둔 페이지예요.">
 <meta property="og:type" content="article">
 
+<meta property="og:url" content="https://protofu.github.io/opendata-insight/about.html">
 <meta property="og:site_name" content="데이터 한 컷">
+<meta name="theme-color" content="#fbfbf9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+<link rel="alternate" type="application/rss+xml" title="데이터 한 컷" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <link rel="stylesheet" href="style.css">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}})();</script>
 </head>
-<body class="inner">
-<header class="mast">
+<body>
+<header class="head"><div class="wrap">
   <a class="brand" href="index.html">데이터 한 컷</a>
-  <p class="mast-meta">공공데이터로 숫자 하나씩 읽어요. 출처와 한계까지 같이 적어요.</p>
-</header>
-<nav class="nav" aria-label="메뉴"><span class="nav-cats"><a href="index.html">전체</a><a href="category/work/index.html">일·이직</a><a href="category/money/index.html">돈·자산</a><a href="category/digital/index.html">디지털·크리에이터</a><a href="category/society/index.html">가족·사회</a><a href="category/life/index.html">생활·건강</a><a href="category/business/index.html">창업·자영업</a></span>
-  <span class="nav-util"><a href="archive/index.html">자료실</a><a href="data.html">데이터</a><a href="about.html" aria-current=page>원칙</a></span></nav>
+  <nav class="util" aria-label="사이트"><a href="about.html" class=hide-m aria-current=page>소개</a><a href="archive/index.html" class=hide-m>자료실</a><a href="data.html" class=hide-m>데이터</a></nav>
+  <a class="sub-btn" href="index.html#subscribe">구독</a>
+  <button class="theme" type="button" aria-label="밝은 화면/어두운 화면 바꾸기" title="밝게/어둡게" hidden>◐</button>
+</div></header>
+<nav class="cats" aria-label="카테고리"><div class="wrap"><a href="index.html">전체</a><a href="category/work/index.html">일·이직</a><a href="category/money/index.html">돈·자산</a><a href="category/digital/index.html">디지털·크리에이터</a><a href="category/society/index.html">가족·사회</a><a href="category/life/index.html">생활·건강</a><a href="category/business/index.html">창업·자영업</a></div></nav>
 <main>
-<article class="story"><h1>이 사이트의 원칙</h1>
-<p>흩어진 공공데이터에서 질문 하나를 골라, 차트 한 장으로 답합니다. 대신 그 답이 어디서 왔고 어디까지 믿을 수 있는지를 같이 공개합니다.</p>
-<h2>모든 글의 틀</h2>
+<article class="art prose"><h1>이 사이트는요</h1>
+<p>뉴스에 숫자가 나오면 원본이 궁금해지더라고요. 그 숫자는 누구를 센 건지, 다른 해와 비교하면 어떤지. 그래서 공공데이터를 직접 열어 보고, 다시 계산하고, 그러면서 알게 된 걸 적어요. 한 사람이 만드는 작은 사이트예요.</p>
+<h2>이렇게 써요</h2>
 <ul>
-<li><strong>질문</strong>: 데이터보다 질문을 먼저 정합니다.</li>
-<li><strong>사용 데이터와 출처</strong>: 표 이름, 기관, 수집일, 계산 방법.</li>
-<li><strong>기준일</strong>: 언제의 숫자인지.</li>
-<li><strong>인사이트</strong>: 데이터로 확인한 패턴.</li>
-<li><strong>한계</strong>: 이 데이터로 말할 수 없는 것.</li>
-<li><strong>전제 기록</strong>: 데이터를 보기 <em>전에</em> 적어둔 정의와 기준. 보고 나서 바꿨다면 그 이유까지.</li>
+<li><strong>질문을 먼저 정해요.</strong> 데이터를 열기 전에 무엇을 셀지 적어 둬요. 이걸 '전제 기록'이라고 불러요. 보고 나서 바꾼 게 있으면 바꾼 이유도 남겨요.</li>
+<li><strong>숫자는 원자료에서 다시 계산해요.</strong> 합계가 총계와 맞는지, 보도된 숫자와 같은지 대조해요.</li>
+<li><strong>원인은 단정하지 않아요.</strong> 같이 움직였다는 것과 그래서 그렇다는 건 다르니까요.</li>
+<li><strong>숫자가 서로 다르면 누구를 셌는지부터 봐요.</strong> 같은 기관 통계인데 몇 배씩 차이 나는 일이 생각보다 흔했어요.</li>
+<li><strong>틀린 걸 찾으면 고치고, 고쳤다고 적어요.</strong></li>
+<li>투자나 진로 조언은 하지 않아요.</li>
 </ul>
-<h2>지키는 것</h2>
-<ul>
-<li><strong>원인을 단정하지 않습니다.</strong> "같이 움직였다"와 "그래서 그렇다"는 다릅니다.</li>
-<li><strong>숫자는 원자료로 다시 계산합니다.</strong> 합계가 총계와 맞는지 검사하고, 공식 발표 수치와 대조합니다.</li>
-<li><strong>다른 숫자를 만나면 범위부터 확인합니다.</strong> 같은 기관의 통계라도 누구를 세느냐에 따라 숫자가 몇 배씩 달라집니다.</li>
-<li><strong>투자·진로 권유를 하지 않습니다.</strong></li>
-<li><strong>틀린 것을 찾으면 고치고, 고친 사실을 남깁니다.</strong></li>
-</ul>
-<h2>데이터는 어디서 오나</h2>
-<p>대부분 <a href="https://kosis.kr">KOSIS 국가통계포털</a> 오픈API입니다. 전체 목록은 <a href="data.html">데이터</a> 페이지에 있습니다. 새 데이터가 나오면 같은 계산을 다시 돌려 갱신합니다.</p></article>
+<h2>데이터는 어디서</h2>
+<p>대부분 <a href="https://kosis.kr">KOSIS 국가통계포털</a> 오픈API예요. 글마다 쓴 표는 <a href="data.html">숫자 장부</a>에 다 적어 뒀어요. 새 데이터가 나오면 같은 계산을 다시 돌려요.</p>
+<h2>받아 보기</h2>
+<p>새 글은 <a href="feed.xml">RSS</a>로 받을 수 있어요. 메일 구독은 아직 준비 중이에요.</p></article>
 </main>
-<footer class="site-footer">
-  <p>모든 수치는 공개된 원자료로 다시 계산했습니다. 패턴을 보여줄 뿐 원인을 단정하지 않으며, 투자·진로 권유가 아닙니다.</p>
-</footer>
+<footer class="foot"><div class="wrap">
+  <div><a class="brand" href="index.html">데이터 한 컷</a>
+    <p>뉴스에 나온 숫자가 궁금하면 공공데이터 원본을 열어서 다시 계산해 봐요. 한 사람이 만드는 작은 사이트예요.</p>
+    <small>숫자는 전부 공개된 원자료에서 다시 계산했어요. 원인을 단정하진 않고, 투자·진로 조언도 아니에요.</small></div>
+  <div><h2>둘러보기</h2><ul><li><a href="about.html">소개</a></li><li><a href="archive/index.html">자료실</a></li><li><a href="data.html">숫자 장부</a></li></ul></div>
+  <div><h2>받아 보기</h2><ul><li><a href="feed.xml">RSS</a></li><li>메일 구독 (준비 중)</li></ul></div>
+</div></footer>
+<script>
+(function () {
+  var r = document.documentElement, b = document.querySelector('.theme');
+  var DARK = '(prefers-color-scheme: dark)';
+  function apply() {
+    var t = r.dataset.theme;
+    document.querySelectorAll('picture source').forEach(function (s) {
+      var m = s.dataset.m || (s.dataset.m = s.media);
+      if (m.indexOf(DARK) < 0) return;
+      s.media = t ? m.replace(DARK, t === 'dark' ? '(min-width: 0px)' : '(max-width: 0px)') : m;
+    });
+  }
+  if (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia(DARK).matches;
+      r.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', r.dataset.theme); } catch (e) {}
+      apply();
+    });
+  }
+  apply();
+})();
+</script>
 </body>
 </html>
