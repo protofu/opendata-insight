@@ -287,3 +287,21 @@ main { max-width: var(--wide); margin: 0 auto; padding: 0 var(--gutter-r) 80px v
 .story .tldr-list li { grid-template-columns: 1fr; }
 .tldr-list li::before { content: none; }
 .so { border-left: 0; padding-left: 0; color: var(--ink-2); }
+
+/* 앞에 세운 글 / 자료실 (2026-11) */
+.to-archive { margin: 40px 0 0; padding-top: 16px; border-top: 1px solid var(--rule); font-weight: 700; }
+.to-archive a { color: var(--ink); text-decoration: none; box-shadow: inset 0 -3px 0 var(--mark); }
+.plain { list-style: none; margin: 0; padding: 0; max-width: 860px; }
+.plain li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; padding: 10px 0; border-bottom: 1px solid var(--hair); }
+.plain a { color: var(--ink); text-decoration: none; font-weight: 600; }
+.plain a:hover { text-decoration: underline; }
+.plain span { color: var(--muted); font-size: .82rem; }
+.arc-sec h2 { margin: 34px 0 0; padding-bottom: 8px; border-bottom: 2px solid var(--rule); font: 900 1.3rem var(--serif); letter-spacing: -.03em; }
+.more { margin: 36px 0 0; max-width: 860px; }
+.more summary { cursor: pointer; font-weight: 700; padding: 10px 0; border-bottom: 2px solid var(--rule); }
+.more summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.story .sub a { margin-left: 2px; }
+.cover-num.long .num { font-size: clamp(2.8rem, 6.4vw, 5rem); }
+.cover-num .nw { white-space: normal; }
+.row .num .nw { white-space: normal; }  /* 좁은 숫자 칸: '16.2% → 51.0%'는 화살표에서 줄바꿈 */
+.row { grid-template-columns: 8.4em minmax(0, 1fr); }
