@@ -26,7 +26,7 @@
 <header class="head"><div class="wrap">
   <a class="brand" href="index.html">데이터 한 컷</a>
   <nav class="util" aria-label="사이트"><a href="about.html" class=hide-m aria-current=page>소개</a><a href="archive/index.html" class=hide-m>자료실</a><a href="data.html" class=hide-m>데이터</a></nav>
-  <a class="sub-btn" href="index.html#subscribe">구독</a>
+  <a class="sub-btn" href="#subscribe">구독</a>
   <button class="theme" type="button" aria-label="밝은 화면/어두운 화면 바꾸기" title="밝게/어둡게" hidden>◐</button>
 </div></header>
 <nav class="cats" aria-label="카테고리"><div class="wrap"><a href="index.html">전체</a><a href="category/work/index.html">일·이직</a><a href="category/money/index.html">돈·자산</a><a href="category/digital/index.html">디지털·크리에이터</a><a href="category/society/index.html">가족·사회</a><a href="category/life/index.html">생활·건강</a><a href="category/business/index.html">창업·자영업</a></div></nav>
@@ -35,7 +35,7 @@
 <p>뉴스에 숫자가 나오면 원본이 궁금해지더라고요. 그 숫자는 누구를 센 건지, 다른 해와 비교하면 어떤지. 그래서 공공데이터를 직접 열어 보고, 다시 계산하고, 그러면서 알게 된 걸 적어요. 한 사람이 만드는 작은 사이트예요.</p>
 <h2>이렇게 써요</h2>
 <ul>
-<li><strong>질문을 먼저 정해요.</strong> 데이터를 열기 전에 무엇을 셀지 적어 둬요. 이걸 '전제 기록'이라고 불러요. 보고 나서 바꾼 게 있으면 바꾼 이유도 남겨요.</li>
+<li><strong>질문을 먼저 정해요.</strong> 데이터를 열기 전에 무엇을 셀지 적어 둬요. 글마다 아래쪽 '계산 기록'에 '쓰기 전에 정한 것'으로 남겨 두고, 보고 나서 바꾼 게 있으면 바꾼 이유도 적어요.</li>
 <li><strong>숫자는 원자료에서 다시 계산해요.</strong> 합계가 총계와 맞는지, 보도된 숫자와 같은지 대조해요.</li>
 <li><strong>원인은 단정하지 않아요.</strong> 같이 움직였다는 것과 그래서 그렇다는 건 다르니까요.</li>
 <li><strong>숫자가 서로 다르면 누구를 셌는지부터 봐요.</strong> 같은 기관 통계인데 몇 배씩 차이 나는 일이 생각보다 흔했어요.</li>
@@ -43,17 +43,41 @@
 <li>투자나 진로 조언은 하지 않아요.</li>
 </ul>
 <h2>데이터는 어디서</h2>
-<p>대부분 <a href="https://kosis.kr">KOSIS 국가통계포털</a> 오픈API예요. 글마다 쓴 표는 <a href="data.html">숫자 장부</a>에 다 적어 뒀어요. 새 데이터가 나오면 같은 계산을 다시 돌려요.</p>
-<h2>받아 보기</h2>
-<p>새 글은 <a href="feed.xml">RSS</a>로 받을 수 있어요. 메일 구독은 아직 준비 중이에요.</p></article>
+<p>대부분 <a href="https://kosis.kr">KOSIS 국가통계포털</a> 오픈API예요. 글마다 쓴 표는 <a href="data.html">숫자 장부</a>에 다 적어 뒀어요. 새 데이터가 나오면 같은 계산을 다시 돌려요.</p></article><div class="art"><section class="subscribe" id="subscribe"><div class="sub-t"><h2>새 글 나오면 받아 보기</h2><p>피드 리더 앱에 이 사이트 주소를 한 번 넣어 두면, 새 글이 올라올 때 앱에 떠요. 가입이나 메일 주소는 필요 없어요.</p></div><details class="how"><summary class="btn dark">받는 법 보기</summary><div class="how-in"><ol><li><b>피드 리더 앱을 하나 골라요.</b> 새 글을 모아 보여 주는 앱이에요. 예를 들면 <a href="https://feedly.com" target="_blank" rel="noopener">Feedly</a>나 <a href="https://www.inoreader.com" target="_blank" rel="noopener">Inoreader</a>가 있어요. 둘 다 무료고 웹·휴대폰에서 써요.</li><li><b>앱에서 '구독 추가'(+)를 누르고 아래 주소를 붙여 넣어요.</b></li><li><b>끝이에요.</b> 새 글이 올라오면 앱 목록에 떠요.</li></ol><div class="feed-addr"><code>https://protofu.github.io/opendata-insight/feed.xml</code><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/feed.xml" data-rel="feed.xml" data-done="주소를 복사했어요" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>주소 복사</span></button></div><p class="how-alt">Feedly를 쓴다면 <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fprotofu.github.io%2Fopendata-insight%2Ffeed.xml" target="_blank" rel="noopener">여기를 눌러 바로 추가</a>할 수도 있어요.</p></div></details></section></div>
 </main>
 <footer class="foot"><div class="wrap">
   <div><a class="brand" href="index.html">데이터 한 컷</a>
     <p>뉴스에 나온 숫자가 궁금하면 공공데이터 원본을 열어서 다시 계산해 봐요. 한 사람이 만드는 작은 사이트예요.</p>
     <small>숫자는 전부 공개된 원자료에서 다시 계산했어요. 원인을 단정하진 않고, 투자·진로 조언도 아니에요.</small></div>
   <div><h2>둘러보기</h2><ul><li><a href="about.html">소개</a></li><li><a href="archive/index.html">자료실</a></li><li><a href="data.html">숫자 장부</a></li></ul></div>
-  <div><h2>받아 보기</h2><ul><li><a href="feed.xml">RSS</a></li><li>메일 구독 (준비 중)</li></ul></div>
+  <div><h2>받아 보기</h2><ul><li><a href="#subscribe">새 글 받는 법</a></li><li><a href="feed.xml">RSS 주소</a></li></ul></div>
 </div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var toast = document.querySelector('.toast');
+  function say(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
+  }
+  function fallback(t, ok_) {
+    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
+    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(a); say(ok ? ok_ : '주소창의 주소를 복사해 주세요');
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var t = b.dataset.copy || (b.dataset.rel ? new URL(b.dataset.rel, location.href).href : location.href.split('#')[0]);
+      var ok_ = b.dataset.done || '링크를 복사했어요';
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(ok_); }, function () { fallback(t, ok_); });
+      else fallback(t, ok_);
+    });
+  });
+})();
+</script>
 <script>
 (function () {
   var r = document.documentElement, b = document.querySelector('.theme');

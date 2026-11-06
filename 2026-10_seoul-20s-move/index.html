@@ -28,7 +28,7 @@
 <header class="head"><div class="wrap">
   <a class="brand" href="../index.html">데이터 한 컷</a>
   <nav class="util" aria-label="사이트"><a href="../about.html" class=hide-m>소개</a><a href="../archive/index.html" class=hide-m>자료실</a><a href="../data.html" class=hide-m>데이터</a></nav>
-  <a class="sub-btn" href="../index.html#subscribe">구독</a>
+  <a class="sub-btn" href="#subscribe">구독</a>
   <button class="theme" type="button" aria-label="밝은 화면/어두운 화면 바꾸기" title="밝게/어둡게" hidden>◐</button>
 </div></header>
 <nav class="cats" aria-label="카테고리"><div class="wrap"><a href="../index.html">전체</a><a href="../category/work/index.html">일·이직</a><a href="../category/money/index.html">돈·자산</a><a href="../category/digital/index.html">디지털·크리에이터</a><a href="../category/society/index.html" aria-current=page>가족·사회</a><a href="../category/life/index.html">생활·건강</a><a href="../category/business/index.html">창업·자영업</a></div></nav>
@@ -51,109 +51,74 @@
 <p>구별 순서는 거의 그대로예요. 관악구는 11년 모두 1~3위였고, 노원·양천·도봉은 11년 모두 20대 순유출이었어요. 2025년의 21곳도 예년(18~22곳) 범위 안이에요.</p>
 <p>크게 바뀐 곳은 강동구예요. 2015~2018년엔 20대 순유출이었고, 2015년엔 25개 구 중 맨 아래였어요. 2019년부터 순유입으로 돌아섰고, 2025년엔 천 명당 64.2명으로 3위까지 올라왔어요. 10년 평균(15.4명)보다 천 명당 49명 많아요. 반대로 마포구(2015년 2위 → 2025년 13위)와 중구, 서대문구는 2025년 값이 평균보다 천 명당 15명 넘게 낮았어요.</p>
 <p>관악에 처음 짐을 푼 20대가 몇 년 뒤 어느 구에 있을지, 그게 더 궁금해졌어요.</p>
-</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source">
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>데이터</th>
-<th>출처</th>
-<th>쓰임</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>서울특별시 시군구 각세별 이동자수 (KOSIS DT_1B26B02)</td>
-<td>국가데이터처 「국내인구이동통계」</td>
-<td>전입·전출·순이동</td>
-</tr>
-<tr>
-<td>행정구역(읍면동)별/5세별 주민등록인구 (KOSIS DT_1B04005N)</td>
-<td>행정안전부 「주민등록인구현황」</td>
-<td>천 명당 비율의 분모</td>
-</tr>
-</tbody>
-</table></div>
+</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 2025년 1월 1일 ~ 12월 31일 전입신고 기준이에요(인구는 2025년 12월 말 기준).</p>
+<div class="src-cards"><div class="src"><p class="src-h"><span>국가데이터처</span><b>국내인구이동통계</b></p><ul><li><div class="src-t">서울특별시 시군구 각세별 이동자수<small>KOSIS DT_1B26B02</small><p>전입·전출·순이동</p></div><a class="src-go" href="https://kosis.kr/statHtml/statHtml.do?orgId=101&amp;tblId=DT_1B26B02" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div><div class="src"><p class="src-h"><span>행정안전부</span><b>주민등록인구현황</b></p><ul><li><div class="src-t">행정구역(읍면동)별/5세별 주민등록인구<small>KOSIS DT_1B04005N</small><p>천 명당 비율의 분모</p></div><a class="src-go" href="https://kosis.kr/statHtml/statHtml.do?orgId=101&amp;tblId=DT_1B04005N" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div></div>
+</div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
 <ul>
-<li>수집일: 2026-10-27 (KOSIS 오픈API)</li>
+<li>주민등록 전입신고로 센 이동이에요. 내국인만 들어가요.</li>
+<li><strong>순이동</strong>은 들어온 사람(전입)에서 나간 사람(전출)을 뺀 수예요.</li>
+<li>천 명당 비율은 20대 순이동을 2025년 말 20대 주민등록인구로 나눠 1,000을 곱한 값이에요.</li>
+<li>20대는 20~29세를 1세 단위로 더했어요. 나이는 이동할 때 나이예요.</li>
+</ul>
+</div></details><details id="ev-limits" open><summary>한계 6가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
+<ul>
+<li>주민등록 신고 기준이에요. 전입신고를 하지 않았거나 늦게 한 경우, 주소만 옮긴 경우가 있어 실제 거주 이동과 다를 수 있어요. 대학생처럼 주소를 옮기지 않고 사는 경우가 20대에 특히 많을 수 있어요.</li>
+<li>분모가 연말 인구예요. 연중 평균 인구(연앙인구) 대신 연말 인구를 썼어요. 순유입이 많은 구는 분모가 커져 비율이 조금 낮게 나와요.</li>
+<li>비교 기준. 2015~2024년 평균은 연도별 비율을 단순 평균한 값이에요. 2015년 이전은 보지 않았어요.</li>
+<li>내국인만 들어가요. 외국인 이동은 포함되지 않아요.</li>
+<li>나이 기준. 이동 당시 나이 기준이고, 20~29세를 1세 단위로 더했어요.</li>
+<li>원인은 말하지 않아요. 대학, 일자리, 주거비, 신축 아파트 등과의 관계는 이 데이터로 확인할 수 없어요. 이 글은 패턴만 보여 줘요.</li>
+</ul>
+</div></details><details id="ev-calc"><summary>계산 기록</summary><div class="in ev-calc"><div class="calc-part calc-premises" id="ev-premises"><h3 class="ev-sub">쓰기 전에 정한 것</h3>
+<ul>
+<li>천 명당 비율을 구할 수 있으면 함께 적기로 미리 정했어요. 구할 수 있었고, 분모는 연말 인구로 정했어요(연앙인구는 따로 구할 수 없었어요). 결과를 보기 전에 정했어요.</li>
+<li>20대는 20~29세(1세 단위 합산)로 보기로, 결과를 보기 전에 정했어요.</li>
+</ul>
+</div><div class="calc-part calc-question" id="ev-question"><h3 class="ev-sub">처음 던진 질문</h3>
+<p>서울을 떠나는 사람이 많다는 얘기가 자주 나와요. 20대(20~29세)도 그런지, 2025년 서울 25개 자치구에서 20대가 더 들어왔는지 더 나갔는지 봤어요.</p>
+</div><div class="calc-part calc-check" id="ev-check"><h3 class="ev-sub">수집·검증 기록</h3>
+<ul>
+<li>데이터를 받기 전에 쓴 계획(premises.md, v4)을 그대로 따름.</li>
+<li>표: KOSIS DT_1B26B02, DT_1B04005N. 수집일 2026-10-27 (KOSIS 오픈API).</li>
 <li>계산: 순이동 = 전입 − 전출. 천 명당 = 20대 순이동 ÷ 2025년 말 20대 주민등록인구 × 1,000.</li>
 <li>검증: 25개 구 합계가 서울 전체와 8개 항목 모두 일치(차이 0명). 나이별 합 = 총계, 순이동 = 전입 − 전출 확인.</li>
-</ul>
-<h4 class="ev-sub">기준일</h4>
-<p>2025년 1월 1일 ~ 12월 31일 전입신고 기준 (인구는 2025년 12월 말 기준)</p>
-</div></details><details id="ev-limits"><summary>한계 6가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
-<ul>
-<li>주민등록 신고 기준이다. 전입신고를 하지 않았거나 늦게 한 경우, 주소만 옮긴 경우가 있어 실제 거주 이동과 다를 수 있다. 대학생처럼 주소를 옮기지 않고 사는 경우가 20대에 특히 많을 수 있다.</li>
-<li>분모가 연말 인구다. 연중 평균 인구(연앙인구)가 아니라 연말 인구를 썼다. 순유입이 많은 구는 분모가 커져 비율이 조금 낮게 나온다.</li>
-<li>비교 기준. 2015~2024년 평균은 연도별 비율을 단순 평균한 값이다. 2015년 이전은 보지 않았다.</li>
-<li>내국인만 포함한다. 외국인 이동은 포함되지 않는다.</li>
-<li>나이 기준. 이동 당시 나이 기준이며, 20~29세를 1세 단위로 합산했다.</li>
-<li>원인은 말하지 않는다. 대학, 일자리, 주거비, 신축 아파트 등과의 관계는 이 데이터로 확인할 수 없다. 이 글은 패턴만 보여준다.</li>
-</ul>
-</div></details><details id="ev-premises"><summary>전제 기록</summary><div class="in ev-premises"><p class="sec-note">데이터를 보기 전에 적어둔 것, 그리고 보고 나서 바꾼 것</p>
-<ul>
-<li>전제 v4 그대로 진행.</li>
-<li>2번 "천 명당 비율을 구할 수 있으면 병기" → 구할 수 있었고, 분모는 연말 인구로 정함(연앙인구를 따로 구할 수 없음). 결과를 보기 전에 정했음.</li>
-<li>20대 = 20~29세(1세 단위 합산). 결과를 보기 전에 정했음.</li>
-</ul></div></details><details id="ev-question"><summary>질문</summary><div class="in ev-question">
-<p>서울을 떠나는 사람이 많다는 얘기가 자주 나와요. 20대(20~29세)도 그런지, 2025년 서울 25개 자치구에서 20대가 더 들어왔는지 더 나갔는지 봤어요.</p>
-</div></details></section><script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);if(e&&e.tagName==="DETAILS")e.open=true;}addEventListener("hashchange",o);o();})();</script><section class="share-end"><p>카톡에 링크를 붙이면 숫자 카드랑 요약이 같이 떠요.</p><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/2026-10_seoul-20s-move/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></section><section class="subscribe" id="subscribe"><div><h2>새 글 나오면 받아 보기</h2><p>지금은 RSS로 받을 수 있어요. 메일은 아직 준비 중이에요.</p></div><div class="row"><a class="btn dark" href="../feed.xml">RSS 주소</a><span class="btn off">메일 (준비 중)</span></div></section>
+</ul></div></div></details></section><script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);var d=e&&e.closest("details");if(d){d.open=true;if(d!==e)e.scrollIntoView();}}addEventListener("hashchange",o);o();})();</script><section class="share-end"><p>카톡에 링크를 붙이면 숫자 카드랑 요약이 같이 떠요.</p><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/2026-10_seoul-20s-move/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></section><section class="subscribe" id="subscribe"><div class="sub-t"><h2>새 글 나오면 받아 보기</h2><p>피드 리더 앱에 이 사이트 주소를 한 번 넣어 두면, 새 글이 올라올 때 앱에 떠요. 가입이나 메일 주소는 필요 없어요.</p></div><details class="how"><summary class="btn dark">받는 법 보기</summary><div class="how-in"><ol><li><b>피드 리더 앱을 하나 골라요.</b> 새 글을 모아 보여 주는 앱이에요. 예를 들면 <a href="https://feedly.com" target="_blank" rel="noopener">Feedly</a>나 <a href="https://www.inoreader.com" target="_blank" rel="noopener">Inoreader</a>가 있어요. 둘 다 무료고 웹·휴대폰에서 써요.</li><li><b>앱에서 '구독 추가'(+)를 누르고 아래 주소를 붙여 넣어요.</b></li><li><b>끝이에요.</b> 새 글이 올라오면 앱 목록에 떠요.</li></ol><div class="feed-addr"><code>https://protofu.github.io/opendata-insight/feed.xml</code><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/feed.xml" data-rel="../feed.xml" data-done="주소를 복사했어요" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>주소 복사</span></button></div><p class="how-alt">Feedly를 쓴다면 <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fprotofu.github.io%2Fopendata-insight%2Ffeed.xml" target="_blank" rel="noopener">여기를 눌러 바로 추가</a>할 수도 있어요.</p></div></details></section>
 </article>
-<section class="rel wrap"><div class="sec-h"><h2>이어서 읽을 만한 글</h2></div><div class="trio"><a class="card" href="../2026-10_seoul-20s-only/index.html"><div class="ph"><picture><source srcset="../2026-10_seoul-20s-only/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_seoul-20s-only/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">가족·사회</span><h3>서울 구 대부분, 20대만 들어오고 다른 나이는 나갔어요</h3><p>서울 대부분의 구에서 20대만 들어오고 다른 나이는 빠져나갔어요. 모든 나이가 함께 들어온 곳은 강동구 하나였어요.</p></a><a class="card" href="../2026-10_moving-less/index.html"><div class="ph"><picture><source srcset="../2026-10_moving-less/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_moving-less/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">가족·사회</span><h3>요즘 사람들, 정말 이사를 덜 다닐까요</h3><p>주소를 옮기는 사람은 25년 새 크게 줄었고, 20대 초반만 예외예요. 줄어든 건 주로 가까운 이동이었어요.</p></a><a class="card" href="../2026-10_home-ownership/index.html"><div class="ph"><picture><source srcset="../2026-10_home-ownership/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_home-ownership/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">돈·자산</span><h3>집 가진 가구는 늘었는데, 30대 가구는 6년째 줄었어요</h3><p>전체 숫자가 가장 높은 해에, 30대 가구는 10가구 중 3.6가구만 집이 있어요. 같은 통계 안에서 방향이 갈렸어요.</p></a></div></section><div class="toast" role="status" aria-live="polite"></div>
-<script>
-(function () {
-  var btns = document.querySelectorAll('[data-copy]'), toast = document.querySelector('.toast');
-  function say(ok) {
-    if (!toast) return;
-    toast.textContent = ok ? '링크를 복사했어요' : '주소창의 링크를 복사해 주세요';
-    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
-  }
-  function fallback(t) {
-    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
-    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
-    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
-    document.body.removeChild(a); say(ok);
-  }
-  btns.forEach(function (b) {
-    b.hidden = false;
-    b.addEventListener('click', function () {
-      var t = b.dataset.copy || location.href.split('#')[0];
-      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(true); }, function () { fallback(t); });
-      else fallback(t);
-    });
-  });
-  // 근거 탭
-  var ev = document.querySelector('.evidence');
-  if (!ev) return;
-  var tabs = ev.querySelectorAll('[role=tab]'), panes = ev.querySelectorAll('.ev-pane');
-  if (!tabs.length) return;
-  ev.classList.add('js'); ev.querySelector('[role=tablist]').hidden = false;
-  function sel(id) {
-    tabs.forEach(function (t) { var on = t.getAttribute('aria-controls') === id; t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1; });
-    panes.forEach(function (p) { p.hidden = p.id !== id; });
-  }
-  tabs.forEach(function (t, i) {
-    t.addEventListener('click', function () { sel(t.getAttribute('aria-controls')); });
-    t.addEventListener('keydown', function (e) {
-      var k = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (!k) return;
-      var n = tabs[(i + k + tabs.length) % tabs.length]; n.focus(); sel(n.getAttribute('aria-controls'));
-    });
-  });
-  function fromHash() {
-    var h = location.hash.slice(1);
-    if (h.indexOf('ev-') === 0 && document.getElementById(h)) { sel(h); ev.scrollIntoView({block: 'start'}); return true; }
-  }
-  window.addEventListener('hashchange', fromHash);
-  if (!fromHash()) sel(tabs[0].getAttribute('aria-controls'));
-})();
-</script>
+<section class="rel wrap"><div class="sec-h"><h2>이어서 읽을 만한 글</h2></div><div class="trio"><a class="card" href="../2026-10_seoul-20s-only/index.html"><div class="ph"><picture><source srcset="../2026-10_seoul-20s-only/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_seoul-20s-only/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">가족·사회</span><h3>서울 구 대부분, 20대만 들어오고 다른 나이는 나갔어요</h3><p>서울 대부분의 구에서 20대만 들어오고 다른 나이는 빠져나갔어요. 모든 나이가 함께 들어온 곳은 강동구 하나였어요.</p></a><a class="card" href="../2026-10_moving-less/index.html"><div class="ph"><picture><source srcset="../2026-10_moving-less/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_moving-less/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">가족·사회</span><h3>요즘 사람들, 정말 이사를 덜 다닐까요</h3><p>주소를 옮기는 사람은 25년 새 크게 줄었고, 20대 초반만 예외예요. 줄어든 건 주로 가까운 이동이었어요.</p></a><a class="card" href="../2026-10_home-ownership/index.html"><div class="ph"><picture><source srcset="../2026-10_home-ownership/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_home-ownership/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">돈·자산</span><h3>집 가진 가구는 늘었는데, 30대 가구는 6년째 줄었어요</h3><p>전체 숫자가 가장 높은 해에, 30대 가구는 10가구 중 3.6가구만 집이 있어요. 같은 통계 안에서 방향이 갈렸어요.</p></a></div></section>
 </main>
 <footer class="foot"><div class="wrap">
   <div><a class="brand" href="../index.html">데이터 한 컷</a>
     <p>뉴스에 나온 숫자가 궁금하면 공공데이터 원본을 열어서 다시 계산해 봐요. 한 사람이 만드는 작은 사이트예요.</p>
     <small>숫자는 전부 공개된 원자료에서 다시 계산했어요. 원인을 단정하진 않고, 투자·진로 조언도 아니에요.</small></div>
   <div><h2>둘러보기</h2><ul><li><a href="../about.html">소개</a></li><li><a href="../archive/index.html">자료실</a></li><li><a href="../data.html">숫자 장부</a></li></ul></div>
-  <div><h2>받아 보기</h2><ul><li><a href="../feed.xml">RSS</a></li><li>메일 구독 (준비 중)</li></ul></div>
+  <div><h2>받아 보기</h2><ul><li><a href="#subscribe">새 글 받는 법</a></li><li><a href="../feed.xml">RSS 주소</a></li></ul></div>
 </div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var toast = document.querySelector('.toast');
+  function say(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
+  }
+  function fallback(t, ok_) {
+    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
+    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(a); say(ok ? ok_ : '주소창의 주소를 복사해 주세요');
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var t = b.dataset.copy || (b.dataset.rel ? new URL(b.dataset.rel, location.href).href : location.href.split('#')[0]);
+      var ok_ = b.dataset.done || '링크를 복사했어요';
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(ok_); }, function () { fallback(t, ok_); });
+      else fallback(t, ok_);
+    });
+  });
+})();
+</script>
 <script>
 (function () {
   var r = document.documentElement, b = document.querySelector('.theme');

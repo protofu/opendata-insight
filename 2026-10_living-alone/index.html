@@ -28,7 +28,7 @@
 <header class="head"><div class="wrap">
   <a class="brand" href="../index.html">데이터 한 컷</a>
   <nav class="util" aria-label="사이트"><a href="../about.html" class=hide-m>소개</a><a href="../archive/index.html" class=hide-m>자료실</a><a href="../data.html" class=hide-m>데이터</a></nav>
-  <a class="sub-btn" href="../index.html#subscribe">구독</a>
+  <a class="sub-btn" href="#subscribe">구독</a>
   <button class="theme" type="button" aria-label="밝은 화면/어두운 화면 바꾸기" title="밝게/어둡게" hidden>◐</button>
 </div></header>
 <nav class="cats" aria-label="카테고리"><div class="wrap"><a href="../index.html">전체</a><a href="../category/work/index.html">일·이직</a><a href="../category/money/index.html">돈·자산</a><a href="../category/digital/index.html">디지털·크리에이터</a><a href="../category/society/index.html" aria-current=page>가족·사회</a><a href="../category/life/index.html">생활·건강</a><a href="../category/business/index.html">창업·자영업</a></div></nav>
@@ -36,7 +36,7 @@
 <article class="art">
 <span class="kick">가족·사회</span><h1>혼자 사는 비율, 20대 후반과 85세 이상이 거의 같아요</h1>
 <p class="dek">혼자 사는 집이라고 하면 어르신 집이 먼저 떠오르기 쉬워요. 비율로 재 보면 20대 후반도 같은 높이에 있어요.</p>
-<div class="byline"><span>데이터 한 컷</span><span>읽는 데 2분</span><span>인구주택총조사(등록센서스) 2015~2025</span><span class="sp"></span><a href="#evidence">근거</a><button type="button" class="pill" data-copy="https://protofu.github.io/opendata-insight/2026-10_living-alone/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></div>
+<div class="byline"><span>데이터 한 컷</span><span>읽는 데 3분</span><span>인구주택총조사(등록센서스) 2015~2025</span><span class="sp"></span><a href="#evidence">근거</a><button type="button" class="pill" data-copy="https://protofu.github.io/opendata-insight/2026-10_living-alone/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></div>
 <figure class="fig"><a href="chart_living_alone_age5.png" title="원본 크기로 보기"><picture><source srcset="chart_living_alone_age5.m.dark.png" media="(max-width: 560px) and (prefers-color-scheme: dark)"><source srcset="chart_living_alone_age5.m.png" media="(max-width: 560px)"><source srcset="chart_living_alone_age5.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_living_alone_age5.png" alt="차트"></picture></a></figure><ul class="points"><li>2025년 25~29세 중 혼자 사는 사람은 28.2%예요. 85세 이상은 28.5%예요.</li><li>20대 전체로는 10년 새 13.8%에서 24.3%로 올랐어요. 30대도 12.9%에서 22.4%가 됐어요.</li><li>20대 인구는 2023년부터 줄었는데, 혼자 사는 비율은 계속 올랐어요.</li></ul><div class="body">
 <section class="sec">
 <p>가장 최근 조사에서 혼자 사는 60대는 146.3만 가구예요. 혼자 사는 20대 134.4만 가구보다 많아요. 그런데 그 나이대 사람 수로 나누면 60대는 18.9%, 20대는 24.3%로 순서가 바뀌어요. 다섯 살 단위로 쪼개면 가장 낮은 건 45~49세(13.1%)이고, 거기서부터 나이가 들수록 다시 올라가더라고요. 양 끝이 높고 가운데가 낮은 모양이에요.</p>
@@ -47,108 +47,73 @@
 <figure class="fig"><a href="chart_living_alone_count.png" title="원본 크기로 보기"><picture><source srcset="chart_living_alone_count.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_living_alone_count.png" alt="나이대별 수" loading=lazy></picture></a></figure>
 <p>20대에선 숫자 둘이 서로 다른 쪽으로 움직였어요. 혼자 사는 20대는 2023년 140.5만에서 2025년 134.4만으로 줄었어요. 같은 기간 20대 인구는 603만에서 554만으로 더 크게 줄어서, 비율은 계속 올랐어요.</p>
 <p>같은 28%라도 두 나이대가 혼자 사는 사정은 전혀 다를 텐데, 이 표엔 그 이유를 적는 칸이 없었어요.</p>
-</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source">
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>데이터</th>
-<th>출처</th>
-<th>쓰임</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>성 및 연령별 1인가구 (KOSIS DT_1PL1502)</td>
-<td>국가데이터처 「인구주택총조사(등록센서스)」</td>
-<td>5세 나이대별 1인가구 수</td>
-</tr>
-<tr>
-<td>연령 및 성별 인구 (KOSIS DT_1IN1503)</td>
-<td>같은 조사</td>
-<td>5세 나이대별 내국인 인구(분모)</td>
-</tr>
-</tbody>
-</table></div>
+</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 2015~2025년, 매년 11월 1일이에요.</p>
+<div class="src-cards"><div class="src"><p class="src-h"><span>국가데이터처</span><b>인구주택총조사(등록센서스)</b></p><ul><li><div class="src-t">성 및 연령별 1인가구<small>KOSIS DT_1PL1502</small><p>5세 나이대별 1인가구 수</p></div><a class="src-go" href="https://kosis.kr/statHtml/statHtml.do?orgId=101&amp;tblId=DT_1PL1502" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li><li><div class="src-t">연령 및 성별 인구<small>KOSIS DT_1IN1503</small><p>5세 나이대별 내국인 인구(분모)</p></div><a class="src-go" href="https://kosis.kr/statHtml/statHtml.do?orgId=101&amp;tblId=DT_1IN1503" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div></div>
+</div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
 <ul>
-<li>혼자 사는 비율 = 1인가구 수 ÷ 그 나이대 내국인 인구. 1인가구 하나에 한 사람이 사니 '그 나이대 사람 중 혼자 사는 사람 비율'에 가깝다.</li>
-<li>1인가구는 일반가구만 센다(기숙사·사회시설 등 집단가구와 외국인 가구 제외). 분모는 내국인 전체라 집단가구에 사는 사람도 들어 있다 → 근사값.</li>
-<li>검증: 해마다 나이대별 1인가구 합이 전체 1인가구 수와 같은지 확인했다.</li>
-<li>교차 확인: 2025년 1인가구 824만 4천 가구(8,244,308)는 보도(일반가구의 36.6%)와 같다. 보도의 '남자 30대 21.8%, 여자 60대 18.6%'는 1인가구 중 그 나이대가 차지하는 몫이라 이 글의 비율(그 나이대 사람 중 혼자 사는 사람)과 기준이 다르다.</li>
-<li>수집일: 2026-10-29 (KOSIS 오픈API).</li>
-<li>대표 차트는 2025년 5세 나이대 값(20~24세 ~ 85세 이상 14칸)이에요. '1.7배'는 2025년 비율 ÷ 2015년 비율(20대 24.3 ÷ 13.8, 30대 22.4 ÷ 12.9)이고, '4명 중 1명꼴'은 24.3%를 어림한 거예요.</li>
+<li><strong>1인가구</strong>는 혼자 사는 가구예요. 일반가구만 세고, 기숙사·사회시설 같은 <strong>집단가구</strong>와 외국인 가구는 빼요.</li>
+<li>혼자 사는 비율은 1인가구 수를 그 나이대 내국인 인구로 나눈 값이에요. 1인가구 하나에 한 사람이 사니, 그 나이대 사람 중 혼자 사는 사람의 비율에 가까워요.</li>
+<li>분모인 내국인 인구에는 집단가구에 사는 사람도 들어 있어서, 비율은 근삿값이에요.</li>
+<li>나이는 다섯 살 단위로 나눴어요(20~24세부터 85세 이상까지).</li>
+<li>보도에 나오는 '남자 30대 21.8%, 여자 60대 18.6%'는 1인가구 가운데 그 나이대가 차지하는 비율이에요. 그 나이대 사람 중 혼자 사는 사람을 센 이 글의 비율과는 기준이 달라요.</li>
 </ul>
-<h4 class="ev-sub">기준일</h4>
-<p>매년 11월 1일, 2015~2025년.</p>
-</div></details><details id="ev-limits"><summary>한계 4가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
+</div></details><details id="ev-limits" open><summary>한계 4가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
 <ul>
-<li>분모가 근사다. 기숙사·군대·요양시설 등에 사는 사람은 분모에만 들어간다. 20대 초반과 80세 이상은 실제 '혼자 사는 비율'보다 낮게 나올 수 있다.</li>
-<li>왜 혼자 사는지는 모른다. 독립, 취업, 미혼, 사별, 이혼 등 이유는 이 표에 없다. 2019~2021년 급증의 원인도 이 데이터로 말할 수 없다.</li>
-<li>전국만 봤다. 지역 차이는 다루지 않는다.</li>
-<li>좋다 나쁘다를 판단하지 않는다. 패턴만 적었다.</li>
+<li>분모가 근삿값이에요. 기숙사·군대·요양시설 등에 사는 사람은 분모에만 들어가요. 20대 초반과 80세 이상은 실제 '혼자 사는 비율'보다 낮게 나올 수 있어요.</li>
+<li>왜 혼자 사는지는 몰라요. 독립, 취업, 미혼, 사별, 이혼 등 이유는 이 표에 없어요. 2019~2021년에 가파르게 오른 원인도 이 데이터로 말할 수 없어요.</li>
+<li>전국만 봤어요. 지역 차이는 다루지 않아요.</li>
+<li>좋다 나쁘다를 판단하지 않아요. 패턴만 적었어요.</li>
 </ul>
-</div></details><details id="ev-premises"><summary>전제 기록</summary><div class="in ev-premises"><p class="sec-note">데이터를 보기 전에 적어둔 것, 그리고 보고 나서 바꾼 것</p>
+</div></details><details id="ev-calc"><summary>계산 기록</summary><div class="in ev-calc"><div class="calc-part calc-premises" id="ev-premises"><h3 class="ev-sub">쓰기 전에 정한 것</h3>
 <ul>
-<li><a href="premises.html">전제 기록(premises)</a>(데이터를 받기 전에 작성)를 따랐다. 표 주석에서 1인가구가 외국인 가구를 빼고 센다는 걸 미리 보고 분모를 '내국인'으로 정했다.</li>
-</ul><p class="premises-link"><a href="premises.html">전제 기록 원문 보기 <span aria-hidden="true">→</span></a></p></div></details><details id="ev-question"><summary>질문</summary><div class="in ev-question">
+<li>표 주석에서 1인가구가 외국인 가구를 빼고 센다는 걸 미리 보고, 분모를 내국인 인구로 정했어요. 데이터를 받기 전이에요.</li>
+<li>기숙사·시설에 사는 사람은 분모에만 들어가 20대 초반·80세 이상이 낮게 나올 수 있다는 점도 받기 전에 적어 두었어요.</li>
+</ul>
+<p class="premises-link"><a href="premises.html">쓰기 전에 정한 것 원문 보기 <span aria-hidden="true">→</span></a></p></div><div class="calc-part calc-question" id="ev-question"><h3 class="ev-sub">처음 던진 질문</h3>
 <p>20대 후반과 85세 이상. 살아온 시간도, 사는 모습도 전혀 다른 두 나이대예요. 그런데 혼자 사는 비율을 나란히 놓으니 거의 같은 높이였어요. 처음 봤을 땐 믿기지 않았어요. 그래서 나이대를 다섯 살 단위로 쪼개 10년 치를 열어 봤어요.</p>
-</div></details></section><script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);if(e&&e.tagName==="DETAILS")e.open=true;}addEventListener("hashchange",o);o();})();</script><section class="share-end"><p>카톡에 링크를 붙이면 숫자 카드랑 요약이 같이 떠요.</p><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/2026-10_living-alone/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></section><section class="subscribe" id="subscribe"><div><h2>새 글 나오면 받아 보기</h2><p>지금은 RSS로 받을 수 있어요. 메일은 아직 준비 중이에요.</p></div><div class="row"><a class="btn dark" href="../feed.xml">RSS 주소</a><span class="btn off">메일 (준비 중)</span></div></section>
+</div><div class="calc-part calc-check" id="ev-check"><h3 class="ev-sub">수집·검증 기록</h3>
+<ul>
+<li>표: KOSIS DT_1PL1502(1인가구), DT_1IN1503(내국인 인구, 분모). 수집일 2026-10-29 (KOSIS 오픈API).</li>
+<li>계산: 혼자 사는 비율 = 1인가구 수 ÷ 그 나이대 내국인 인구(근사). 대표 차트는 2025년 5세 나이대 값(20~24세 ~ 85세 이상 14칸). '1.7배' = 2025년 비율 ÷ 2015년 비율(20대 24.3 ÷ 13.8, 30대 22.4 ÷ 12.9). '4명 중 1명꼴' = 24.3% 어림.</li>
+<li>검증: 해마다 나이대별 1인가구 합이 전체 1인가구 수와 같은지 확인.</li>
+<li>교차 확인: 2025년 1인가구 824만 4천 가구(8,244,308)가 보도(일반가구의 36.6%)와 같음. 보도의 '남자 30대 21.8%, 여자 60대 18.6%'는 1인가구 중 그 나이대 몫이라 이 글 비율과 기준이 다름.</li>
+</ul></div></div></details></section><script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);var d=e&&e.closest("details");if(d){d.open=true;if(d!==e)e.scrollIntoView();}}addEventListener("hashchange",o);o();})();</script><section class="share-end"><p>카톡에 링크를 붙이면 숫자 카드랑 요약이 같이 떠요.</p><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/2026-10_living-alone/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></section><section class="subscribe" id="subscribe"><div class="sub-t"><h2>새 글 나오면 받아 보기</h2><p>피드 리더 앱에 이 사이트 주소를 한 번 넣어 두면, 새 글이 올라올 때 앱에 떠요. 가입이나 메일 주소는 필요 없어요.</p></div><details class="how"><summary class="btn dark">받는 법 보기</summary><div class="how-in"><ol><li><b>피드 리더 앱을 하나 골라요.</b> 새 글을 모아 보여 주는 앱이에요. 예를 들면 <a href="https://feedly.com" target="_blank" rel="noopener">Feedly</a>나 <a href="https://www.inoreader.com" target="_blank" rel="noopener">Inoreader</a>가 있어요. 둘 다 무료고 웹·휴대폰에서 써요.</li><li><b>앱에서 '구독 추가'(+)를 누르고 아래 주소를 붙여 넣어요.</b></li><li><b>끝이에요.</b> 새 글이 올라오면 앱 목록에 떠요.</li></ol><div class="feed-addr"><code>https://protofu.github.io/opendata-insight/feed.xml</code><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/feed.xml" data-rel="../feed.xml" data-done="주소를 복사했어요" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>주소 복사</span></button></div><p class="how-alt">Feedly를 쓴다면 <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fprotofu.github.io%2Fopendata-insight%2Ffeed.xml" target="_blank" rel="noopener">여기를 눌러 바로 추가</a>할 수도 있어요.</p></div></details></section>
 </article>
-<section class="rel wrap"><div class="sec-h"><h2>이어서 읽을 만한 글</h2></div><div class="trio"><a class="card" href="../2026-10_home-ownership/index.html"><div class="ph"><picture><source srcset="../2026-10_home-ownership/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_home-ownership/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">돈·자산</span><h3>집 가진 가구는 늘었는데, 30대 가구는 6년째 줄었어요</h3><p>전체 숫자가 가장 높은 해에, 30대 가구는 10가구 중 3.6가구만 집이 있어요. 같은 통계 안에서 방향이 갈렸어요.</p></a><a class="card" href="../2026-10_birth-rebound/index.html"><div class="ph"><picture><source srcset="../2026-10_birth-rebound/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_birth-rebound/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">가족·사회</span><h3>출생아, 1년 전보다 많은 달이 2년 넘게 이어지고 있어요</h3><p>아기는 2년 넘게 1년 전보다 많이 태어나고 있어요. 바닥에서는 올라왔고, 2015년과는 아직 거리가 있어요.</p></a><a class="card" href="../2026-10_migrant-background/index.html"><div class="ph"><picture><source srcset="../2026-10_migrant-background/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_migrant-background/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">가족·사회</span><h3>20대 이주배경인구, 열어 보니 대부분 외국인이었어요</h3><p>같은 &#x27;이주배경&#x27;이어도 20대는 대부분 외국인이고, 어린아이는 대부분 한국 국적이에요. 나이에 따라 전혀 다른 사람들이 한 단어 안에 들어 있어요.</p></a></div></section><div class="toast" role="status" aria-live="polite"></div>
-<script>
-(function () {
-  var btns = document.querySelectorAll('[data-copy]'), toast = document.querySelector('.toast');
-  function say(ok) {
-    if (!toast) return;
-    toast.textContent = ok ? '링크를 복사했어요' : '주소창의 링크를 복사해 주세요';
-    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
-  }
-  function fallback(t) {
-    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
-    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
-    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
-    document.body.removeChild(a); say(ok);
-  }
-  btns.forEach(function (b) {
-    b.hidden = false;
-    b.addEventListener('click', function () {
-      var t = b.dataset.copy || location.href.split('#')[0];
-      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(true); }, function () { fallback(t); });
-      else fallback(t);
-    });
-  });
-  // 근거 탭
-  var ev = document.querySelector('.evidence');
-  if (!ev) return;
-  var tabs = ev.querySelectorAll('[role=tab]'), panes = ev.querySelectorAll('.ev-pane');
-  if (!tabs.length) return;
-  ev.classList.add('js'); ev.querySelector('[role=tablist]').hidden = false;
-  function sel(id) {
-    tabs.forEach(function (t) { var on = t.getAttribute('aria-controls') === id; t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1; });
-    panes.forEach(function (p) { p.hidden = p.id !== id; });
-  }
-  tabs.forEach(function (t, i) {
-    t.addEventListener('click', function () { sel(t.getAttribute('aria-controls')); });
-    t.addEventListener('keydown', function (e) {
-      var k = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (!k) return;
-      var n = tabs[(i + k + tabs.length) % tabs.length]; n.focus(); sel(n.getAttribute('aria-controls'));
-    });
-  });
-  function fromHash() {
-    var h = location.hash.slice(1);
-    if (h.indexOf('ev-') === 0 && document.getElementById(h)) { sel(h); ev.scrollIntoView({block: 'start'}); return true; }
-  }
-  window.addEventListener('hashchange', fromHash);
-  if (!fromHash()) sel(tabs[0].getAttribute('aria-controls'));
-})();
-</script>
+<section class="rel wrap"><div class="sec-h"><h2>이어서 읽을 만한 글</h2></div><div class="trio"><a class="card" href="../2026-10_home-ownership/index.html"><div class="ph"><picture><source srcset="../2026-10_home-ownership/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_home-ownership/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">돈·자산</span><h3>집 가진 가구는 늘었는데, 30대 가구는 6년째 줄었어요</h3><p>전체 숫자가 가장 높은 해에, 30대 가구는 10가구 중 3.6가구만 집이 있어요. 같은 통계 안에서 방향이 갈렸어요.</p></a><a class="card" href="../2026-10_birth-rebound/index.html"><div class="ph"><picture><source srcset="../2026-10_birth-rebound/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_birth-rebound/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">가족·사회</span><h3>출생아, 1년 전보다 많은 달이 2년 넘게 이어지고 있어요</h3><p>아기는 2년 넘게 1년 전보다 많이 태어나고 있어요. 바닥에서는 올라왔고, 2015년과는 아직 거리가 있어요.</p></a><a class="card" href="../2026-10_migrant-background/index.html"><div class="ph"><picture><source srcset="../2026-10_migrant-background/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_migrant-background/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">가족·사회</span><h3>20대 이주배경인구, 열어 보니 대부분 외국인이었어요</h3><p>같은 &#x27;이주배경&#x27;이어도 20대는 대부분 외국인이고, 어린아이는 대부분 한국 국적이에요. 나이에 따라 전혀 다른 사람들이 한 단어 안에 들어 있어요.</p></a></div></section>
 </main>
 <footer class="foot"><div class="wrap">
   <div><a class="brand" href="../index.html">데이터 한 컷</a>
     <p>뉴스에 나온 숫자가 궁금하면 공공데이터 원본을 열어서 다시 계산해 봐요. 한 사람이 만드는 작은 사이트예요.</p>
     <small>숫자는 전부 공개된 원자료에서 다시 계산했어요. 원인을 단정하진 않고, 투자·진로 조언도 아니에요.</small></div>
   <div><h2>둘러보기</h2><ul><li><a href="../about.html">소개</a></li><li><a href="../archive/index.html">자료실</a></li><li><a href="../data.html">숫자 장부</a></li></ul></div>
-  <div><h2>받아 보기</h2><ul><li><a href="../feed.xml">RSS</a></li><li>메일 구독 (준비 중)</li></ul></div>
+  <div><h2>받아 보기</h2><ul><li><a href="#subscribe">새 글 받는 법</a></li><li><a href="../feed.xml">RSS 주소</a></li></ul></div>
 </div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var toast = document.querySelector('.toast');
+  function say(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
+  }
+  function fallback(t, ok_) {
+    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
+    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(a); say(ok ? ok_ : '주소창의 주소를 복사해 주세요');
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var t = b.dataset.copy || (b.dataset.rel ? new URL(b.dataset.rel, location.href).href : location.href.split('#')[0]);
+      var ok_ = b.dataset.done || '링크를 복사했어요';
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(ok_); }, function () { fallback(t, ok_); });
+      else fallback(t, ok_);
+    });
+  });
+})();
+</script>
 <script>
 (function () {
   var r = document.documentElement, b = document.querySelector('.theme');

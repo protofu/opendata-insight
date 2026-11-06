@@ -28,7 +28,7 @@
 <header class="head"><div class="wrap">
   <a class="brand" href="../index.html">데이터 한 컷</a>
   <nav class="util" aria-label="사이트"><a href="../about.html" class=hide-m>소개</a><a href="../archive/index.html" class=hide-m>자료실</a><a href="../data.html" class=hide-m>데이터</a></nav>
-  <a class="sub-btn" href="../index.html#subscribe">구독</a>
+  <a class="sub-btn" href="#subscribe">구독</a>
   <button class="theme" type="button" aria-label="밝은 화면/어두운 화면 바꾸기" title="밝게/어둡게" hidden>◐</button>
 </div></header>
 <nav class="cats" aria-label="카테고리"><div class="wrap"><a href="../index.html">전체</a><a href="../category/work/index.html">일·이직</a><a href="../category/money/index.html">돈·자산</a><a href="../category/digital/index.html">디지털·크리에이터</a><a href="../category/society/index.html">가족·사회</a><a href="../category/life/index.html" aria-current=page>생활·건강</a><a href="../category/business/index.html">창업·자영업</a></div></nav>
@@ -46,110 +46,72 @@
 <p>성별로는 남성이 더 많이 줄었어요. 남성은 55.1%에서 35.1%, 여성은 56.3%에서 41.9%예요.</p>
 <figure class="fig"><a href="chart_reading_media.png" title="원본 크기로 보기"><picture><source srcset="chart_reading_media.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_reading_media.png" alt="매체" loading=lazy></picture></a></figure>
 <p>웹소설이나 웹툰이 '책'에 들어가는지는 끝내 확인하지 못했어요. 40~50대가 읽기를 그만둔 건지, 다른 화면으로 옮겨 간 건지는 이 표로 가를 수 없었어요.</p>
-</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source">
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>데이터</th>
-<th>출처</th>
-<th>쓰임</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>종합 독서율 - 성인 (KOSIS DT_113_STBL_1029672)</td>
-<td>문화체육관광부 「국민 독서실태조사」</td>
-<td>2019·2021·2023·2025년 성별·나이대별 독서율</td>
-</tr>
-<tr>
-<td>매체별 독서율 - 성인 (KOSIS DT_113_STBL_1031917)</td>
-<td>같은 조사</td>
-<td>2023·2025년 종이책·전자책·오디오북 독서율</td>
-</tr>
-</tbody>
-</table></div>
+</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 2019·2021·2023·2025년 조사예요. 각각 조사 직전 1년을 물어요.</p>
+<div class="src-cards"><div class="src"><p class="src-h"><span>문화체육관광부</span><b>국민 독서실태조사</b></p><ul><li><div class="src-t">종합 독서율 - 성인<small>KOSIS DT_113_STBL_1029672</small><p>2019·2021·2023·2025년 성별·나이대별 독서율</p></div><a class="src-go" href="https://kosis.kr/statHtml/statHtml.do?orgId=113&amp;tblId=DT_113_STBL_1029672" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li><li><div class="src-t">매체별 독서율 - 성인<small>KOSIS DT_113_STBL_1031917</small><p>2023·2025년 종이책·전자책·오디오북 독서율</p></div><a class="src-go" href="https://kosis.kr/statHtml/statHtml.do?orgId=113&amp;tblId=DT_113_STBL_1031917" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div></div>
+</div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
 <ul>
-<li>종합 독서율 = 최근 1년 동안 종이책·전자책·오디오북 중 하나로 1권 이상 읽거나 들은 성인(19세 이상) 비율.</li>
-<li>2년마다 조사한다. 표본은 2019·2021년 6,000명, 2023·2025년 5,000명.</li>
-<li>나이 구분 이름이 2021년과 2023년 사이 바뀌어(19~29세 → 20대 이하 등) 같은 구간끼리 묶었다. 2025년부터는 60세 이상을 60대와 70대 이상으로 나눠 발표한다.</li>
-<li>검증: 모든 칸에서 '독서한 적 있음 + 없음 = 100%'인지 확인했다.</li>
-<li>교차 확인: 2025년 성인 38.5%(2023년 43.0%), 20대 75.3%는 문화체육관광부 2026년 3월 발표와 같다.</li>
-<li>수집일: 2026-10-29 (KOSIS 오픈API).</li>
+<li><strong>종합 독서율</strong>은 최근 1년 동안 종이책·전자책·오디오북 중 하나로 1권 이상 읽거나 들은 성인(19세 이상)의 비율이에요.</li>
+<li>2년마다 조사해요. 표본은 2019·2021년 6,000명, 2023·2025년 5,000명이에요.</li>
+<li>나이 구분 이름이 2021년과 2023년 사이에 바뀌어(19~29세 → 20대 이하 등) 같은 구간끼리 묶었어요. 2025년부터는 60세 이상을 60대와 70대 이상으로 나눠 발표해요.</li>
+<li>매체별 독서율은 2023·2025년 값만 있어요.</li>
 </ul>
-<h4 class="ev-sub">기준일</h4>
-<p>2019·2021·2023·2025년 조사(각각 직전 1년).</p>
-</div></details><details id="ev-limits"><summary>한계 5가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
+</div></details><details id="ev-limits" open><summary>한계 5가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
 <ul>
-<li>'책'의 범위. 어떤 책(교과서·수험서·만화·웹소설 등)이 들어가는지 문항 정의는 이 표로 확인하지 못했다. 웹소설이나 웹툰이 빠진다면, 그쪽으로 옮겨 간 읽기는 여기 잡히지 않는다.</li>
-<li>표본조사다. 나이대별 표본은 700~1,000명 안팎이라 1~2%p 차이는 오차일 수 있다.</li>
-<li>2019년 이전과는 잇지 않았다. 1993~2010년 '일반도서 독서율'은 정의가 달라 이어 붙이지 않았다.</li>
-<li>2025년 60세 이상은 나뉘어 발표돼 2023년 이전과 같은 구간으로 비교할 수 없다.</li>
-<li>원인은 말하지 않는다. 책을 덜 읽는 것이 좋다·나쁘다는 판단도 하지 않는다.</li>
+<li>'책'의 범위를 확인하지 못했어요. 어떤 책(교과서·수험서·만화·웹소설 등)이 들어가는지 문항 정의는 이 표로 확인하지 못했어요. 웹소설이나 웹툰이 빠진다면, 그쪽으로 옮겨 간 읽기는 여기 잡히지 않아요.</li>
+<li>표본조사예요. 나이대별 표본은 700~1,000명 안팎이라 1~2%p 차이는 오차일 수 있어요.</li>
+<li>2019년 이전과는 잇지 않았어요. 1993~2010년 '일반도서 독서율'은 정의가 달라 이어 붙이지 않았어요.</li>
+<li>2025년 60세 이상은 나뉘어 발표돼서 2023년 이전과 같은 구간으로 비교할 수 없어요.</li>
+<li>원인은 말하지 않아요. 책을 덜 읽는 것이 좋다·나쁘다는 판단도 하지 않아요.</li>
 </ul>
-</div></details><details id="ev-premises"><summary>전제 기록</summary><div class="in ev-premises"><p class="sec-note">데이터를 보기 전에 적어둔 것, 그리고 보고 나서 바꾼 것</p>
+</div></details><details id="ev-calc"><summary>계산 기록</summary><div class="in ev-calc"><div class="calc-part calc-premises" id="ev-premises"><h3 class="ev-sub">쓰기 전에 정한 것</h3>
 <ul>
-<li><a href="premises.html">전제 기록(premises)</a>(데이터를 받기 전에 작성)를 따랐다. 전제 1('책'의 범위)은 확인하지 못해 한계 첫 줄에 남겼다.</li>
-<li>받은 뒤 바뀐 점: 나이 구분 이름이 해마다 달라 정리 단계에서 묶는 표(AGE)를 만들었다.</li>
-</ul><p class="premises-link"><a href="premises.html">전제 기록 원문 보기 <span aria-hidden="true">→</span></a></p></div></details><details id="ev-question"><summary>질문</summary><div class="in ev-question">
+<li>교과서·참고서·수험서·잡지·만화가 '책'에 들어가는지 문항 정의로 확인하고, 확인하지 못하면 한계에 적기로 데이터를 받기 전에 정했어요. 확인하지 못해 한계 첫 줄에 남겼어요.</li>
+</ul>
+<p class="premises-link"><a href="premises.html">쓰기 전에 정한 것 원문 보기 <span aria-hidden="true">→</span></a></p></div><div class="calc-part calc-question" id="ev-question"><h3 class="ev-sub">처음 던진 질문</h3>
 <p>젊은 사람이 책을 안 읽는다는 말은 자주 나와요. 2019년부터 2025년까지 나이대별로 책 읽는 사람이 얼마나 바뀌었는지, 종이책·전자책·오디오북 중 무엇으로 읽는지 봤어요.</p>
-</div></details></section><script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);if(e&&e.tagName==="DETAILS")e.open=true;}addEventListener("hashchange",o);o();})();</script><section class="share-end"><p>카톡에 링크를 붙이면 숫자 카드랑 요약이 같이 떠요.</p><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/2026-10_reading-rate/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></section><section class="subscribe" id="subscribe"><div><h2>새 글 나오면 받아 보기</h2><p>지금은 RSS로 받을 수 있어요. 메일은 아직 준비 중이에요.</p></div><div class="row"><a class="btn dark" href="../feed.xml">RSS 주소</a><span class="btn off">메일 (준비 중)</span></div></section>
+</div><div class="calc-part calc-check" id="ev-check"><h3 class="ev-sub">수집·검증 기록</h3>
+<ul>
+<li>표: KOSIS DT_113_STBL_1029672, DT_113_STBL_1031917. 수집일 2026-10-29 (KOSIS 오픈API).</li>
+<li>검증: 모든 칸에서 '독서한 적 있음 + 없음 = 100%'.</li>
+<li>교차 확인: 2025년 성인 38.5%(2023년 43.0%), 20대 75.3%는 문화체육관광부 2026년 3월 발표와 같음.</li>
+<li>받은 뒤 바뀐 점: 나이 구분 이름이 해마다 달라 정리 단계에서 묶는 표(AGE)를 만듦.</li>
+</ul></div></div></details></section><script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);var d=e&&e.closest("details");if(d){d.open=true;if(d!==e)e.scrollIntoView();}}addEventListener("hashchange",o);o();})();</script><section class="share-end"><p>카톡에 링크를 붙이면 숫자 카드랑 요약이 같이 떠요.</p><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/2026-10_reading-rate/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></section><section class="subscribe" id="subscribe"><div class="sub-t"><h2>새 글 나오면 받아 보기</h2><p>피드 리더 앱에 이 사이트 주소를 한 번 넣어 두면, 새 글이 올라올 때 앱에 떠요. 가입이나 메일 주소는 필요 없어요.</p></div><details class="how"><summary class="btn dark">받는 법 보기</summary><div class="how-in"><ol><li><b>피드 리더 앱을 하나 골라요.</b> 새 글을 모아 보여 주는 앱이에요. 예를 들면 <a href="https://feedly.com" target="_blank" rel="noopener">Feedly</a>나 <a href="https://www.inoreader.com" target="_blank" rel="noopener">Inoreader</a>가 있어요. 둘 다 무료고 웹·휴대폰에서 써요.</li><li><b>앱에서 '구독 추가'(+)를 누르고 아래 주소를 붙여 넣어요.</b></li><li><b>끝이에요.</b> 새 글이 올라오면 앱 목록에 떠요.</li></ol><div class="feed-addr"><code>https://protofu.github.io/opendata-insight/feed.xml</code><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/feed.xml" data-rel="../feed.xml" data-done="주소를 복사했어요" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>주소 복사</span></button></div><p class="how-alt">Feedly를 쓴다면 <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fprotofu.github.io%2Fopendata-insight%2Ffeed.xml" target="_blank" rel="noopener">여기를 눌러 바로 추가</a>할 수도 있어요.</p></div></details></section>
 </article>
-<section class="rel wrap"><div class="sec-h"><h2>이어서 읽을 만한 글</h2></div><div class="trio"><a class="card" href="../2026-10_weekend-leisure/index.html"><div class="ph"><picture><source srcset="../2026-10_weekend-leisure/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_weekend-leisure/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">생활·건강</span><h3>주말엔 그냥 쉰다는 사람, 10년 새 크게 늘었어요</h3><p>주말은 영상 보기와 쉬기가 중심이에요. 쉰다는 사람은 10년 새 크게 늘었어요.</p></a><a class="card" href="../2026-10_exercise-rate/index.html"><div class="ph"><picture><source srcset="../2026-10_exercise-rate/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_exercise-rate/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">생활·건강</span><h3>주 1회 운동하는 사람, 정말 늘었을까요</h3><p>운동하는 사람은 몇 해째 제자리예요. 그 안에서 10대만 계속 줄고 있어요.</p></a><a class="card" href="../2026-10_travel-gap/index.html"><div class="ph"><picture><source srcset="../2026-10_travel-gap/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_travel-gap/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">생활·건강</span><h3>외국인이 많이 왔는데, 나간 한국인은 더 많았어요</h3><p>외국인 입국은 코로나 전인 2019년을 넘었어요. 그래도 나가는 한국인이 더 많아요.</p></a></div></section><div class="toast" role="status" aria-live="polite"></div>
-<script>
-(function () {
-  var btns = document.querySelectorAll('[data-copy]'), toast = document.querySelector('.toast');
-  function say(ok) {
-    if (!toast) return;
-    toast.textContent = ok ? '링크를 복사했어요' : '주소창의 링크를 복사해 주세요';
-    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
-  }
-  function fallback(t) {
-    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
-    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
-    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
-    document.body.removeChild(a); say(ok);
-  }
-  btns.forEach(function (b) {
-    b.hidden = false;
-    b.addEventListener('click', function () {
-      var t = b.dataset.copy || location.href.split('#')[0];
-      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(true); }, function () { fallback(t); });
-      else fallback(t);
-    });
-  });
-  // 근거 탭
-  var ev = document.querySelector('.evidence');
-  if (!ev) return;
-  var tabs = ev.querySelectorAll('[role=tab]'), panes = ev.querySelectorAll('.ev-pane');
-  if (!tabs.length) return;
-  ev.classList.add('js'); ev.querySelector('[role=tablist]').hidden = false;
-  function sel(id) {
-    tabs.forEach(function (t) { var on = t.getAttribute('aria-controls') === id; t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1; });
-    panes.forEach(function (p) { p.hidden = p.id !== id; });
-  }
-  tabs.forEach(function (t, i) {
-    t.addEventListener('click', function () { sel(t.getAttribute('aria-controls')); });
-    t.addEventListener('keydown', function (e) {
-      var k = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (!k) return;
-      var n = tabs[(i + k + tabs.length) % tabs.length]; n.focus(); sel(n.getAttribute('aria-controls'));
-    });
-  });
-  function fromHash() {
-    var h = location.hash.slice(1);
-    if (h.indexOf('ev-') === 0 && document.getElementById(h)) { sel(h); ev.scrollIntoView({block: 'start'}); return true; }
-  }
-  window.addEventListener('hashchange', fromHash);
-  if (!fromHash()) sel(tabs[0].getAttribute('aria-controls'));
-})();
-</script>
+<section class="rel wrap"><div class="sec-h"><h2>이어서 읽을 만한 글</h2></div><div class="trio"><a class="card" href="../2026-10_weekend-leisure/index.html"><div class="ph"><picture><source srcset="../2026-10_weekend-leisure/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_weekend-leisure/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">생활·건강</span><h3>주말엔 그냥 쉰다는 사람, 10년 새 크게 늘었어요</h3><p>주말은 영상 보기와 쉬기가 중심이에요. 쉰다는 사람은 10년 새 크게 늘었어요.</p></a><a class="card" href="../2026-10_exercise-rate/index.html"><div class="ph"><picture><source srcset="../2026-10_exercise-rate/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_exercise-rate/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">생활·건강</span><h3>주 1회 운동하는 사람, 정말 늘었을까요</h3><p>운동하는 사람은 몇 해째 제자리예요. 그 안에서 10대만 계속 줄고 있어요.</p></a><a class="card" href="../2026-10_travel-gap/index.html"><div class="ph"><picture><source srcset="../2026-10_travel-gap/thumb.dark.jpg" media="(prefers-color-scheme: dark)"><img src="../2026-10_travel-gap/thumb.jpg" alt="" loading="lazy" width="800" height="600"></picture></div><span class="kick">생활·건강</span><h3>외국인이 많이 왔는데, 나간 한국인은 더 많았어요</h3><p>외국인 입국은 코로나 전인 2019년을 넘었어요. 그래도 나가는 한국인이 더 많아요.</p></a></div></section>
 </main>
 <footer class="foot"><div class="wrap">
   <div><a class="brand" href="../index.html">데이터 한 컷</a>
     <p>뉴스에 나온 숫자가 궁금하면 공공데이터 원본을 열어서 다시 계산해 봐요. 한 사람이 만드는 작은 사이트예요.</p>
     <small>숫자는 전부 공개된 원자료에서 다시 계산했어요. 원인을 단정하진 않고, 투자·진로 조언도 아니에요.</small></div>
   <div><h2>둘러보기</h2><ul><li><a href="../about.html">소개</a></li><li><a href="../archive/index.html">자료실</a></li><li><a href="../data.html">숫자 장부</a></li></ul></div>
-  <div><h2>받아 보기</h2><ul><li><a href="../feed.xml">RSS</a></li><li>메일 구독 (준비 중)</li></ul></div>
+  <div><h2>받아 보기</h2><ul><li><a href="#subscribe">새 글 받는 법</a></li><li><a href="../feed.xml">RSS 주소</a></li></ul></div>
 </div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var toast = document.querySelector('.toast');
+  function say(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
+  }
+  function fallback(t, ok_) {
+    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
+    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(a); say(ok ? ok_ : '주소창의 주소를 복사해 주세요');
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var t = b.dataset.copy || (b.dataset.rel ? new URL(b.dataset.rel, location.href).href : location.href.split('#')[0]);
+      var ok_ = b.dataset.done || '링크를 복사했어요';
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(ok_); }, function () { fallback(t, ok_); });
+      else fallback(t, ok_);
+    });
+  });
+})();
+</script>
 <script>
 (function () {
   var r = document.documentElement, b = document.querySelector('.theme');
