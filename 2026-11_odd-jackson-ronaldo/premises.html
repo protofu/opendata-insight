@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>쓰기 전에 정한 것 — 잭슨 vs 호날두, 위키백과 조회수는 18개 언어 중 16곳이 호날두였어요</title>
+<meta name="description" content="위키백과 조회수로 본 &#x27;누가 더 많이 찾아봤나&#x27;는 어느 언어로, 어느 해를 보느냐에 따라 답이 바뀌어요. 2025년 18개 언어 위키백과에서 호날두 문서 조회수가 16곳에서 잭슨보다 많았어요. 영어로는 1,212만 대 707만이에요.">
+<meta property="og:title" content="쓰기 전에 정한 것 — 잭슨 vs 호날두, 위키백과 조회수는 18개 언어 중 16곳이 호날두였어요">
+<meta property="og:description" content="위키백과 조회수로 본 &#x27;누가 더 많이 찾아봤나&#x27;는 어느 언어로, 어느 해를 보느냐에 따라 답이 바뀌어요. 2025년 18개 언어 위키백과에서 호날두 문서 조회수가 16곳에서 잭슨보다 많았어요. 영어로는 1,212만 대 707만이에요.">
+<meta property="og:type" content="article">
+
+<meta property="og:site_name" content="데이터 한 컷">
+<meta name="theme-color" content="#fbfbf9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+<link rel="alternate" type="application/rss+xml" title="데이터 한 컷" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="../style.css">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}})();</script>
+</head>
+<body>
+<header class="head"><div class="wrap">
+  <a class="brand" href="../index.html">데이터 한 컷</a>
+  <nav class="util" aria-label="사이트"><a href="../about.html" class=hide-m>소개</a><a href="../archive/index.html" class=hide-m>자료실</a><a href="../data.html" class=hide-m>데이터</a></nav>
+  <a class="sub-btn" href="../index.html#subscribe">구독</a>
+  <button class="theme" type="button" aria-label="밝은 화면/어두운 화면 바꾸기" title="밝게/어둡게" hidden>◐</button>
+</div></header>
+<nav class="cats" aria-label="카테고리"><div class="wrap"><a href="../index.html">전체</a><a href="../category/work/index.html">일·이직</a><a href="../category/money/index.html">돈·자산</a><a href="../category/digital/index.html">디지털·크리에이터</a><a href="../category/society/index.html">가족·사회</a><a href="../category/life/index.html">생활·건강</a><a href="../category/business/index.html">창업·자영업</a><a href="../category/odd/index.html">엉뚱한 비교</a></div></nav>
+<main>
+<article class="art prose premises-page"><p class="kicker"><a href="index.html">← 잭슨 vs 호날두, 위키백과 조회수는 18개 언어 중 16곳이 호날두였어요</a></p><p class="stamp">쓰기 전에 정한 것 · 데이터를 받기 전에 적었어요</p><h1>전제 선언 (데이터 받기 전, 2026-11-06 작성)</h1>
+<h2>질문</h2>
+<p>마이클 잭슨과 크리스티아누 호날두, 위키백과 문서를 더 많이 연 사람은 누구일까? 언어마다 답이 같을까?</p>
+<h2>비교군 존재 확인 (meta)</h2>
+<ul>
+<li>Wikimedia Pageviews API(per-article, monthly, agent=user). 2015년 7월부터 있다.</li>
+<li>두 사람의 언어별 문서 제목은 Wikidata(Q2831 마이클 잭슨, Q11571 크리스티아누 호날두) sitelinks에서 가져온다.</li>
+<li>2009년 6월(잭슨 사망) 같은 달은 이 API 범위(2015-07~) 밖이다. 문서별 옛 기록(pagecounts 원본 덤프)은 시간당 파일이라 이번 글에서는 받지 않는다. 쓸 수 없으면 쓸 수 없다고 적는다.</li>
+</ul>
+<h2>전제</h2>
+<ol>
+<li>부르는 이름은 '위키백과 조회수'다. 인기·실력·팬 수가 아니다.</li>
+<li>agent=user(사람이 연 것으로 분류된 조회). 봇·자동 수집으로 분류된 건 뺀다. access=all-access(PC+모바일 웹+앱).</li>
+<li>각 언어의 '대표 문서 제목' 하나만 센다. 다른 철자로 들어왔다가 넘어가는 넘겨주기(redirect) 조회는 들어가지 않는다.</li>
+<li>연간 비교는 2025년(1~12월) 합계. 긴 흐름은 2015-07 ~ 2026-10 월별.</li>
+<li>언어는 위키백과 사용량이 큰 언어를 중심으로 미리 정한다: en, ja, es, de, ru, fr, it, zh, pt, pl, ar, id, ko, tr, fa, nl, vi, hi (18개). 받은 뒤 결과를 보고 언어를 넣거나 빼지 않는다.</li>
+<li>사생활·사건·논란은 다루지 않는다. 뾰족한 달은 날짜와 숫자만 적고, 그달 무슨 일이 있었는지는 공개 기록(경기·기념일 등)으로 확인되는 것만 짧게.</li>
+</ol>
+<h2>완료 기준</h2>
+<ul>
+<li>2025년 언어별 두 사람 조회수와 누가 더 많은지(뒤집히는 언어 수)</li>
+<li>pm이 찍어 본 값(영어 호날두 1,212만 &gt; 잭슨 707만, 한국어 잭슨 7.0만 &gt; 호날두 3.4만) 대조</li>
+<li>월별 흐름에서 가장 뾰족한 달(각자)</li>
+<li>차트 1~2장(+휴대폰판), 글 1편, 한계</li>
+</ul></article>
+</main>
+<footer class="foot"><div class="wrap">
+  <div><a class="brand" href="../index.html">데이터 한 컷</a>
+    <p>뉴스에 나온 숫자가 궁금하면 공공데이터 원본을 열어서 다시 계산해 봐요. 한 사람이 만드는 작은 사이트예요.</p>
+    <small>숫자는 전부 공개된 원자료에서 다시 계산했어요. 원인을 단정하진 않고, 투자·진로 조언도 아니에요.</small></div>
+  <div><h2>둘러보기</h2><ul><li><a href="../about.html">소개</a></li><li><a href="../archive/index.html">자료실</a></li><li><a href="../data.html">숫자 장부</a></li></ul></div>
+  <div><h2>받아 보기</h2><ul><li><a href="../index.html#subscribe">새 글 받는 법</a></li><li><a href="../feed.xml">RSS 주소</a></li></ul></div>
+</div></footer>
+
+<script>
+(function () {
+  var r = document.documentElement, b = document.querySelector('.theme');
+  var DARK = '(prefers-color-scheme: dark)';
+  function apply() {
+    var t = r.dataset.theme;
+    document.querySelectorAll('picture source').forEach(function (s) {
+      var m = s.dataset.m || (s.dataset.m = s.media);
+      if (m.indexOf(DARK) < 0) return;
+      s.media = t ? m.replace(DARK, t === 'dark' ? '(min-width: 0px)' : '(max-width: 0px)') : m;
+    });
+  }
+  if (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia(DARK).matches;
+      r.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', r.dataset.theme); } catch (e) {}
+      apply();
+    });
+  }
+  apply();
+})();
+</script>
+</body>
+</html>

@@ -91,6 +91,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .num-t:hover p { text-decoration: underline; }
 
+/* 쉬어 가는 칸 (엉뚱한 비교): 둥근 연한 상자 + 가로 줄 카드. 카테고리 색 #a12d68 (site_cards CAT_COLOR와 같음) */
+.odd { --odd: #a12d68; --odd-bg: #f8eef3; margin: 44px 0 4px; padding: 26px 28px 28px; border-radius: 18px; background: var(--odd-bg);
+       display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 28px; align-items: start; }
+:root[data-theme="dark"] .odd { --odd: #f08cbc; --odd-bg: #24191f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .odd { --odd: #f08cbc; --odd-bg: #24191f; } }
+.odd-h .eyebrow { margin: 0; color: var(--odd); font-weight: 800; font-size: 13px; letter-spacing: .08em; }
+.odd-h h2 { margin: 4px 0 10px; font: 900 26px var(--serif); letter-spacing: -.03em; }
+.odd-h p { margin: 0; color: var(--ink-2); font-size: 15px; line-height: 1.65; }
+.odd-h a { display: inline-block; margin-top: 12px; font-size: 14px; font-weight: 700; color: var(--odd); }
+.odd-list { display: grid; gap: 12px; }
+.odd-c { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 16px; align-items: center; padding: 10px; border-radius: 12px; background: var(--surface); }
+.odd-c .ph { border-radius: 8px; overflow: hidden; }
+.odd-c .ph img { display: block; width: 100%; height: auto; }
+.odd-c .n { display: block; font: 800 15px var(--sans); margin-bottom: 2px; }
+.odd-c h3 { margin: 0; font: 800 17px/1.45 var(--serif); letter-spacing: -.02em; }
+.odd-c:hover h3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .sec { padding: 40px 0 6px; }
 .sec-h { display: flex; justify-content: space-between; align-items: baseline; border-top: 2px solid var(--rule); padding-top: 12px; margin: 0 0 20px; }
 .sec-h h2 { margin: 0; font: 900 26px var(--serif); letter-spacing: -.03em; }
@@ -285,6 +301,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .foot .wrap { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 560px) {
+  .odd { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 20px 16px; margin-left: -4px; margin-right: -4px; }
+  .odd-c { grid-template-columns: 88px minmax(0, 1fr); gap: 12px; }
+  .odd-c h3 { font-size: 16px; }
   :root { --g: 16px; }
   .util .hide-m { display: none; }
   .util { margin-left: auto; }
