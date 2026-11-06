@@ -91,6 +91,35 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .num-t:hover p { text-decoration: underline; }
 
+/* 독자 투표 칸 (엉뚱한 비교 예고·결과 글). JS가 집계를 받아야만 보임 */
+.poll { --odd: #a12d68; --odd-bg: #f8eef3; margin: 34px 0; padding: 22px 22px 18px; border-radius: 16px; background: var(--odd-bg); }
+:root[data-theme="dark"] .poll { --odd: #f08cbc; --odd-bg: #24191f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .poll { --odd: #f08cbc; --odd-bg: #24191f; } }
+.poll[hidden], .poll [hidden] { display: none !important; }
+.poll-k { margin: 0 !important; color: var(--odd); font: 800 13px var(--sans) !important; letter-spacing: .06em; }
+.poll-q { margin: 6px 0 16px; font: 800 21px/1.45 var(--serif); letter-spacing: -.03em; color: var(--ink); }
+.poll-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.poll-btns button { min-height: 56px; padding: 10px 14px; border-radius: 12px; border: 2px solid var(--ink); background: var(--surface);
+                    color: var(--ink); font: 700 17px/1.35 var(--sans); cursor: pointer; display: flex; align-items: center; gap: 10px; text-align: left; }
+.poll-btns button b { flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--odd); color: var(--bg);
+                      font: 800 14px/28px var(--sans); text-align: center; }
+.poll-btns button:hover { background: var(--ink); color: var(--bg); }
+.poll-btns button:disabled { opacity: .5; cursor: wait; }
+.poll-res { display: grid; gap: 8px; }
+.poll-bar { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px;
+            padding: 8px 14px; border-radius: 10px; background: var(--surface); overflow: hidden; }
+.poll-bar i { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: color-mix(in srgb, var(--odd) 22%, transparent);
+              transition: width .6s ease; }
+.poll-bar.ans { box-shadow: inset 0 0 0 2px var(--ink); }
+.poll-bar > span { position: relative; }
+.poll-l { font-weight: 700; font-size: 16px; color: var(--ink); }
+.poll-l b { color: var(--odd); margin-right: 4px; }
+.poll-l em { font-style: normal; margin-left: 8px; padding: 1px 8px; border-radius: 999px; background: var(--ink); color: var(--bg);
+             font: 800 12px/1.6 var(--sans); white-space: nowrap; }
+.poll-bar.mine .poll-l::after { content: "내 선택"; margin-left: 8px; font: 700 12px var(--sans); color: var(--muted); }
+.poll-p { font: 800 18px var(--sans); color: var(--ink); font-variant-numeric: tabular-nums; }
+.poll-ans { margin: 14px 0 0 !important; font-size: 16px !important; color: var(--ink-2); }
+.poll-meta { margin: 12px 0 0 !important; font-size: 13.5px !important; color: var(--muted); }
 /* 쉬어 가는 칸 (엉뚱한 비교): 둥근 연한 상자 + 가로 줄 카드. 카테고리 색 #a12d68 (site_cards CAT_COLOR와 같음) */
 .odd { --odd: #a12d68; --odd-bg: #f8eef3; margin: 44px 0 4px; padding: 26px 28px 28px; border-radius: 18px; background: var(--odd-bg);
        display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 28px; align-items: start; }
@@ -107,6 +136,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .odd-c .n { display: block; font: 800 15px var(--sans); margin-bottom: 2px; }
 .odd-c h3 { margin: 0; font: 800 17px/1.45 var(--serif); letter-spacing: -.02em; }
 .odd-c:hover h3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.odd-live { display: inline-block; margin: 0 0 4px; padding: 2px 9px; border-radius: 999px; background: var(--odd); color: var(--bg);
+            font: 800 12px/1.6 var(--sans); }
+.odd-live[hidden] { display: none; }
 .sec { padding: 40px 0 6px; }
 .sec-h { display: flex; justify-content: space-between; align-items: baseline; border-top: 2px solid var(--rule); padding-top: 12px; margin: 0 0 20px; }
 .sec-h h2 { margin: 0; font: 900 26px var(--serif); letter-spacing: -.03em; }
@@ -304,6 +336,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .odd { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 20px 16px; margin-left: -4px; margin-right: -4px; }
   .odd-c { grid-template-columns: 88px minmax(0, 1fr); gap: 12px; }
   .odd-c h3 { font-size: 16px; }
+  .poll { padding: 18px 16px 14px; margin-left: -4px; margin-right: -4px; }
+  .poll-q { font-size: 19px; }
+  .poll-btns button { font-size: 16px; }
   :root { --g: 16px; }
   .util .hide-m { display: none; }
   .util { margin-left: auto; }
