@@ -120,6 +120,17 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .poll-p { font: 800 18px var(--sans); color: var(--ink); font-variant-numeric: tabular-nums; }
 .poll-ans { margin: 14px 0 0 !important; font-size: 16px !important; color: var(--ink-2); }
 .poll-meta { margin: 12px 0 0 !important; font-size: 13.5px !important; color: var(--muted); }
+/* 투표 게이트: html.gate-on(JS 있음)일 때만 가림. 안내 박스는 잠겼을 때만, '결과 바로 보기'는 서버가 안 될 때만 */
+.gate-note { display: none; margin: 34px 0; padding: 22px; border-radius: 16px; border: 2px dashed var(--hair); text-align: center; }
+.gate-on:not(.gate-open) .gated { display: none; }
+.gate-on:not(.gate-open) .gate-note { display: block; }
+.gate-k { margin: 0 0 4px !important; font: 800 13px var(--sans) !important; letter-spacing: .06em; color: var(--muted); }
+.gate-note p { margin: 0; font-size: 17px; font-weight: 700; color: var(--ink); }
+.gate-act { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 16px; }
+.gate-skip { display: none !important; }
+.gate-fail .gate-skip { display: inline-flex !important; }
+.gate-fail .gate-act a { display: none; }  /* 서버가 안 되면 투표 칸도 숨어 있음 */
+.gated { scroll-margin-top: 16px; }
 /* 쉬어 가는 칸 (엉뚱한 비교): 둥근 연한 상자 + 가로 줄 카드. 카테고리 색 #a12d68 (site_cards CAT_COLOR와 같음) */
 .odd { --odd: #a12d68; --odd-bg: #f8eef3; margin: 44px 0 4px; padding: 26px 28px 28px; border-radius: 18px; background: var(--odd-bg);
        display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 28px; align-items: start; }
@@ -133,6 +144,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .odd-c { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 16px; align-items: center; padding: 10px; border-radius: 12px; background: var(--surface); }
 .odd-c .ph { border-radius: 8px; overflow: hidden; }
 .odd-c .ph img { display: block; width: 100%; height: auto; }
+.odd-ph { aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--odd); color: var(--bg);
+          font: 900 24px var(--serif); }
+.odd-ph small { font: 700 12px var(--sans); opacity: .8; }
 .odd-c .n { display: block; font: 800 15px var(--sans); margin-bottom: 2px; }
 .odd-c h3 { margin: 0; font: 800 17px/1.45 var(--serif); letter-spacing: -.02em; }
 .odd-c:hover h3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
