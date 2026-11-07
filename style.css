@@ -1,4 +1,4 @@
-/* 데이터 한 컷 — v2 (2026-11, 사용자 승인). 토큰 표: site_src/tokens.md
+/* FITAHW(피타우) — v2 (2026-11, 사용자 승인). 토큰 표: site_src/tokens.md
    원칙: 배경 = 차트 배경(라이트/다크 둘 다) → 차트가 지면에 인쇄된 것처럼 붙는다.
    형광펜은 핵심 숫자에만. 다크에선 반투명 대신 진한 노랑 칸 + 어두운 글자.
    매체형 홈: 같은 모양 줄이 4줄 넘게 이어지지 않게 (큰 이야기 · 카드 · 숫자 띠 · 섹션마다 다른 모양). */
@@ -42,7 +42,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 /* ── 머리 ── */
 .head { border-bottom: 1px solid var(--hair); }
 .head .wrap { display: flex; align-items: center; gap: 18px; height: 64px; }
-.brand { font: 900 26px/1 var(--serif); letter-spacing: -.04em; color: var(--ink); }
+.brand { display: inline-flex; align-items: baseline; gap: 9px; color: var(--ink); white-space: nowrap; font-size: 25px; }
+/* 제호: 대문자 세리프 + 넓은 자간 + 글자 아래 형광펜 줄(다크에서도 글자와 안 겹치게 아래에만) */
+.brand .wm { font: 900 1em/1 var(--serif); letter-spacing: .08em; margin-left: -.08em; padding: 0 0 .16em .08em;
+             box-shadow: inset 0 -.2em 0 var(--mark); }
+.brand .ko { font: 600 12px/1 var(--sans); letter-spacing: .12em; color: var(--muted); }
 .util { display: flex; gap: 18px; margin-left: auto; font-size: 14.5px; font-weight: 600; color: var(--ink-2); }
 .util a:hover, .util a[aria-current] { color: var(--ink); }
 .sub-btn { height: 36px; padding: 0 15px; display: inline-flex; align-items: center; font-weight: 700; font-size: 14px;
@@ -207,7 +211,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 /* ── 푸터 ── */
 .foot { margin-top: 72px; border-top: 2px solid var(--rule); }
 .foot .wrap { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 28px; padding-top: 28px; padding-bottom: 48px; font-size: 14px; color: var(--ink-2); }
-.foot .brand { font-size: 22px; }
+.foot .brand { font-size: 21px; }
 .foot p { margin: 10px 0 0; max-width: 34em; }
 .foot h2 { margin: 0 0 8px; font-size: 12.5px; letter-spacing: .08em; color: var(--muted); }
 .foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
@@ -356,7 +360,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   :root { --g: 16px; }
   .util .hide-m { display: none; }
   .util { margin-left: auto; }
-  .brand { font-size: 22px; }
+  .brand { font-size: 21px; gap: 7px; }
+  .brand .ko { font-size: 11px; }
   .head .wrap { gap: 10px; }
   .cats .wrap { gap: 18px; -webkit-mask-image: linear-gradient(to right, #000 88%, transparent); mask-image: linear-gradient(to right, #000 88%, transparent); }
   .trio .card, .grid3 .card { display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 2px 14px; align-items: start; }
