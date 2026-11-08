@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>아파트 5층에 살면, 엘리베이터와 계단 중 뭐가 더 빠를까</title>
+<meta name="description" content="결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요. 아파트 5층에 살아요. 나갈 때도 들어올 때도, 엘리베이터 버튼을 누를까요, 계단 문을 열까요?">
+<meta property="og:title" content="아파트 5층에 살면, 엘리베이터와 계단 중 뭐가 더 빠를까">
+<meta property="og:description" content="결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요. 아파트 5층에 살아요. 나갈 때도 들어올 때도, 엘리베이터 버튼을 누를까요, 계단 문을 열까요?">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://protofu.github.io/opendata-insight/2026-11_odd-elevator-stairs/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://protofu.github.io/opendata-insight/2026-11_odd-elevator-stairs/">
+<meta property="og:site_name" content="FITAHW">
+<meta name="theme-color" content="#fbfbf9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="FITAHW" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="../style.css">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}})();</script><script>
+(function () {  // 투표 게이트: 그리기 전에 잠금 여부를 정해 깜빡임 없게. fetch가 없으면 가리지 않음
+  var d = document.documentElement, id = "elevator-stairs";
+  if (!window.fetch) return;
+  d.classList.add("gate-on");
+  try { if (localStorage.getItem("dhc-vote:" + id) || sessionStorage.getItem("dhc-gate-skip:" + id)) d.classList.add("gate-open"); }
+  catch (e) { d.classList.add("gate-open"); }
+  window.dhcOpenGate = function (delay) {
+    d.classList.add("gate-open");
+    var g = document.getElementById("gated");
+    if (g && delay !== false) setTimeout(function () { g.scrollIntoView({ behavior: "smooth", block: "start" }); }, delay || 0);
+  };
+  setTimeout(function () { if (!d.classList.contains("poll-ok")) d.classList.add("gate-fail"); }, 9000);
+  document.addEventListener("click", function (e) {
+    if (!(e.target.closest && e.target.closest(".gate-skip"))) return;
+    try { sessionStorage.setItem("dhc-gate-skip:" + id, "1"); } catch (_) {}
+    window.dhcOpenGate(0);
+  });
+})();
+</script>
+</head>
+<body>
+<header class="head"><div class="wrap">
+  <a class="brand" href="../index.html" aria-label="FITAHW 피타우 홈"><b class="wm">FITAHW</b><span class="ko">피타우</span></a>
+  <nav class="util" aria-label="사이트"><a href="../about.html" class=hide-m>소개</a><a href="../archive/index.html" class=hide-m>자료실</a><a href="../data.html" class=hide-m>데이터</a></nav>
+  <a class="sub-btn" href="#subscribe">구독</a>
+  <button class="theme" type="button" aria-label="밝은 화면/어두운 화면 바꾸기" title="밝게/어둡게" hidden>◐</button>
+</div></header>
+<nav class="cats" aria-label="카테고리"><div class="wrap"><a href="../index.html">전체</a><a href="../category/work/index.html">일·이직</a><a href="../category/money/index.html">돈·자산</a><a href="../category/digital/index.html">디지털·크리에이터</a><a href="../category/society/index.html">가족·사회</a><a href="../category/life/index.html">생활·건강</a><a href="../category/business/index.html">창업·자영업</a><a href="../category/odd/index.html" aria-current=page>엉뚱한 비교</a></div></nav>
+<main>
+<article class="art">
+<span class="kick">엉뚱한 비교</span><h1>아파트 5층에 살면, 엘리베이터와 계단 중 뭐가 더 빠를까</h1>
+<p class="dek">결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p>
+<div class="byline"><span>FITAHW</span><span>읽는 데 9분</span><span>한국승강기안전공단 승강기 보유 현황·승강기 설계·계단 보행 연구</span><span class="sp"></span><a href="#evidence">근거</a><button type="button" class="pill" data-copy="https://protofu.github.io/opendata-insight/2026-11_odd-elevator-stairs/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></div>
+<ul class="points"><li>아파트 5층에 살아요. 나갈 때도 들어올 때도, 엘리베이터 버튼을 누를까요, 계단 문을 열까요?</li><li>몇 층부터 엘리베이터가 빠른지, 올라갈 때와 출근 시간에는 어떻게 다른지도 따져 봤어요.</li><li>전국 아파트 엘리베이터 42만 대의 속도와 계단 걷기 측정 연구로 계산했어요. 투표하면 결과가 바로 아래에 열려요.</li></ul><div class="body"><section class="sec"><h2>조건과 규칙</h2>
+<ul>
+<li><strong>건물</strong>은 우리나라 아파트에서 가장 흔한 15층짜리예요. 엘리베이터 속도는 실제 15층 아파트에 깔린 엘리베이터들의 속도 비율대로 정해요.</li>
+<li><strong>엘리베이터</strong>는 문이 열리고 닫히는 시간, 타고 내리는 시간, 출발하고 멈출 때 천천히 움직이는 시간까지 넣어요. 엘리베이터가 어느 층에 서 있었는지에 따라 기다리는 시간이 달라져요.</li>
+<li><strong>계단</strong>은 보통 걸음으로 걸어요. 층 사이 계단참을 도는 시간도 넣어요.</li>
+<li>한산한 낮에 내려가기, 한산한 낮에 올라가기, 출근 시간에 내려가기, 세 판으로 겨뤄요.</li>
+</ul>
+<section class="poll" id="poll-elevator-stairs" data-poll="elevator-stairs" data-mode="vote" hidden><p class="poll-k">독자 투표</p><h3 class="poll-q">아파트 5층에 살면, 엘리베이터와 계단 중 뭐가 더 빠를까?</h3><div class="poll-btns"><button type="button" data-v="a"><b>A</b>엘리베이터</button><button type="button" data-v="b"><b>B</b>계단</button></div><div class="poll-res" hidden><div class="poll-bar" data-v="a"><i></i><span class="poll-l"><b>A</b> 엘리베이터</span><span class="poll-p"></span></div><div class="poll-bar" data-v="b"><i></i><span class="poll-l"><b>B</b> 계단</span><span class="poll-p"></span></div></div><p class="poll-meta" aria-live="polite"></p></section>
+</section></div><div class="gate-note"><p class="gate-k">데이터 결과는 투표 뒤에</p><p>A·B 중 하나를 고르면 데이터 결과가 열려요.</p><div class="gate-act"><a class="btn dark" href="#poll-elevator-stairs">위에서 고르기 <span aria-hidden="true">↑</span></a><button type="button" class="btn gate-skip">결과 바로 보기</button></div></div><div class="gated" id="gated" data-gate="elevator-stairs"><div class="body">
+<section class="sec"><h2>결과 요약</h2>
+<p><strong>3판 계단 2승 1무 → 최종 계단 승(엘리베이터가 아무 층에나 서 있는 단지라면)</strong></p>
+<ol>
+<li>엘리베이터가 아무 층에나 서 있는 단지라면 5층 주민은 계단이 조금 나아요. 출근 시간엔 확실히 계단이에요(72초 대 37초).</li>
+<li>한산할 때 내려가기는 몇 초 차이로 갈리는 무승부예요. 엘리베이터가 1층에 서 있을 때가 많은 단지라면, 올라갈 때는 엘리베이터가 이겨서 최종도 무승부가 돼요.</li>
+<li>6층부터는 엘리베이터가 빨라요. 아침 출근길엔 11층부터예요.</li>
+</ol>
+<p><strong>그래서?</strong> 5층 이하면 계단, 6층부터는 엘리베이터. 아침 출근길엔 10층까지 계단. 집에서 월패드로 미리 불러 두거나 짐이 있으면 엘리베이터.</p>
+<section class="poll" data-poll="elevator-stairs" data-mode="result" hidden><p class="poll-k">독자 예상 vs 데이터 결과</p><h3 class="poll-q">아파트 5층에 살면, 엘리베이터와 계단 중 뭐가 더 빠를까?</h3><div class="poll-res"><div class="poll-bar" data-v="a"><i></i><span class="poll-l"><b>A</b> 엘리베이터</span><span class="poll-p"></span></div><div class="poll-bar ans" data-v="b"><i></i><span class="poll-l"><b>B</b> 계단<em>데이터 결과</em></span><span class="poll-p"></span></div></div><p class="poll-ans">데이터로 보면 <mark>계단</mark>. 계단 2승 1무예요. 다만 엘리베이터가 1층에 서 있는 일이 많은 단지라면 무승부, 집에서 미리 불러 두면 엘리베이터가 이겨요.</p><p class="poll-meta" aria-live="polite"></p></section>
+<figure class="fig"><a href="chart_odd_elevator_rounds.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_elevator_rounds.m.dark.png" media="(max-width: 560px) and (prefers-color-scheme: dark)"><source srcset="chart_odd_elevator_rounds.m.png" media="(max-width: 560px)"><source srcset="chart_odd_elevator_rounds.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_elevator_rounds.png" alt="차트"></picture></a></figure>
+</section><section class="sec">
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>판</th>
+<th>엘리베이터</th>
+<th>계단</th>
+<th>엘리베이터가 먼저 올 확률</th>
+<th>승자</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1판 5층→1층, 한산할 때</td>
+<td>35초</td>
+<td>37초</td>
+<td>50%</td>
+<td>무승부</td>
+</tr>
+<tr>
+<td>2판 1층→5층, 한산할 때</td>
+<td>42초</td>
+<td>35초</td>
+<td>27%</td>
+<td>계단</td>
+</tr>
+<tr>
+<td>3판 5층→1층, 출근 시간</td>
+<td>72초</td>
+<td>37초</td>
+<td>7%</td>
+<td>계단</td>
+</tr>
+<tr>
+<td><strong>최종</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>3판 계단 2승 1무 → 계단 승</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>판마다 같은 경주를 2만 번 다르게 돌려 봤어요. 표의 시간은 그 가운데 딱 중간에 오는 값이고, 확률은 2만 번 가운데 엘리베이터가 먼저 도착한 비율이에요. 이 규칙과 가정이면 최종 승자는 계단이에요. 다만 이 판정은 엘리베이터가 15개 층 가운데 아무 층에나 똑같이 서 있다는 가정 위에 서 있어요. 이 가정을 바꾸면 결과가 달라져요.</p>
+<h3>1판 5층→1층, 한산할 때: 무승부(50%)</h3>
+<p>엘리베이터가 아무 층에나 서 있으면, 버튼을 누르고 엘리베이터가 와서 문이 열리기까지 중간값으로 15초가 걸려요. 그다음 타고, 문이 닫히고, 4개 층을 내려가고, 문이 열리고, 내리는 데 20초가 더 걸려요. 그 20초 가운데 엘리베이터가 실제로 움직이는 시간은 11초뿐이에요. 나머지 9초는 타고 내리고 문이 여닫히는 시간이에요. 합쳐서 35초예요.</p>
+<p>계단은 한 층에 9초 남짓이에요. 계단을 내려가는 데 6초, 층 사이 계단참 두 곳을 도는 데 3초 안팎이에요. 4개 층이면 37초예요. 엘리베이터와 겨우 1~2초 차이라, 2만 번 가운데 엘리베이터가 먼저 도착한 게 딱 절반이었어요. 계산을 돌려 보기 전에는 엘리베이터가 넉넉히 이길 줄 알았는데, 동전 던지기가 나와서 저도 놀랐어요.</p>
+<blockquote>
+<p><strong>1판은 몇 초 차이로 갈려요.</strong> 계단 방화문을 열고 닫는 데 3초가 더 들면 엘리베이터가 이겨요(먼저 올 확률 63%). 엘리베이터 문이 열리길 3초 더 기다리면 계단이 이겨요(엘리베이터 34%). 엘리베이터가 이 글의 현장 측정값보다 빠르게 출발하고 멈추면(설계 지침에서 흔한 값) 엘리베이터가 이겨요(62%).</p>
+</blockquote>
+<figure class="fig"><a href="chart_odd_elevator_curve.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_elevator_curve.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_elevator_curve.png" alt="차트" loading=lazy></picture></a></figure>
+<h3>2판 1층→5층, 한산할 때: 계단 승(27%, 1층 로비에 엘리베이터가 없을 때)</h3>
+<p>올라갈 때는 계단이 느려져요. 한 층에 8~10초, 4개 층이면 35초예요. 엘리베이터도 느려져요. 1층에서 부르면 엘리베이터가 서 있던 층에서 1층까지 내려와야 하는데, 평균 거리가 5층에서 부를 때보다 멀어요. 그래서 엘리베이터 42초, 계단 35초로 계단이 이겨요.</p>
+<p>그런데 이 승리는 1층 로비에 엘리베이터가 없을 때 이야기예요. 내려간 사람이 많으면 엘리베이터는 1층에 남아 있고, 1층으로 자동으로 돌아가게 맞춘 단지도 있어요. 엘리베이터가 1층에 서 있는 비중이 25%면 2판은 무승부(45%), 50%면 엘리베이터 승(63%)이에요. 그러면 최종 판정도 1승 1무 1패, 무승부가 돼요.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>엘리베이터가 1층에 서 있는 비중</th>
+<th>1판</th>
+<th>2판</th>
+<th>3판</th>
+<th>최종</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0%(이 글의 기본)</td>
+<td>무승부(50%)</td>
+<td>계단(27%)</td>
+<td>계단(7%)</td>
+<td>계단 승</td>
+</tr>
+<tr>
+<td>25%</td>
+<td>무승부(49%)</td>
+<td>무승부(45%)</td>
+<td>계단(6%)</td>
+<td>계단 승</td>
+</tr>
+<tr>
+<td>50%</td>
+<td>무승부(48%)</td>
+<td>엘리베이터(63%)</td>
+<td>계단(7%)</td>
+<td>무승부</td>
+</tr>
+</tbody>
+</table></div>
+<h3>3판 5층→1층, 출근 시간: 계단 승(7%)</h3>
+<p>출근 시간에는 엘리베이터가 위층 사람들을 태우고 오가느라 우리 층에 오는 간격이 길어져요. 승강기 설계에서 아파트에 쓰는 기준 간격이 60초예요. 평균으로 그 간격의 60%를 기다리고, 내려가는 길에 다른 층에서 한두 번 더 서요. 그래서 엘리베이터는 72초, 계단은 그대로 37초예요. 엘리베이터 간격이 45초로 짧아도 엘리베이터가 먼저 올 확률은 9%, 내려가는 길에 한 번도 안 서도 18%예요. 출근 시간엔 어느 쪽으로 바꿔도 계단이에요.</p>
+<h3>몇 층부터 엘리베이터가 빠를까</h3>
+<p>한산할 때 내려가기는 6층부터 엘리베이터가 앞서요. 엘리베이터가 먼저 올 확률이 5층에서 반반, 6층에서 80%, 8층부터는 거의 100%예요. 올라가기도 6층부터(53%) 엘리베이터가 앞서요. 출근 시간에는 10층까지 반반을 못 넘고, 11층(59%)부터 엘리베이터가 앞서요.</p>
+<figure class="fig"><a href="chart_odd_elevator_sens.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_elevator_sens.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_elevator_sens.png" alt="차트" loading=lazy></picture></a></figure>
+<h3>가정을 바꾸면</h3>
+<p>가장 크게 흔드는 건 엘리베이터가 어디에 서 있느냐예요. 집에서 월패드로 미리 불러 두면, 나갈 때 엘리베이터가 우리 층에 서 있어요. 그러면 문만 열리면 돼서 23초, 엘리베이터가 늘 이겨요. 반대로 꼭대기 15층에 있으면 46초가 걸려 계단이 거의 늘 이겨요. 나가기 전에 층 표시판을 보거나 미리 불러 두는 게 가장 쓸모 있는 방법이에요.</p>
+<p>엘리베이터 속도도 판을 바꿔요. 1초에 1m짜리면 계단이 이기고(33%), 1.75m짜리면 엘리베이터가 이겨요(67%). 층 높이를 2.7m나 2.9m로 바꿔도 결과는 반반 그대로였어요. 계단과 엘리베이터가 같은 높이를 함께 가니까 서로 상쇄돼요. 계단을 서둘러 내려가면 30초로 줄어 계단이 이기고, 계단 오르기가 이 글의 값보다 10% 느리면 2판은 그래도 계단이에요(엘리베이터 38%). 25층 건물(엘리베이터 1.75m)이라면 엘리베이터가 서 있을 수 있는 층이 늘어나 5층 주민에게는 계단이 이겨요(엘리베이터 40%).</p>
+<figure class="fig"><a href="chart_odd_elevator_speed.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_elevator_speed.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_elevator_speed.png" alt="차트" loading=lazy></picture></a></figure>
+<h3>엘리베이터 속도는 건물 높이를 따라가요</h3>
+<p>전국 공동주택 엘리베이터 42.7만 대를 건물 층수별로 나눠 봤어요. 5층 이하 건물은 96%가 1초에 1m예요. 11~15층은 1.5m와 1m가 섞여 있고, 16~25층은 1.5~1.75m가 흔해요. 높은 건물일수록 빨라서, 41층 이상은 1초에 3.5m가 가운데 값이에요.</p>
+<p>이 규칙과 가정이면 최종 판정은 계단 승이에요. 엘리베이터가 아무 층에나 서 있는 단지라면 5층 주민은 계단이 조금 낫고, 출근 시간엔 확실히 계단이에요. 엘리베이터가 1층에 서 있는 일이 절반 가까이 되는 단지라면 무승부로 바뀌고, 집에서 미리 불러 두면 엘리베이터가 이겨요.</p>
+</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 승강기 보유 현황은 2025년 12월 31일 기준(2026년 11월 8일 받음)이에요. 조건은 2026년 11월 8일, 계산하기 전에 정했어요.</p>
+<div class="src-cards"><div class="src"><p class="src-h"><span>한국승강기안전공단</span></p><ul><li><div class="src-t">국내 승강기 보유 현황(2025.12.31, 공공데이터포털 15017366)<p>공동주택 엘리베이터 427,215대의 건물 층수·속도</p></div></li></ul></div><div class="src"><p class="src-h"><span>Peters·Dean 2018</span></p><ul><li><div class="src-t">엘리베이터 교통 설계값 (9th Symposium on Lift &amp; Escalator Technologies)<p>문 열림·닫힘, 타고 내리기, 가속도, 주거 설계 간격 60초</p></div></li></ul></div><div class="src"><p class="src-h"><span>Smith 2012</span></p><ul><li><div class="src-t">기다리는 시간 계산 (Symposium on Lift &amp; Escalator Technologies)<p>실제 평균 대기 ≈ 간격의 60%</p></div></li></ul></div><div class="src"><p class="src-h"><span>Fujiyama·Tyler 2004, 런던대</span></p><ul><li><div class="src-t">계단 걷는 속도 (UTSG 2004)<p>성인 보통 걸음 계단 내려가기·오르기 속도</p></div></li></ul></div><div class="src"><p class="src-h"><span>Ronchi 외 2015</span></p><ul><li><div class="src-t">긴 계단 오르기 (Lund University TVBB-3192)<p>층마다 오르는 속도, 계단참 포함</p></div></li></ul></div><div class="src"><p class="src-h"><b>주택건설기준 등에 관한 규정</b></p><ul><li><div class="src-t">계단 단높이·단너비 기준<p>공동주택 계단 단높이 18cm 이하, 단너비 26cm 이상</p></div></li></ul></div></div>
+</div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
+<ul>
+<li><strong>엘리베이터 속도</strong>: 한국승강기안전공단의 「국내 승강기 보유 현황」(2025년 12월 31일)에서 공동주택에 있는 사람이 타는 엘리베이터 427,215대를 뽑았어요. 15층 건물 엘리베이터의 속도 비율(1초에 1.5m 49%, 1m 40%, 1.75m 10%)대로 2만 번 뽑았어요.</li>
+<li><strong>엘리베이터 움직임</strong>: 주거용 엘리베이터를 현장에서 잰 값을 정리한 승강기 설계 논문(Peters·Dean 2018)을 따랐어요. 출발과 멈춤 때 1초마다 속도가 0.6m씩 붙거나 줄어드는 움직임, 출발 지연 0.5초, 옆으로 열리는 문이 열리는 데 2.5초·닫히는 데 3.0초, 한 사람이 타거나 내리는 데 1.5초예요. 이 값들로 5층→1층(11.2m)을 1초에 1.5m로 가면 움직이는 시간이 11.5초예요.</li>
+<li><strong>기다리는 시간(한산할 때)</strong>: 엘리베이터가 15개 층 가운데 아무 층에나 같은 확률로 서 있다고 봤어요. 그 층에서 우리 층까지 오는 시간과 문이 열리는 시간을 더했어요.</li>
+<li><strong>기다리는 시간(출근 시간)</strong>: 아파트 설계 기준 간격 60초를 쓰고, 기다리는 시간은 0초에서 72초 사이로 고르게 뽑아 평균이 간격의 60%가 되게 했어요(Smith 2012). 내려가는 길에 다른 층에서 0~2번 서고, 설 때마다 문 열림·타기·닫힘·출발 지연과 멈췄다 다시 가는 손실을 더했어요.</li>
+<li><strong>층 높이</strong>: 법으로 정한 기준이 없어 2.8m로 두고, 2.7m·2.9m도 돌려 봤어요.</li>
+<li><strong>계단 내려가기</strong>: 계단 높이 17.5cm·폭 25cm 계단에서 잰 성인 보통 걸음(Fujiyama·Tyler 2004)을 썼어요. 위아래로 1초에 0.46m 내려가요. 사람마다 ±15% 차이를 두고, 층마다 계단참 두 곳을 도는 2~4초를 더했어요.</li>
+<li><strong>계단 오르기</strong>: 우리 법정 기준과 같은 18cm·26cm 계단을 13층까지 오르게 한 실험(Ronchi 외 2015)의 가운데 값을 썼어요. 1층에서 1초에 0.36m, 4층부터 0.28m로 느려져요. 계단참을 도는 시간이 이미 들어 있어요. 이 실험은 층고 3.7m 건물에서 대피하듯 오르게 한 거라, 평소 걸음보다 빠르게 잡혔을 수 있어요. 10% 느리게 해도 2판 판정은 같았어요.</li>
+<li>집 문에서 엘리베이터 문과 계단 문까지 걷는 거리는 같다고 봤어요.</li>
+</ul>
+</div></details><details id="ev-limits" open><summary>한계 7가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
+<ul>
+<li>엘리베이터가 서 있는 층은 단지마다 달라요. 이 글은 15개 층에 똑같이 흩어져 있다고 봤어요. 1층에 서 있는 일이 절반 가까이 되면 최종 판정이 무승부로 바뀌어요.</li>
+<li>짐을 들었거나, 집 문에서 계단까지와 엘리베이터까지 거리가 다르면 결과가 달라져요. 짐이 있으면 엘리베이터가 유리해요.</li>
+<li>아파트마다 엘리베이터 대수가 달라요. 한 라인에 엘리베이터가 두 대면 기다리는 시간이 줄어 엘리베이터가 유리해져요. 이 글은 한 대를 기준으로 했어요.</li>
+<li>출근 시간의 간격(60초)과 기다리는 시간 비율은 승강기 설계 기준값이에요. 우리 아파트 아침 대기 시간을 직접 잰 국내 자료는 찾지 못했어요.</li>
+<li>엘리베이터가 꽉 차서 그냥 지나가는 경우는 넣지 않았어요. 넣으면 출근 시간 엘리베이터가 더 느려져요.</li>
+<li>계단 속도는 외국 실험 값이에요. 무릎이 불편하거나 짐이 많으면 계단은 훨씬 느려져요.</li>
+<li>층 높이 2.8m는 기준이 없어 고른 값이에요. 2.7~2.9m에서는 결과가 같았어요.</li>
+</ul>
+</div></details></section><script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);var d=e&&e.closest("details");if(d){d.open=true;if(d!==e)e.scrollIntoView();}}addEventListener("hashchange",o);o();})();</script></div><section class="share-end"><p>카톡에 링크를 붙이면 숫자 카드랑 요약이 같이 떠요.</p><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/2026-11_odd-elevator-stairs/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></section><section class="subscribe" id="subscribe"><div class="sub-t"><h2>새 글 나오면 받아 보기</h2><p>피드 리더 앱에 이 사이트 주소를 한 번 넣어 두면, 새 글이 올라올 때 앱에 떠요. 가입이나 메일 주소는 필요 없어요.</p></div><details class="how"><summary class="btn dark">받는 법 보기</summary><div class="how-in"><ol><li><b>피드 리더 앱을 하나 골라요.</b> 새 글을 모아 보여 주는 앱이에요. 예를 들면 <a href="https://feedly.com" target="_blank" rel="noopener">Feedly</a>나 <a href="https://www.inoreader.com" target="_blank" rel="noopener">Inoreader</a>가 있어요. 둘 다 무료고 웹·휴대폰에서 써요.</li><li><b>앱에서 '구독 추가'(+)를 누르고 아래 주소를 붙여 넣어요.</b></li><li><b>끝이에요.</b> 새 글이 올라오면 앱 목록에 떠요.</li></ol><div class="feed-addr"><code>https://protofu.github.io/opendata-insight/feed.xml</code><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/feed.xml" data-rel="../feed.xml" data-done="주소를 복사했어요" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>주소 복사</span></button></div><p class="how-alt">Feedly를 쓴다면 <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fprotofu.github.io%2Fopendata-insight%2Ffeed.xml" target="_blank" rel="noopener">여기를 눌러 바로 추가</a>할 수도 있어요.</p></div></details></section>
+</article>
+<section class="rel wrap"><div class="sec-h"><h2>이어서 읽을 만한 글</h2></div><div class="trio"><a class="card" href="../2026-11_odd-chicken-car/index.html"><span class="kick">엉뚱한 비교</span><h3>한국인이 평생 먹는 치킨 값이면, 중형차를 살 수 있을까</h3><p>결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p></a><a class="card" href="../2026-11_odd-gorilla-100men/index.html"><span class="kick">엉뚱한 비교</span><h3>수컷 고릴라 1마리 vs 성인 남자 100명, 줄다리기하면 누가 이길까</h3><p>결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p></a><a class="card" href="../2026-11_odd-ants-humans/index.html"><span class="kick">엉뚱한 비교</span><h3>지구의 개미 전부 vs 사람 전부, 어느 쪽이 더 무거울까</h3><p>결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p></a></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <div><a class="brand" href="../index.html" aria-label="FITAHW 피타우 홈"><b class="wm">FITAHW</b><span class="ko">피타우</span></a>
+    <p>뉴스에 나온 숫자가 궁금하면 공공데이터 원본을 열어서 다시 계산해 봐요. 한 사람이 만드는 작은 사이트예요.</p>
+    <small>숫자는 전부 공개된 원자료에서 다시 계산했어요. 원인을 단정하진 않고, 투자·진로 조언도 아니에요.</small></div>
+  <div><h2>둘러보기</h2><ul><li><a href="../about.html">소개</a></li><li><a href="../archive/index.html">자료실</a></li><li><a href="../data.html">숫자 장부</a></li></ul></div>
+  <div><h2>받아 보기</h2><ul><li><a href="#subscribe">새 글 받는 법</a></li><li><a href="../feed.xml">RSS 주소</a></li></ul></div>
+</div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var toast = document.querySelector('.toast');
+  function say(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
+  }
+  function fallback(t, ok_) {
+    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
+    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(a); say(ok ? ok_ : '주소창의 주소를 복사해 주세요');
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var t = b.dataset.copy || (b.dataset.rel ? new URL(b.dataset.rel, location.href).href : location.href.split('#')[0]);
+      var ok_ = b.dataset.done || '링크를 복사했어요';
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(ok_); }, function () { fallback(t, ok_); });
+      else fallback(t, ok_);
+    });
+  });
+})();
+</script><script>
+(function () {
+  var API = "https://nesiqqzkvkxrcyzxtagh.supabase.co", KEY = "sb_publishable_71wZ1_loLKWiPxd070D5UQ_n8RK2q4u";
+  if (!window.fetch || !document.querySelectorAll) return;
+  function call(fn, body) {
+    var c = window.AbortController ? new AbortController() : null, t = c ? setTimeout(function () { c.abort(); }, 8000) : 0;
+    return fetch(API + "/rest/v1/rpc/" + fn, { method: "POST", headers: { apikey: KEY, "Content-Type": "application/json" },
+                                               body: JSON.stringify(body), signal: c ? c.signal : undefined })
+      .then(function (r) { clearTimeout(t); if (!r.ok) throw r.status; return r.json(); })
+      .then(function (j) { var x = Array.isArray(j) ? j[0] : j; if (!x || x.a == null) throw "no poll"; return x; });
+  }
+  function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function put(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function uuid() {
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (ch) {
+      var r = Math.random() * 16 | 0; return (ch === "x" ? r : (r & 3 | 8)).toString(16); });
+  }
+  function when(iso) {  // 한국 시각 '11월 10일(화) 0시' (자정을 '오전 12:00'으로 쓰면 헷갈려서 24시간제)
+    var t = Date.parse(iso); if (isNaN(t)) return "";
+    var d = new Date(t + 9 * 3600e3), m = d.getUTCMinutes();
+    return (d.getUTCMonth() + 1) + "월 " + d.getUTCDate() + "일(" + "일월화수목금토".charAt(d.getUTCDay()) + ") "
+           + d.getUTCHours() + "시" + (m ? " " + m + "분" : "");
+  }
+  function endless(x) { return Date.parse(x.closes_at) >= Date.UTC(2090, 0, 1); }  // 마감 없이 받는 투표(2099년 등): 마감 문구 숨김
+  var voter = get("dhc-voter");
+  if (!voter) { voter = uuid(); put("dhc-voter", voter); }
+  [].forEach.call(document.querySelectorAll(".poll[data-poll]"), function (box) {
+    var id = box.getAttribute("data-poll"), mode = box.getAttribute("data-mode"), mine = get("dhc-vote:" + id);
+    var btns = box.querySelector(".poll-btns"), res = box.querySelector(".poll-res"), meta = box.querySelector(".poll-meta");
+    function show(x, note) {
+      var a = +x.a || 0, b = +x.b || 0, n = a + b, pa = n ? Math.round(a * 100 / n) : 0, far = endless(x);
+      [["a", pa], ["b", n ? 100 - pa : 0]].forEach(function (p) {
+        var bar = res.querySelector('[data-v="' + p[0] + '"]');
+        bar.querySelector(".poll-p").textContent = n ? p[1] + "%" : "";
+        bar.querySelector("i").style.width = p[1] + "%";
+        if (mine === p[0]) bar.classList.add("mine");
+      });
+      if (btns) btns.hidden = true;
+      res.hidden = false;
+      meta.textContent = (n ? (far ? "지금까지 " + n.toLocaleString("ko-KR") + "명 참여" : n.toLocaleString("ko-KR") + "명이 골랐어요")
+                            : "아직 고른 사람이 없어요") + (note ? " · " + note : "");
+    }
+    var gated = mode !== "result" && document.querySelector('.gated[data-gate="' + id + '"]');
+    function fail() { if (gated) document.documentElement.classList.add("gate-fail"); }
+    call("poll_results", { p_poll: id }).then(function (x) {
+      box.hidden = false;
+      if (gated) document.documentElement.classList.add("poll-ok");
+      var far = endless(x);
+      if (mode === "result") return show(x, far ? "" : x.is_open ? when(x.closes_at) + "까지 받는 중" : "독자 투표 결과");
+      if (!x.is_open) { if (gated && window.dhcOpenGate) window.dhcOpenGate(false); return show(x, "투표가 끝났어요"); }
+      if (mine) return show(x, far ? "" : "마감 " + when(x.closes_at));
+      meta.textContent = (far ? "" : "마감 " + when(x.closes_at) + " · ") + "고르면 지금까지 비율이 바로 보여요";
+      [].forEach.call(btns.querySelectorAll("button"), function (b) {
+        b.addEventListener("click", function () {
+          [].forEach.call(btns.querySelectorAll("button"), function (o) { o.disabled = true; });
+          call("cast_vote", { p_poll: id, p_voter: voter, p_choice: b.getAttribute("data-v") }).then(function (y) {
+            if (y.is_open) { mine = b.getAttribute("data-v"); put("dhc-vote:" + id, mine); }
+            if (window.gtag) gtag("event", "poll_vote", { poll_id: id, choice: b.getAttribute("data-v") });
+            show(y, gated ? "아래에 데이터 결과가 열렸어요" : y.is_open ? "결과 글에서 데이터랑 맞춰 볼게요" : "투표가 막 끝났어요");
+            if (gated && window.dhcOpenGate) window.dhcOpenGate(900);
+          }).catch(function () {
+            [].forEach.call(btns.querySelectorAll("button"), function (o) { o.disabled = false; });
+            meta.textContent = "지금은 표가 안 들어가요. 잠시 뒤에 다시 눌러 주세요.";
+            fail();
+          });
+        });
+      });
+    }).catch(fail);
+  });
+  [].forEach.call(document.querySelectorAll("[data-poll-live]"), function (el) {
+    call("poll_results", { p_poll: el.getAttribute("data-poll-live") }).then(function (x) { if (x.is_open) el.hidden = false; })
+      .catch(function () {});
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var r = document.documentElement, b = document.querySelector('.theme');
+  var DARK = '(prefers-color-scheme: dark)';
+  function apply() {
+    var t = r.dataset.theme;
+    document.querySelectorAll('picture source').forEach(function (s) {
+      var m = s.dataset.m || (s.dataset.m = s.media);
+      if (m.indexOf(DARK) < 0) return;
+      s.media = t ? m.replace(DARK, t === 'dark' ? '(min-width: 0px)' : '(max-width: 0px)') : m;
+    });
+  }
+  if (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia(DARK).matches;
+      r.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', r.dataset.theme); } catch (e) {}
+      apply();
+    });
+  }
+  apply();
+})();
+</script>
+</body>
+</html>
