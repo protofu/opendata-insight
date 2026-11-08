@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>사자 vs 호랑이, 싸움 말고 능력으로 겨루면 누가 이길까</title>
+<meta name="description" content="결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요. 사자와 호랑이를 싸우게 하는 대신, 논문에 측정값이 남아 있는 능력으로 겨뤄요.">
+<meta property="og:title" content="사자 vs 호랑이, 싸움 말고 능력으로 겨루면 누가 이길까">
+<meta property="og:description" content="결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요. 사자와 호랑이를 싸우게 하는 대신, 논문에 측정값이 남아 있는 능력으로 겨뤄요.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://protofu.github.io/opendata-insight/2026-11_odd-lion-tiger/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://protofu.github.io/opendata-insight/2026-11_odd-lion-tiger/">
+<meta property="og:site_name" content="FITAHW">
+<meta name="theme-color" content="#fbfbf9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="FITAHW" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="../style.css">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}})();</script><script>
+(function () {  // 투표 게이트: 그리기 전에 잠금 여부를 정해 깜빡임 없게. fetch가 없으면 가리지 않음
+  var d = document.documentElement, id = "lion-tiger";
+  if (!window.fetch) return;
+  d.classList.add("gate-on");
+  try { if (localStorage.getItem("dhc-vote:" + id) || sessionStorage.getItem("dhc-gate-skip:" + id)) d.classList.add("gate-open"); }
+  catch (e) { d.classList.add("gate-open"); }
+  window.dhcOpenGate = function (delay) {
+    d.classList.add("gate-open");
+    var g = document.getElementById("gated");
+    if (g && delay !== false) setTimeout(function () { g.scrollIntoView({ behavior: "smooth", block: "start" }); }, delay || 0);
+  };
+  setTimeout(function () { if (!d.classList.contains("poll-ok")) d.classList.add("gate-fail"); }, 9000);
+  document.addEventListener("click", function (e) {
+    if (!(e.target.closest && e.target.closest(".gate-skip"))) return;
+    try { sessionStorage.setItem("dhc-gate-skip:" + id, "1"); } catch (_) {}
+    window.dhcOpenGate(0);
+  });
+})();
+</script>
+</head>
+<body>
+<header class="head"><div class="wrap">
+  <a class="brand" href="../index.html" aria-label="FITAHW 피타우 홈"><b class="wm">FITAHW</b><span class="ko">피타우</span></a>
+  <nav class="util" aria-label="사이트"><a href="../about.html" class=hide-m>소개</a><a href="../archive/index.html" class=hide-m>자료실</a><a href="../data.html" class=hide-m>데이터</a></nav>
+  <a class="sub-btn" href="#subscribe">구독</a>
+  <button class="theme" type="button" aria-label="밝은 화면/어두운 화면 바꾸기" title="밝게/어둡게" hidden>◐</button>
+</div></header>
+<nav class="cats" aria-label="카테고리"><div class="wrap"><a href="../index.html">전체</a><a href="../category/work/index.html">일·이직</a><a href="../category/money/index.html">돈·자산</a><a href="../category/digital/index.html">디지털·크리에이터</a><a href="../category/society/index.html">가족·사회</a><a href="../category/life/index.html">생활·건강</a><a href="../category/business/index.html">창업·자영업</a><a href="../category/odd/index.html" aria-current=page>엉뚱한 비교</a></div></nav>
+<main>
+<article class="art">
+<span class="kick">엉뚱한 비교</span><h1>사자 vs 호랑이, 싸움 말고 능력으로 겨루면 누가 이길까</h1>
+<p class="dek">결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p>
+<div class="byline"><span>FITAHW</span><span>읽는 데 9분</span><span>Wroe 2005·Smuts 1980·Mazák 1981·Naha 2016·Eloff 1984·Braczkowski 2024</span><span class="sp"></span><a href="#evidence">근거</a><button type="button" class="pill" data-copy="https://protofu.github.io/opendata-insight/2026-11_odd-lion-tiger/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></div>
+<ul class="points"><li>사자와 호랑이를 싸우게 하는 대신, 논문에 측정값이 남아 있는 능력으로 겨뤄요.</li><li>무는 힘, 지구력, 수영, 체급 네 종목이에요. 두 동물 모두 잰 기록이 있는 종목만 골랐어요.</li><li>누가 더 많은 종목을 가져갈까요? 투표하면 결과가 바로 아래에 열려요.</li></ul><div class="body"><section class="sec"><h2>조건과 규칙</h2>
+<ul>
+<li><strong>대진</strong>은 아프리카 사자 수컷 vs 벵골호랑이 수컷이에요. 종목마다 잰 무리는 달라요.</li>
+<li><strong>아무르호랑이</strong>(시베리아호랑이)는 뺐어요. 야생에서 잰 몸무게가 대부분 책에만 있고 논문으로 확인되지 않아서예요.</li>
+<li><strong>종목</strong>은 네 개예요. 무는 힘(몸무게를 맞추면 누가 더 세게 무나), 지구력(하루에 움직인 거리), 수영, 체급(몸무게).</li>
+<li>최고 속도와 점프는 뺐어요. 두 동물 모두 믿을 만한 측정값이 있어야 종목이 되는데, 이 둘은 한쪽이나 양쪽 기록이 없어요.</li>
+</ul>
+<section class="poll" id="poll-lion-tiger" data-poll="lion-tiger" data-mode="vote" hidden><p class="poll-k">독자 투표</p><h3 class="poll-q">사자 vs 호랑이, 싸움 말고 능력으로 겨루면 누가 이길까?</h3><div class="poll-btns"><button type="button" data-v="a"><b>A</b>사자</button><button type="button" data-v="b"><b>B</b>호랑이</button></div><div class="poll-res" hidden><div class="poll-bar" data-v="a"><i></i><span class="poll-l"><b>A</b> 사자</span><span class="poll-p"></span></div><div class="poll-bar" data-v="b"><i></i><span class="poll-l"><b>B</b> 호랑이</span><span class="poll-p"></span></div></div><p class="poll-meta" aria-live="polite"></p></section>
+</section></div><div class="gate-note"><p class="gate-k">데이터 결과는 투표 뒤에</p><p>A·B 중 하나를 고르면 데이터 결과가 열려요.</p><div class="gate-act"><a class="btn dark" href="#poll-lion-tiger">위에서 고르기 <span aria-hidden="true">↑</span></a><button type="button" class="btn gate-skip">결과 바로 보기</button></div></div><div class="gated" id="gated" data-gate="lion-tiger"><div class="body">
+<section class="sec"><h2>결과 요약</h2>
+<p><strong>4종목 호랑이 2승 2무 → 최종 호랑이 승</strong></p>
+<ol>
+<li>호랑이는 무는 힘(몸무게를 맞추면 1.13배)과 체급(1.17배)을 가져갔어요. 둘 다 아슬아슬한 차이예요.</li>
+<li>지구력과 수영은 무승부예요. 두 동물을 같은 잣대로 잰 기록이 없어서, 어느 자료를 고르느냐에 따라 승자가 바뀌어요.</li>
+<li>결론은 "고른 자료에 따라 갈린다"예요. 사자에게 유리한 자료만 고르면 사자 4승 1무, 호랑이에게 유리한 자료만 고르면 호랑이 3승 1무예요.</li>
+</ol>
+<p><strong>그래서?</strong> 이 규칙이면 호랑이가 이기지만, 판정을 가른 건 동물보다 자료였어요.</p>
+<section class="poll" data-poll="lion-tiger" data-mode="result" hidden><p class="poll-k">독자 예상 vs 데이터 결과</p><h3 class="poll-q">사자 vs 호랑이, 싸움 말고 능력으로 겨루면 누가 이길까?</h3><div class="poll-res"><div class="poll-bar" data-v="a"><i></i><span class="poll-l"><b>A</b> 사자</span><span class="poll-p"></span></div><div class="poll-bar ans" data-v="b"><i></i><span class="poll-l"><b>B</b> 호랑이<em>데이터 결과</em></span><span class="poll-p"></span></div></div><p class="poll-ans">데이터로 보면 <mark>호랑이</mark>. 4종목 호랑이 2승 2무예요. 사자에게 유리한 자료만 고르면 사자가 이겨요.</p><p class="poll-meta" aria-live="polite"></p></section>
+<figure class="fig"><a href="chart_odd_liontiger_events.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_liontiger_events.m.dark.png" media="(max-width: 560px) and (prefers-color-scheme: dark)"><source srcset="chart_odd_liontiger_events.m.png" media="(max-width: 560px)"><source srcset="chart_odd_liontiger_events.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_liontiger_events.png" alt="차트"></picture></a></figure>
+<p>호랑이가 이긴 두 종목은 모두 1.2배가 안 되는 차이예요. 무승부로 둔 두 종목은 고르는 자료에 따라 사자가 이기기도, 호랑이가 이기기도 해요.</p>
+</section><section class="sec">
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>종목</th>
+<th>사자</th>
+<th>호랑이</th>
+<th>승자</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 무는 힘(몸무게를 맞추면)</td>
+<td>1</td>
+<td>1.13배</td>
+<td>호랑이(1.13배)</td>
+</tr>
+<tr>
+<td>2. 지구력(하루 이동 거리)</td>
+<td>4.5~11.8km</td>
+<td>4.65~8.12km</td>
+<td>무승부</td>
+</tr>
+<tr>
+<td>3. 수영</td>
+<td>가장 긴 기록 약 1.1km</td>
+<td>물길을 하루 약 5개 건넘</td>
+<td>무승부</td>
+</tr>
+<tr>
+<td>4. 체급(몸무게)</td>
+<td>187.5kg</td>
+<td>219kg</td>
+<td>호랑이(1.17배)</td>
+</tr>
+<tr>
+<td><strong>최종</strong></td>
+<td></td>
+<td></td>
+<td><strong>4종목 호랑이 2승 2무 → 호랑이 승</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>이 규칙과 측정값이면 최종 승자는 호랑이예요. 다만 처음 짠 규칙에서는 사자가 이겼어요. 검토에서 '몸 크기를 세 번 셌다', '사는 곳이 다른 기록끼리 붙였다'는 지적을 받고 종목을 다시 짰더니 결과가 뒤집혔어요. 그 과정까지 그대로 적었어요.</p>
+<h3>1종목 무는 힘: 호랑이 승(1.13배)</h3>
+<p>무는 힘은 박물관 두개골의 크기와 턱 근육이 붙는 자리로 계산한 값이에요. 살아 있는 동물이 문 힘을 잰 건 아니에요. 같은 방법으로 여러 육식동물을 계산한 논문이라 두 동물을 나란히 놓기에는 좋아요.</p>
+<p>몸무게를 맞추면 호랑이가 1.13배 세게 물어요. 몸집에 견주면 호랑이 턱이 더 센 편이라는 뜻이에요. 그냥 힘으로 재면 사자 두개골이 1.16배 세게 무는데, 이 사자 두개골은 계산상 몸무게가 295kg일 만큼 큰 개체였어요. 몸무게는 4종목에서 따로 겨루니, 무는 힘은 몸무게를 맞춘 쪽으로 쟀어요.</p>
+<h3>2종목 지구력: 무승부</h3>
+<p>지구력은 처음에 칼라하리 사막 사자(하룻밤 11.8km)와 순다르반스 맹그로브 숲 호랑이(하루 4.65km)를 붙여 사자가 2.5배로 이겼어요. 그런데 이건 가장 많이 걷는 사자 무리와 가장 적게 걷는 호랑이 무리를 고른 결과였어요. 사자는 발자국을 따라가 잰 거리, 호랑이는 GPS 목걸이 위치를 이은 직선 거리라 재는 방법도 달라요.</p>
+<figure class="fig"><a href="chart_odd_liontiger_endurance.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_liontiger_endurance.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_liontiger_endurance.png" alt="차트" loading=lazy></picture></a></figure>
+<p>그래서 찾은 기록을 전부 놓아 봤어요. 사자는 케냐 나이로비 4.5km부터 칼라하리 11.8km까지, 호랑이는 4.65km부터 8.12km까지예요. 두 범위가 대부분 겹쳐요. 같은 방법(GPS 하루 이동)으로 잰 사자 기록은 학위논문이나 검색 결과로만 확인돼, 논문끼리 맞대어 볼 수 없었어요. 그래서 무승부로 뒀어요. 연구별 값의 가운데를 비교하면 사자가 2.17배로 이겨요(대진에서 뺀 아무르호랑이 기록은 넣지 않았어요).</p>
+<h3>3종목 수영: 무승부</h3>
+<p>수영은 의외였어요. 저는 당연히 호랑이가 이길 줄 알았는데, 가장 긴 한 번만 보면 사자 기록이 더 길어요. 2024년 우간다에서 사자 형제가 밤에 바다와 이어진 해협을 건너는 장면이 열화상 드론에 찍혔고, 연구진은 직선으로 약 1.1km라고 계산했어요. 호랑이는 GPS 목걸이를 단 몇 마리 가운데 폭 800m 강을 건넌 게 가장 길어요.</p>
+<p>하지만 사자 기록은 한 번 찍힌 장면이고, 호랑이 기록은 목걸이를 단 몇 마리 안에서 나온 가장 긴 값이에요. 같은 잣대가 아니에요. '얼마나 자주'로 재면 순다르반스 호랑이는 물길을 하루에 약 5개 건너고, 사자는 헤엄치는 일 자체가 드물어요. 이 기록 전에 알려진 사자 헤엄은 100m 이하였어요. 기준에 따라 승자가 정반대라서 무승부로 뒀어요.</p>
+<h3>4종목 체급: 호랑이 승(1.17배)</h3>
+<p>남아프리카 크루거 국립공원 사자 수컷은 평균 187.5kg이에요(위 속 먹이 무게는 뺐어요). 벵골호랑이 수컷은 동물학 학술지 정리 논문에 180~258kg 범위로만 나와 있어서, 그 가운데인 219kg을 썼어요. 호랑이가 1.17배 무거워요. 범위의 아래 끝 180kg을 쓰면 이 종목은 무승부가 되지만, 최종은 1승 3무로 그대로 호랑이 승이에요.</p>
+<figure class="fig"><a href="chart_odd_liontiger_sens.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_liontiger_sens.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_liontiger_sens.png" alt="차트" loading=lazy></picture></a></figure>
+<h3>고른 자료에 따라 갈려요</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>바꾼 것</th>
+<th>사자</th>
+<th>호랑이</th>
+<th>최종</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기본</td>
+<td>0승</td>
+<td>2승</td>
+<td>호랑이 승</td>
+</tr>
+<tr>
+<td>무는 힘을 그냥 힘으로</td>
+<td>1승</td>
+<td>1승</td>
+<td>무승부</td>
+</tr>
+<tr>
+<td>최고 속도 넣기(호랑이 기록 없어 사자 승)</td>
+<td>1승</td>
+<td>2승</td>
+<td>호랑이 승</td>
+</tr>
+<tr>
+<td>지구력을 연구별 가운데 값으로(사자 2.17배)</td>
+<td>1승</td>
+<td>2승</td>
+<td>호랑이 승</td>
+</tr>
+<tr>
+<td>수영을 가장 긴 한 번으로</td>
+<td>1승</td>
+<td>2승</td>
+<td>호랑이 승</td>
+</tr>
+<tr>
+<td>무는 힘 그냥 힘 + 최고 속도</td>
+<td>2승</td>
+<td>1승</td>
+<td>사자 승</td>
+</tr>
+<tr>
+<td>사자 쪽 자료만(그냥 무는 힘, 지구력 가운데 값, 수영 가장 긴 한 번, 최고 속도, 호랑이 180kg)</td>
+<td>4승</td>
+<td>0승(1무)</td>
+<td>사자 승</td>
+</tr>
+<tr>
+<td>호랑이 쪽 자료만(몸무게 맞춘 무는 힘, 수영 빈도, 호랑이 219kg)</td>
+<td>0승</td>
+<td>3승(1무)</td>
+<td>호랑이 승</td>
+</tr>
+</tbody>
+</table></div>
+<p>한 가지만 바꾸면 대부분 호랑이 승이 그대로예요. 무는 힘을 그냥 힘으로 재면 무승부가 되고, 거기에 최고 속도까지 넣으면 사자가 이겨요. 사자에게 유리한 자료를 모두 고르면 4승 1무로 사자가 크게 이겨요. 호랑이의 승리는 '몸무게를 맞춘 무는 힘'과 '몸무게' 두 가지에 기대고 있고, 사자의 역전은 '그냥 무는 힘'과 '속도'에 기대요.</p>
+<h3>점수 밖</h3>
+<figure class="fig"><a href="chart_odd_liontiger_extra.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_liontiger_extra.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_liontiger_extra.png" alt="차트" loading=lazy></picture></a></figure>
+<p>최고 속도는 사자만 잰 기록이 있어요. 보츠와나 야생 사자에게 GPS 목걸이를 달아 달리기를 2,700번 넘게 기록했더니 최고 시속 74km가 나왔어요. 호랑이는 시속 56~65km라는 숫자가 돌지만 1960년대 책의 어림이라 쓰지 않았어요. 넣으면 사자가 1승을 더하지만, 한쪽 기록만 있는 경기라 점수에서 뺐어요.</p>
+<p>뇌 크기(머리뼈 안쪽 부피)는 호랑이 289cm³, 사자 244cm³로 호랑이가 1.18배예요. 몸무게 차이와 비슷해요. 뇌가 크다고 더 영리하다고 말할 수는 없어서 종목으로 넣지 않았어요.</p>
+<p>두 동물을 재 보니, 승패를 가른 건 이빨이나 다리보다 '누구를 어디서 쟀느냐'였어요. 사자와 호랑이를 같은 들판에 세워 같은 장비로 재는 날이 오기 전까지, 이 질문의 답은 고르는 자료만큼 여러 개예요.</p>
+</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 논문 값은 2026년 11월 8일에 원문·초록·공개 원자료로 다시 확인했어요. 처음 규칙은 같은 날 계산 전에 정했고, 검토 뒤 같은 날 종목을 다시 짰어요.</p>
+<div class="src-cards"><div class="src"><p class="src-h"><span>Wroe·McHenry·Thomason 2005,</span><b>Proceedings of the Royal Society B</b></p><ul><li><div class="src-t">무는 힘<small>doi:10.1098/rspb.2004.2986</small><p>표 1: 송곳니 무는 힘(사자 1,768N, 호랑이 1,525N), 몸 크기 대비 지수 BFQ(사자 112, 호랑이 127), 두개골 추정 몸무게(사자 294.6kg)</p></div><a class="src-go" href="https://doi.org/10.1098/rspb.2004.2986" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div><div class="src"><p class="src-h"><span>Smuts·Robinson·Whyte 1980,</span><b>Journal of Zoology</b></p><ul><li><div class="src-t">사자 몸무게<small>doi:10.1111/j.1469-7998.1980.tb01433.x</small><p>크루거 수컷 평균 187.5kg</p></div><a class="src-go" href="https://doi.org/10.1111/j.1469-7998.1980.tb01433.x" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div><div class="src"><p class="src-h"><span>Mazák 1981,</span><b>Mammalian Species</b></p><ul><li><div class="src-t">호랑이 몸무게<small>doi:10.2307/3504004</small><p>벵골호랑이 수컷 180~258kg(표 1)</p></div><a class="src-go" href="https://doi.org/10.2307/3504004" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div><div class="src"><p class="src-h"><span>Naha 외 2016,</span><b>PLoS ONE</b></p><ul><li><div class="src-t">호랑이 이동·수영<small>doi:10.1371/journal.pone.0152119</small><p>수컷 하루 4.65km, 한 마리 8.12km, 800m 강 횡단, 하루 물길 4.8~5.2개</p></div><a class="src-go" href="https://doi.org/10.1371/journal.pone.0152119" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div><div class="src"><p class="src-h"><span>Eloff 1984,</span><b>Koedoe</b></p><ul><li><div class="src-t">사자 이동<small>doi:10.4102/koedoe.v27i2.584</small><p>칼라하리 사자 하룻밤 11.8km(발자국 추적)</p></div><a class="src-go" href="https://doi.org/10.4102/koedoe.v27i2.584" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div><div class="src"><p class="src-h"><span>MacFarlane 2014 박사논문(호주국립대), Mammalia 2021(doi:10.1515/mammalia-2020-0116)</span></p><ul><li><div class="src-t">사자 이동(참고)<p>중부 칼라하리 수컷 하루 10.07km, 나이로비 하루 4.5km</p></div></li></ul></div><div class="src"><p class="src-h"><span>Braczkowski 외 2024,</span><b>Ecology and Evolution</b></p><ul><li><div class="src-t">사자 수영<small>doi:10.1002/ece3.11597</small><p>카징가 해협 약 1.1~1.5km</p></div><a class="src-go" href="https://doi.org/10.1002/ece3.11597" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div><div class="src"><p class="src-h"><span>Wilson 외 2018,</span><b>Nature</b></p><ul><li><div class="src-t">사자 최고 속도<small>doi:10.1038/nature25479</small><p>초속 20.6m(공개 원자료로 다시 계산)</p></div><a class="src-go" href="https://doi.org/10.1038/nature25479" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div><div class="src"><p class="src-h"><span>Sakai 외 2016,</span><b>Frontiers in Neuroanatomy</b></p><ul><li><div class="src-t">뇌 용적<small>doi:10.3389/fnana.2016.00099</small><p>사자 244, 호랑이 289cm³</p></div><a class="src-go" href="https://doi.org/10.3389/fnana.2016.00099" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div></div>
+</div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
+<ul>
+<li><strong>대진</strong>: 아프리카 사자 vs 벵골호랑이. 종목마다 잰 무리가 달라요. 사자는 크루거(몸무게)·칼라하리(이동)·우간다(수영)·보츠와나(속도), 호랑이는 순다르반스(이동·수영)와 인도 전역(몸무게) 기록이에요.</li>
+<li><strong>수컷 성체끼리</strong>가 원칙이에요. 다만 무는 힘의 두개골과 칼라하리 사자 이동 기록은 성별이 밝혀지지 않았어요.</li>
+<li><strong>무는 힘</strong>: 몸무게를 맞춘 무는 힘(육식동물 평균을 100으로 놓은 점수)으로 겨뤘어요. 그냥 힘은 민감도로만 봤어요.</li>
+<li><strong>지구력·수영</strong>: 사는 곳에 크게 좌우되는 종목이라, 같은 방법으로 잰 논문 값끼리 비교할 수 있을 때만 승패를 내기로 했어요. 지금 자료로는 둘 다 맞출 수 없어 무승부예요.</li>
+<li><strong>체급</strong>: 사자는 크루거 수컷 평균, 호랑이는 벵골 수컷 범위 180~258kg의 가운데 값이에요.</li>
+<li><strong>판정</strong>: 종목마다 큰 쪽이 이겨요. 두 값의 차이가 1.1배 미만이면 무승부예요. 이긴 종목 수가 많은 쪽이 최종 승자예요.</li>
+</ul>
+</div></details><details id="ev-limits" open><summary>한계 8가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
+<ul>
+<li>무는 힘은 두개골로 계산한 추정값이고, 두개골의 성별·아종이 밝혀지지 않았어요.</li>
+<li>사자 몸무게는 초록의 평균만 확인했어요. 호랑이 몸무게는 평균 없이 범위만 있어요. 네팔 치트완에서 잡아서 잰 호랑이 수컷 7마리 평균(221~235kg)은 다른 글에 인용된 값으로만 확인돼 판정에 쓰지 않았어요. 써도 호랑이 승은 그대로예요.</li>
+<li>지구력 참고 기록 둘(중부 칼라하리, 나이로비)은 학위논문이나 검색 결과로만 확인한 값이에요. 아무르호랑이 기록(하루 6.6km, 석사논문)은 대진에서 뺐으니 넣지 않았어요.</li>
+<li>몸무게를 맞춘 무는 힘에 쓴 몸무게도 두개골로 추정한 값이에요(사자 294.6kg, 호랑이 186.9kg). 실제 몸무게와 다를 수 있어요.</li>
+<li>체급에는 '같은 방법으로 잰 값끼리' 규칙을 쓰지 않았어요. 몸무게는 어디서 재든 저울로 재는 같은 방법이라 방법 차이가 없어서예요. 다만 잰 무리가 달라서(크루거 사자, 인도 전역 호랑이) 호랑이 범위의 아래 끝 값으로 민감도를 봤어요(180kg이면 이 종목은 무승부).</li>
+<li>사자 최고 속도는 측정한 사자의 성별이 원자료에 없어요.</li>
+<li>점프는 두 동물 모두 측정 논문을 찾지 못했어요.</li>
+<li>이 비교는 측정된 능력 비교예요. 실제로 마주쳤을 때 어떻게 될지는 말해 주지 않아요.</li>
+</ul>
+</div></details></section><script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);var d=e&&e.closest("details");if(d){d.open=true;if(d!==e)e.scrollIntoView();}}addEventListener("hashchange",o);o();})();</script></div><section class="share-end"><p>카톡에 링크를 붙이면 숫자 카드랑 요약이 같이 떠요.</p><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/2026-11_odd-lion-tiger/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></section><section class="subscribe" id="subscribe"><div class="sub-t"><h2>새 글 나오면 받아 보기</h2><p>피드 리더 앱에 이 사이트 주소를 한 번 넣어 두면, 새 글이 올라올 때 앱에 떠요. 가입이나 메일 주소는 필요 없어요.</p></div><details class="how"><summary class="btn dark">받는 법 보기</summary><div class="how-in"><ol><li><b>피드 리더 앱을 하나 골라요.</b> 새 글을 모아 보여 주는 앱이에요. 예를 들면 <a href="https://feedly.com" target="_blank" rel="noopener">Feedly</a>나 <a href="https://www.inoreader.com" target="_blank" rel="noopener">Inoreader</a>가 있어요. 둘 다 무료고 웹·휴대폰에서 써요.</li><li><b>앱에서 '구독 추가'(+)를 누르고 아래 주소를 붙여 넣어요.</b></li><li><b>끝이에요.</b> 새 글이 올라오면 앱 목록에 떠요.</li></ol><div class="feed-addr"><code>https://protofu.github.io/opendata-insight/feed.xml</code><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/feed.xml" data-rel="../feed.xml" data-done="주소를 복사했어요" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>주소 복사</span></button></div><p class="how-alt">Feedly를 쓴다면 <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fprotofu.github.io%2Fopendata-insight%2Ffeed.xml" target="_blank" rel="noopener">여기를 눌러 바로 추가</a>할 수도 있어요.</p></div></details></section>
+</article>
+<section class="rel wrap"><div class="sec-h"><h2>이어서 읽을 만한 글</h2></div><div class="trio"><a class="card" href="../2026-11_odd-gorilla-100men/index.html"><span class="kick">엉뚱한 비교</span><h3>수컷 고릴라 1마리 vs 성인 남자 100명, 줄다리기하면 누가 이길까</h3><p>결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p></a><a class="card" href="../2026-11_odd-ants-humans/index.html"><span class="kick">엉뚱한 비교</span><h3>지구의 개미 전부 vs 사람 전부, 어느 쪽이 더 무거울까</h3><p>결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p></a><a class="card" href="../2026-11_odd-bolt-cheetah/index.html"><span class="kick">엉뚱한 비교</span><h3>100m 달리기, 우사인 볼트가 50m 앞에서 출발하면 치타를 이길까</h3><p>결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p></a></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <div><a class="brand" href="../index.html" aria-label="FITAHW 피타우 홈"><b class="wm">FITAHW</b><span class="ko">피타우</span></a>
+    <p>뉴스에 나온 숫자가 궁금하면 공공데이터 원본을 열어서 다시 계산해 봐요. 한 사람이 만드는 작은 사이트예요.</p>
+    <small>숫자는 전부 공개된 원자료에서 다시 계산했어요. 원인을 단정하진 않고, 투자·진로 조언도 아니에요.</small></div>
+  <div><h2>둘러보기</h2><ul><li><a href="../about.html">소개</a></li><li><a href="../archive/index.html">자료실</a></li><li><a href="../data.html">숫자 장부</a></li></ul></div>
+  <div><h2>받아 보기</h2><ul><li><a href="#subscribe">새 글 받는 법</a></li><li><a href="../feed.xml">RSS 주소</a></li></ul></div>
+</div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var toast = document.querySelector('.toast');
+  function say(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
+  }
+  function fallback(t, ok_) {
+    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
+    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(a); say(ok ? ok_ : '주소창의 주소를 복사해 주세요');
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var t = b.dataset.copy || (b.dataset.rel ? new URL(b.dataset.rel, location.href).href : location.href.split('#')[0]);
+      var ok_ = b.dataset.done || '링크를 복사했어요';
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(ok_); }, function () { fallback(t, ok_); });
+      else fallback(t, ok_);
+    });
+  });
+})();
+</script><script>
+(function () {
+  var API = "https://nesiqqzkvkxrcyzxtagh.supabase.co", KEY = "sb_publishable_71wZ1_loLKWiPxd070D5UQ_n8RK2q4u";
+  if (!window.fetch || !document.querySelectorAll) return;
+  function call(fn, body) {
+    var c = window.AbortController ? new AbortController() : null, t = c ? setTimeout(function () { c.abort(); }, 8000) : 0;
+    return fetch(API + "/rest/v1/rpc/" + fn, { method: "POST", headers: { apikey: KEY, "Content-Type": "application/json" },
+                                               body: JSON.stringify(body), signal: c ? c.signal : undefined })
+      .then(function (r) { clearTimeout(t); if (!r.ok) throw r.status; return r.json(); })
+      .then(function (j) { var x = Array.isArray(j) ? j[0] : j; if (!x || x.a == null) throw "no poll"; return x; });
+  }
+  function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function put(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function uuid() {
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (ch) {
+      var r = Math.random() * 16 | 0; return (ch === "x" ? r : (r & 3 | 8)).toString(16); });
+  }
+  function when(iso) {  // 한국 시각 '11월 10일(화) 0시' (자정을 '오전 12:00'으로 쓰면 헷갈려서 24시간제)
+    var t = Date.parse(iso); if (isNaN(t)) return "";
+    var d = new Date(t + 9 * 3600e3), m = d.getUTCMinutes();
+    return (d.getUTCMonth() + 1) + "월 " + d.getUTCDate() + "일(" + "일월화수목금토".charAt(d.getUTCDay()) + ") "
+           + d.getUTCHours() + "시" + (m ? " " + m + "분" : "");
+  }
+  function endless(x) { return Date.parse(x.closes_at) >= Date.UTC(2090, 0, 1); }  // 마감 없이 받는 투표(2099년 등): 마감 문구 숨김
+  var voter = get("dhc-voter");
+  if (!voter) { voter = uuid(); put("dhc-voter", voter); }
+  [].forEach.call(document.querySelectorAll(".poll[data-poll]"), function (box) {
+    var id = box.getAttribute("data-poll"), mode = box.getAttribute("data-mode"), mine = get("dhc-vote:" + id);
+    var btns = box.querySelector(".poll-btns"), res = box.querySelector(".poll-res"), meta = box.querySelector(".poll-meta");
+    function show(x, note) {
+      var a = +x.a || 0, b = +x.b || 0, n = a + b, pa = n ? Math.round(a * 100 / n) : 0, far = endless(x);
+      [["a", pa], ["b", n ? 100 - pa : 0]].forEach(function (p) {
+        var bar = res.querySelector('[data-v="' + p[0] + '"]');
+        bar.querySelector(".poll-p").textContent = n ? p[1] + "%" : "";
+        bar.querySelector("i").style.width = p[1] + "%";
+        if (mine === p[0]) bar.classList.add("mine");
+      });
+      if (btns) btns.hidden = true;
+      res.hidden = false;
+      meta.textContent = (n ? (far ? "지금까지 " + n.toLocaleString("ko-KR") + "명 참여" : n.toLocaleString("ko-KR") + "명이 골랐어요")
+                            : "아직 고른 사람이 없어요") + (note ? " · " + note : "");
+    }
+    var gated = mode !== "result" && document.querySelector('.gated[data-gate="' + id + '"]');
+    function fail() { if (gated) document.documentElement.classList.add("gate-fail"); }
+    call("poll_results", { p_poll: id }).then(function (x) {
+      box.hidden = false;
+      if (gated) document.documentElement.classList.add("poll-ok");
+      var far = endless(x);
+      if (mode === "result") return show(x, far ? "" : x.is_open ? when(x.closes_at) + "까지 받는 중" : "독자 투표 결과");
+      if (!x.is_open) { if (gated && window.dhcOpenGate) window.dhcOpenGate(false); return show(x, "투표가 끝났어요"); }
+      if (mine) return show(x, far ? "" : "마감 " + when(x.closes_at));
+      meta.textContent = (far ? "" : "마감 " + when(x.closes_at) + " · ") + "고르면 지금까지 비율이 바로 보여요";
+      [].forEach.call(btns.querySelectorAll("button"), function (b) {
+        b.addEventListener("click", function () {
+          [].forEach.call(btns.querySelectorAll("button"), function (o) { o.disabled = true; });
+          call("cast_vote", { p_poll: id, p_voter: voter, p_choice: b.getAttribute("data-v") }).then(function (y) {
+            if (y.is_open) { mine = b.getAttribute("data-v"); put("dhc-vote:" + id, mine); }
+            if (window.gtag) gtag("event", "poll_vote", { poll_id: id, choice: b.getAttribute("data-v") });
+            show(y, gated ? "아래에 데이터 결과가 열렸어요" : y.is_open ? "결과 글에서 데이터랑 맞춰 볼게요" : "투표가 막 끝났어요");
+            if (gated && window.dhcOpenGate) window.dhcOpenGate(900);
+          }).catch(function () {
+            [].forEach.call(btns.querySelectorAll("button"), function (o) { o.disabled = false; });
+            meta.textContent = "지금은 표가 안 들어가요. 잠시 뒤에 다시 눌러 주세요.";
+            fail();
+          });
+        });
+      });
+    }).catch(fail);
+  });
+  [].forEach.call(document.querySelectorAll("[data-poll-live]"), function (el) {
+    call("poll_results", { p_poll: el.getAttribute("data-poll-live") }).then(function (x) { if (x.is_open) el.hidden = false; })
+      .catch(function () {});
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var r = document.documentElement, b = document.querySelector('.theme');
+  var DARK = '(prefers-color-scheme: dark)';
+  function apply() {
+    var t = r.dataset.theme;
+    document.querySelectorAll('picture source').forEach(function (s) {
+      var m = s.dataset.m || (s.dataset.m = s.media);
+      if (m.indexOf(DARK) < 0) return;
+      s.media = t ? m.replace(DARK, t === 'dark' ? '(min-width: 0px)' : '(max-width: 0px)') : m;
+    });
+  }
+  if (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia(DARK).matches;
+      r.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', r.dataset.theme); } catch (e) {}
+      apply();
+    });
+  }
+  apply();
+})();
+</script>
+</body>
+</html>
