@@ -70,9 +70,9 @@
 <section class="sec"><h2>결과 요약</h2>
 <p><strong>3판 계단 2승 1무 → 최종 계단 승(엘리베이터가 아무 층에나 서 있는 단지라면)</strong></p>
 <ol>
-<li>엘리베이터가 아무 층에나 서 있는 단지라면 5층 주민은 계단이 조금 나아요. 출근 시간엔 확실히 계단이에요(72초 대 37초).</li>
-<li>한산할 때 내려가기는 몇 초 차이로 갈리는 무승부예요. 엘리베이터가 1층에 서 있을 때가 많은 단지라면, 올라갈 때는 엘리베이터가 이겨서 최종도 무승부가 돼요.</li>
-<li>6층부터는 엘리베이터가 빨라요. 아침 출근길엔 11층부터예요.</li>
+<li>한산할 땐 동전 던지기, 출근길엔 계단 압승(72초 대 37초). 6층부터는 엘리베이터예요.</li>
+<li>한산할 때 내려가기는 몇 초 차이로 갈리는 무승부예요. 올라가기는 엘리베이터가 1층에 얼마나 자주 서 있느냐에 달려 있어서, 단지에 따라 계단 승도 엘리베이터 승도 돼요.</li>
+<li>아침 출근길엔 11층부터 엘리베이터가 앞서요.</li>
 </ol>
 <p><strong>그래서?</strong> 5층 이하면 계단, 6층부터는 엘리베이터. 아침 출근길엔 10층까지 계단. 집에서 월패드로 미리 불러 두거나 짐이 있으면 엘리베이터.</p>
 <section class="poll" data-poll="elevator-stairs" data-mode="result" hidden><p class="poll-k">독자 예상 vs 데이터 결과</p><h3 class="poll-q">아파트 5층에 살면, 엘리베이터와 계단 중 뭐가 더 빠를까?</h3><div class="poll-res"><div class="poll-bar" data-v="a"><i></i><span class="poll-l"><b>A</b> 엘리베이터</span><span class="poll-p"></span></div><div class="poll-bar ans" data-v="b"><i></i><span class="poll-l"><b>B</b> 계단<em>데이터 결과</em></span><span class="poll-p"></span></div></div><p class="poll-ans">데이터로 보면 <mark>계단</mark>. 계단 2승 1무예요. 다만 엘리베이터가 1층에 서 있는 일이 많은 단지라면 무승부, 집에서 미리 불러 두면 엘리베이터가 이겨요.</p><p class="poll-meta" aria-live="polite"></p></section>
@@ -129,7 +129,7 @@
 <figure class="fig"><a href="chart_odd_elevator_curve.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_elevator_curve.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_elevator_curve.png" alt="차트" loading=lazy></picture></a></figure>
 <h3>2판 1층→5층, 한산할 때: 계단 승(27%, 1층 로비에 엘리베이터가 없을 때)</h3>
 <p>올라갈 때는 계단이 느려져요. 한 층에 8~10초, 4개 층이면 35초예요. 엘리베이터도 느려져요. 1층에서 부르면 엘리베이터가 서 있던 층에서 1층까지 내려와야 하는데, 평균 거리가 5층에서 부를 때보다 멀어요. 그래서 엘리베이터 42초, 계단 35초로 계단이 이겨요.</p>
-<p>그런데 이 승리는 1층 로비에 엘리베이터가 없을 때 이야기예요. 내려간 사람이 많으면 엘리베이터는 1층에 남아 있고, 1층으로 자동으로 돌아가게 맞춘 단지도 있어요. 엘리베이터가 1층에 서 있는 비중이 25%면 2판은 무승부(45%), 50%면 엘리베이터 승(63%)이에요. 그러면 최종 판정도 1승 1무 1패, 무승부가 돼요.</p>
+<p>그런데 이 승리는 1층 로비에 엘리베이터가 없을 때 이야기예요. 이 글의 기본 가정처럼 엘리베이터가 15개 층에 똑같이 흩어져 있으면 1층에 있을 확률은 15분의 1, 약 7%예요. 그런데 실제 아파트 엘리베이터는 사람들을 태우고 대부분 1층을 오가요. 내려간 엘리베이터는 1층에 남고, 1층으로 자동으로 돌아가게 맞춘 단지도 있어요. 그래서 1층에 서 있는 비중이 절반 가까이 되는 게 현실에 더 가까울 수 있어요. 비중이 약 30%면 2판은 무승부(45%), 약 53%면 엘리베이터 승(63%)이에요. 그러면 최종 판정도 1승 1무 1패, 무승부가 돼요.</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -142,21 +142,21 @@
 </thead>
 <tbody>
 <tr>
-<td>0%(이 글의 기본)</td>
+<td>약 7%(15개 층에 똑같이, 이 글의 기본)</td>
 <td>무승부(50%)</td>
 <td>계단(27%)</td>
 <td>계단(7%)</td>
 <td>계단 승</td>
 </tr>
 <tr>
-<td>25%</td>
+<td>약 30%</td>
 <td>무승부(49%)</td>
 <td>무승부(45%)</td>
 <td>계단(6%)</td>
 <td>계단 승</td>
 </tr>
 <tr>
-<td>50%</td>
+<td>약 53%</td>
 <td>무승부(48%)</td>
 <td>엘리베이터(63%)</td>
 <td>계단(7%)</td>
@@ -175,7 +175,7 @@
 <figure class="fig"><a href="chart_odd_elevator_speed.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_elevator_speed.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_elevator_speed.png" alt="차트" loading=lazy></picture></a></figure>
 <h3>엘리베이터 속도는 건물 높이를 따라가요</h3>
 <p>전국 공동주택 엘리베이터 42.7만 대를 건물 층수별로 나눠 봤어요. 5층 이하 건물은 96%가 1초에 1m예요. 11~15층은 1.5m와 1m가 섞여 있고, 16~25층은 1.5~1.75m가 흔해요. 높은 건물일수록 빨라서, 41층 이상은 1초에 3.5m가 가운데 값이에요.</p>
-<p>이 규칙과 가정이면 최종 판정은 계단 승이에요. 엘리베이터가 아무 층에나 서 있는 단지라면 5층 주민은 계단이 조금 낫고, 출근 시간엔 확실히 계단이에요. 엘리베이터가 1층에 서 있는 일이 절반 가까이 되는 단지라면 무승부로 바뀌고, 집에서 미리 불러 두면 엘리베이터가 이겨요.</p>
+<p>어떤 가정을 넣어도 버티는 결론은 이거예요. 한산할 땐 동전 던지기, 출근길엔 계단 압승(72초 대 37초), 6층부터는 엘리베이터. 계산 전에 정한 규칙대로 세면 계단 2승 1무지만, 엘리베이터가 1층에 자주 서 있는 단지라면 무승부예요.</p>
 </section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 승강기 보유 현황은 2025년 12월 31일 기준(2026년 11월 8일 받음)이에요. 조건은 2026년 11월 8일, 계산하기 전에 정했어요.</p>
 <div class="src-cards"><div class="src"><p class="src-h"><span>한국승강기안전공단</span></p><ul><li><div class="src-t">국내 승강기 보유 현황(2025.12.31, 공공데이터포털 15017366)<p>공동주택 엘리베이터 427,215대의 건물 층수·속도</p></div></li></ul></div><div class="src"><p class="src-h"><span>Peters·Dean 2018</span></p><ul><li><div class="src-t">엘리베이터 교통 설계값 (9th Symposium on Lift &amp; Escalator Technologies)<p>문 열림·닫힘, 타고 내리기, 가속도, 주거 설계 간격 60초</p></div></li></ul></div><div class="src"><p class="src-h"><span>Smith 2012</span></p><ul><li><div class="src-t">기다리는 시간 계산 (Symposium on Lift &amp; Escalator Technologies)<p>실제 평균 대기 ≈ 간격의 60%</p></div></li></ul></div><div class="src"><p class="src-h"><span>Fujiyama·Tyler 2004, 런던대</span></p><ul><li><div class="src-t">계단 걷는 속도 (UTSG 2004)<p>성인 보통 걸음 계단 내려가기·오르기 속도</p></div></li></ul></div><div class="src"><p class="src-h"><span>Ronchi 외 2015</span></p><ul><li><div class="src-t">긴 계단 오르기 (Lund University TVBB-3192)<p>층마다 오르는 속도, 계단참 포함</p></div></li></ul></div><div class="src"><p class="src-h"><b>주택건설기준 등에 관한 규정</b></p><ul><li><div class="src-t">계단 단높이·단너비 기준<p>공동주택 계단 단높이 18cm 이하, 단너비 26cm 이상</p></div></li></ul></div></div>
 </div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
@@ -189,9 +189,8 @@
 <li><strong>계단 오르기</strong>: 우리 법정 기준과 같은 18cm·26cm 계단을 13층까지 오르게 한 실험(Ronchi 외 2015)의 가운데 값을 썼어요. 1층에서 1초에 0.36m, 4층부터 0.28m로 느려져요. 계단참을 도는 시간이 이미 들어 있어요. 이 실험은 층고 3.7m 건물에서 대피하듯 오르게 한 거라, 평소 걸음보다 빠르게 잡혔을 수 있어요. 10% 느리게 해도 2판 판정은 같았어요.</li>
 <li>집 문에서 엘리베이터 문과 계단 문까지 걷는 거리는 같다고 봤어요.</li>
 </ul>
-</div></details><details id="ev-limits" open><summary>한계 7가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
+</div></details><details id="ev-limits" open><summary>한계 6가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
 <ul>
-<li>엘리베이터가 서 있는 층은 단지마다 달라요. 이 글은 15개 층에 똑같이 흩어져 있다고 봤어요. 1층에 서 있는 일이 절반 가까이 되면 최종 판정이 무승부로 바뀌어요.</li>
 <li>짐을 들었거나, 집 문에서 계단까지와 엘리베이터까지 거리가 다르면 결과가 달라져요. 짐이 있으면 엘리베이터가 유리해요.</li>
 <li>아파트마다 엘리베이터 대수가 달라요. 한 라인에 엘리베이터가 두 대면 기다리는 시간이 줄어 엘리베이터가 유리해져요. 이 글은 한 대를 기준으로 했어요.</li>
 <li>출근 시간의 간격(60초)과 기다리는 시간 비율은 승강기 설계 기준값이에요. 우리 아파트 아침 대기 시간을 직접 잰 국내 자료는 찾지 못했어요.</li>
