@@ -447,3 +447,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .vs-c h3 { font: 900 24px/1.25 var(--serif) !important; letter-spacing: -.04em; }
 .vs-q { margin: 0; font-size: 14.5px; line-height: 1.55; color: var(--ink-2); }
 .vs-new { padding: 2px 9px; border-radius: 999px; background: var(--odd); color: var(--bg); letter-spacing: .02em; }
+/* 투표를 맨 위로 올린 글(.vote-top): 휴대폰 첫 화면에 질문과 버튼이 다 들어오게 */
+.vote-top > .poll { margin-top: 18px; }
+@media (max-width: 560px) {
+  .vote-top .dek { display: none; }
+  .vote-top h1 { margin-bottom: 10px; }
+  .vote-top .byline > span:nth-child(3) { display: none; }
+  .vote-top > .poll { margin-top: 12px; padding-top: 16px; }
+}
+.poll-k + .poll-btns { margin-top: 12px; }
