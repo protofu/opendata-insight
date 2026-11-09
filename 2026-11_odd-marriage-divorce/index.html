@@ -139,7 +139,7 @@
 <p>"결혼하는 두 쌍 가운데 한 쌍이 이혼한다"는 말은, 같은 해 결혼 신고와 이혼 신고를 나누면 2배 언저리가 나와서 그렇게 들릴 수 있어요. 하지만 그해 이혼하는 부부는 그해 결혼한 부부가 아니에요. 2025년에 이혼한 부부 가운데 결혼한 지 4년 이하(0~4년)인 부부는 16.3%뿐이고, 20년 이상 함께 산 부부가 36.6%, 30년 이상도 17.7%예요. 몇십 년 전에 결혼한 부부의 이혼과 올해 결혼한 커플을 같은 날 창구에서 함께 센 거예요.</p>
 <p>그래서 이 글의 배수는 '하루 동안 신고 창구에 온 두 줄의 길이 비교'로만 읽어야 해요. 결혼한 부부 가운데 몇 %가 언젠가 이혼하는지는, 같은 해 결혼한 부부를 몇십 년 따라가야 알 수 있어요. 이 글은 그 숫자를 다루지 않아요.</p>
 <p>이 규칙과 숫자로 내린 최종 판정은 '2배 넘게'예요. 2025년 하루 평균 결혼 658쌍, 이혼 241쌍으로 2.73배였고, 최근 10년을 합쳐도 시도 가운데 값으로 봐도 2배를 넘었어요.</p>
-</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 2025년 연간 확정치까지(2026년 11월 9일 KOSIS에서 받음). 조건은 2026년 11월 9일, 계산하기 전에 정했어요.</p>
+</section></div><div class="vshare" data-share="marriage-divorce" data-la="2배 넘게" data-lb="2배 이하" hidden><p class="vshare-k">친구는 어느 쪽일까요?</p><p class="vshare-t">내가 고른 쪽만 담아서 보내요. 결과는 안 알려 줘요.</p><div class="vshare-b"><button type="button" class="btn dark vs-native" hidden>공유하기</button><button type="button" class="btn vs-copy">링크 복사</button></div></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 2025년 연간 확정치까지(2026년 11월 9일 KOSIS에서 받음). 조건은 2026년 11월 9일, 계산하기 전에 정했어요.</p>
 <div class="src-cards"><div class="src"><p class="src-h"><span>통계청 인구동향조사</span></p><ul><li><div class="src-t">인구동태건수 및 동태율 추이<small>KOSIS DT_1B8000F</small><p>전국 연간 혼인·이혼 건수 1970~2025</p></div></li><li><div class="src-t">시도/인구동태건수 및 동태율<small>KOSIS DT_1B8000H</small><p>2025년 시도별 혼인·이혼 건수</p></div></li><li><div class="src-t">월·분기·연간 인구동향<small>KOSIS DT_1B8000G</small><p>2025년 달마다 혼인·이혼 건수</p></div><a class="src-go" href="https://kosis.kr/statHtml/statHtml.do?orgId=101&amp;tblId=DT_1B8000G" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li><li><div class="src-t">시도/혼인지속기간(동거기간)별 이혼<small>KOSIS DT_1B85006</small><p>2025년 이혼의 혼인 지속 기간</p></div><a class="src-go" href="https://kosis.kr/statHtml/statHtml.do?orgId=101&amp;tblId=DT_1B85006" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div></div>
 </div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
 <ul>
@@ -218,6 +218,41 @@
            + d.getUTCHours() + "시" + (m ? " " + m + "분" : "");
   }
   function endless(x) { return Date.parse(x.closes_at) >= Date.UTC(2090, 0, 1); }  // 마감 없이 받는 투표(2099년 등): 마감 문구 숨김
+  function say(msg) {
+    var t = document.querySelector(".toast");
+    if (!t) return;
+    t.textContent = msg; t.classList.add("on"); clearTimeout(t.t); t.t = setTimeout(function () { t.classList.remove("on"); }, 1800);
+  }
+  function shareOn(id, v) {  // 투표 뒤 공유: '나는 ○○ 찍었는데, 결과는?' + 링크(utm_source=share). 결과는 안 넣음
+    [].forEach.call(document.querySelectorAll('.vshare[data-share="' + id + '"]'), function (sh) {
+      if (sh.getAttribute("data-on")) return;
+      sh.setAttribute("data-on", "1");
+      var og = document.querySelector('meta[property="og:url"]');
+      var url = (og ? og.content : location.href.split(/[?#]/)[0]) + "?utm_source=share";
+      var lab = sh.getAttribute("data-l" + v) || v.toUpperCase(), text = "나는 " + lab + " 찍었는데, 결과는? 👉";
+      sh.querySelector(".vshare-t").textContent = "내 선택 ‘" + lab + "’만 담아서 보내요. 결과는 안 알려 줘요.";
+      function ev(m) { if (window.gtag) gtag("event", "share", { method: m, content_type: "poll", item_id: id }); }
+      var nat = sh.querySelector(".vs-native");
+      if (navigator.share) {
+        nat.hidden = false;
+        nat.addEventListener("click", function () {
+          navigator.share({ title: document.title, text: text, url: url }).then(function () { ev("native"); }, function () {});
+        });
+      }
+      sh.querySelector(".vs-copy").addEventListener("click", function () {
+        var all = text + " " + url;
+        function done() { say("공유 문구를 복사했어요"); ev("copy"); }
+        function old() {
+          var a = document.createElement("textarea"); a.value = all; a.setAttribute("readonly", "");
+          a.style.position = "fixed"; a.style.opacity = "0"; document.body.appendChild(a); a.select();
+          var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(a); if (ok) done(); else say("주소창의 주소를 복사해 주세요");
+        }
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(all).then(done, old); else old();
+      });
+      sh.hidden = false;
+    });
+  }
   var voter = get("dhc-voter");
   if (!voter) { voter = uuid(); put("dhc-voter", voter); }
   [].forEach.call(document.querySelectorAll(".poll[data-poll]"), function (box) {
@@ -231,6 +266,7 @@
         bar.querySelector("i").style.width = p[1] + "%";
         if (mine === p[0]) bar.classList.add("mine");
       });
+      if (mine && mode === "vote") shareOn(id, mine);
       if (btns) btns.hidden = true;
       res.hidden = false;
       meta.textContent = (n ? (far ? "지금까지 " + n.toLocaleString("ko-KR") + "명 참여" : n.toLocaleString("ko-KR") + "명이 골랐어요")

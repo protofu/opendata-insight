@@ -139,7 +139,7 @@
 <h3>세계는 왜 판정하지 않았나</h3>
 <p>세계 전체로 넓히면 자동차는 국제자동차제조업협회가 집계하지만, 집과 건물의 문, 의자, 여행가방을 센 국제 통계는 없어요. 우리나라에서도 승부를 가른 게 바로 통계가 없는 항목이었어요. 그래서 세계는 판정하지 않았어요.</p>
 <p>결국 우리나라에서는 바퀴가 판정승을 거둬요. 집만 보면 문이 훨씬 많지만, 자동차에서 바퀴가 조금 앞서고 사무실 의자 밑까지 세면 바퀴가 살짝 앞서요. 이긴 판보다 비긴 판이 많은, 사실상 박빙이에요.</p>
-</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 통계는 2026년 11월 9일 KOSIS에서 받았어요. 조건과 범위는 같은 날, 계산하기 전에 정했어요.</p>
+</section></div><div class="vshare" data-share="doors-wheels" data-la="문" data-lb="바퀴" hidden><p class="vshare-k">친구는 어느 쪽일까요?</p><p class="vshare-t">내가 고른 쪽만 담아서 보내요. 결과는 안 알려 줘요.</p><div class="vshare-b"><button type="button" class="btn dark vs-native" hidden>공유하기</button><button type="button" class="btn vs-copy">링크 복사</button></div></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 통계는 2026년 11월 9일 KOSIS에서 받았어요. 조건과 범위는 같은 날, 계산하기 전에 정했어요.</p>
 <div class="src-cards"><div class="src"><p class="src-h"><span>통계청 인구주택총조사</span></p><ul><li><div class="src-t">주택의 종류별 주택<small>KOSIS DT_1JU1501</small><p>주택 2,018만 호, 아파트 1,329만 호</p></div></li><li><div class="src-t">거처의 종류별 평균사용방수<small>KOSIS DT_1PE2005</small><p>가구당 사용방수, 주택 아닌 거처 가구</p></div></li></ul></div><div class="src"><p class="src-h"><span>국토교통부 건축물통계</span></p><ul><li><div class="src-t">용도별 건축물 현황<small>KOSIS DT_MLTM_522</small><p>용도별 건물 동수</p></div></li></ul></div><div class="src"><p class="src-h"><span>국토교통부</span></p><ul><li><div class="src-t">자동차등록대수현황<small>KOSIS DT_MLTM_1244</small><p>차종별 등록대수</p></div></li><li><div class="src-t">이륜차신고현황<small>KOSIS DT_MLTM_7170</small><p>이륜차 대수</p></div></li></ul></div><div class="src"><p class="src-h"><span>통계청 인구주택총조사</span></p><ul><li><div class="src-t">교통수단 보유현황별 가구<small>KOSIS DT_1PH1023</small><p>자전거 보유 가구</p></div></li></ul></div><div class="src"><p class="src-h"><span>국제노동기구(KOSIS 국제통계)</span></p><ul><li><div class="src-t">직업별 취업자<small>KOSIS DT_2KAA353</small><p>관리자·전문가·사무 종사자</p></div></li></ul></div><div class="src"><p class="src-h"><span>행정안전부·통계청</span></p><ul><li><div class="src-t">연령별 주민등록연앙인구<small>KOSIS DT_1B040M5_1</small><p>0~4세, 0~14세 인구</p></div></li></ul></div></div>
 </div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
 <ul>
@@ -223,6 +223,41 @@
            + d.getUTCHours() + "시" + (m ? " " + m + "분" : "");
   }
   function endless(x) { return Date.parse(x.closes_at) >= Date.UTC(2090, 0, 1); }  // 마감 없이 받는 투표(2099년 등): 마감 문구 숨김
+  function say(msg) {
+    var t = document.querySelector(".toast");
+    if (!t) return;
+    t.textContent = msg; t.classList.add("on"); clearTimeout(t.t); t.t = setTimeout(function () { t.classList.remove("on"); }, 1800);
+  }
+  function shareOn(id, v) {  // 투표 뒤 공유: '나는 ○○ 찍었는데, 결과는?' + 링크(utm_source=share). 결과는 안 넣음
+    [].forEach.call(document.querySelectorAll('.vshare[data-share="' + id + '"]'), function (sh) {
+      if (sh.getAttribute("data-on")) return;
+      sh.setAttribute("data-on", "1");
+      var og = document.querySelector('meta[property="og:url"]');
+      var url = (og ? og.content : location.href.split(/[?#]/)[0]) + "?utm_source=share";
+      var lab = sh.getAttribute("data-l" + v) || v.toUpperCase(), text = "나는 " + lab + " 찍었는데, 결과는? 👉";
+      sh.querySelector(".vshare-t").textContent = "내 선택 ‘" + lab + "’만 담아서 보내요. 결과는 안 알려 줘요.";
+      function ev(m) { if (window.gtag) gtag("event", "share", { method: m, content_type: "poll", item_id: id }); }
+      var nat = sh.querySelector(".vs-native");
+      if (navigator.share) {
+        nat.hidden = false;
+        nat.addEventListener("click", function () {
+          navigator.share({ title: document.title, text: text, url: url }).then(function () { ev("native"); }, function () {});
+        });
+      }
+      sh.querySelector(".vs-copy").addEventListener("click", function () {
+        var all = text + " " + url;
+        function done() { say("공유 문구를 복사했어요"); ev("copy"); }
+        function old() {
+          var a = document.createElement("textarea"); a.value = all; a.setAttribute("readonly", "");
+          a.style.position = "fixed"; a.style.opacity = "0"; document.body.appendChild(a); a.select();
+          var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(a); if (ok) done(); else say("주소창의 주소를 복사해 주세요");
+        }
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(all).then(done, old); else old();
+      });
+      sh.hidden = false;
+    });
+  }
   var voter = get("dhc-voter");
   if (!voter) { voter = uuid(); put("dhc-voter", voter); }
   [].forEach.call(document.querySelectorAll(".poll[data-poll]"), function (box) {
@@ -236,6 +271,7 @@
         bar.querySelector("i").style.width = p[1] + "%";
         if (mine === p[0]) bar.classList.add("mine");
       });
+      if (mine && mode === "vote") shareOn(id, mine);
       if (btns) btns.hidden = true;
       res.hidden = false;
       meta.textContent = (n ? (far ? "지금까지 " + n.toLocaleString("ko-KR") + "명 참여" : n.toLocaleString("ko-KR") + "명이 골랐어요")

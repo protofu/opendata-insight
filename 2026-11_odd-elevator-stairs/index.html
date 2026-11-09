@@ -178,7 +178,7 @@
 <h3>엘리베이터 속도는 건물 높이를 따라가요</h3>
 <p>전국 공동주택 엘리베이터 42.7만 대를 건물 층수별로 나눠 봤어요. 5층 이하 건물은 96%가 1초에 1m예요. 11~15층은 1.5m와 1m가 섞여 있고, 16~25층은 1.5~1.75m가 흔해요. 높은 건물일수록 빨라서, 41층 이상은 1초에 3.5m가 가운데 값이에요.</p>
 <p>어떤 가정을 넣어도 버티는 결론은 이거예요. 한산할 땐 동전 던지기, 출근길엔 계단 압승(72초 대 37초), 6층부터는 엘리베이터. 계산 전에 정한 규칙대로 세면 계단 2승 1무지만, 엘리베이터가 1층에 자주 서 있는 단지라면 무승부예요.</p>
-</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 승강기 보유 현황은 2025년 12월 31일 기준(2026년 11월 8일 받음)이에요. 조건은 2026년 11월 8일, 계산하기 전에 정했어요.</p>
+</section></div><div class="vshare" data-share="elevator-stairs" data-la="엘리베이터" data-lb="계단" hidden><p class="vshare-k">친구는 어느 쪽일까요?</p><p class="vshare-t">내가 고른 쪽만 담아서 보내요. 결과는 안 알려 줘요.</p><div class="vshare-b"><button type="button" class="btn dark vs-native" hidden>공유하기</button><button type="button" class="btn vs-copy">링크 복사</button></div></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 승강기 보유 현황은 2025년 12월 31일 기준(2026년 11월 8일 받음)이에요. 조건은 2026년 11월 8일, 계산하기 전에 정했어요.</p>
 <div class="src-cards"><div class="src"><p class="src-h"><span>한국승강기안전공단</span></p><ul><li><div class="src-t">국내 승강기 보유 현황(2025.12.31, 공공데이터포털 15017366)<p>공동주택 엘리베이터 427,215대의 건물 층수·속도</p></div></li></ul></div><div class="src"><p class="src-h"><span>Peters·Dean 2018</span></p><ul><li><div class="src-t">엘리베이터 교통 설계값 (9th Symposium on Lift &amp; Escalator Technologies)<p>문 열림·닫힘, 타고 내리기, 가속도, 주거 설계 간격 60초</p></div></li></ul></div><div class="src"><p class="src-h"><span>Smith 2012</span></p><ul><li><div class="src-t">기다리는 시간 계산 (Symposium on Lift &amp; Escalator Technologies)<p>실제 평균 대기 ≈ 간격의 60%</p></div></li></ul></div><div class="src"><p class="src-h"><span>Fujiyama·Tyler 2004, 런던대</span></p><ul><li><div class="src-t">계단 걷는 속도 (UTSG 2004)<p>성인 보통 걸음 계단 내려가기·오르기 속도</p></div></li></ul></div><div class="src"><p class="src-h"><span>Ronchi 외 2015</span></p><ul><li><div class="src-t">긴 계단 오르기 (Lund University TVBB-3192)<p>층마다 오르는 속도, 계단참 포함</p></div></li></ul></div><div class="src"><p class="src-h"><b>주택건설기준 등에 관한 규정</b></p><ul><li><div class="src-t">계단 단높이·단너비 기준<p>공동주택 계단 단높이 18cm 이하, 단너비 26cm 이상</p></div></li></ul></div></div>
 </div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
 <ul>
@@ -261,6 +261,41 @@
            + d.getUTCHours() + "시" + (m ? " " + m + "분" : "");
   }
   function endless(x) { return Date.parse(x.closes_at) >= Date.UTC(2090, 0, 1); }  // 마감 없이 받는 투표(2099년 등): 마감 문구 숨김
+  function say(msg) {
+    var t = document.querySelector(".toast");
+    if (!t) return;
+    t.textContent = msg; t.classList.add("on"); clearTimeout(t.t); t.t = setTimeout(function () { t.classList.remove("on"); }, 1800);
+  }
+  function shareOn(id, v) {  // 투표 뒤 공유: '나는 ○○ 찍었는데, 결과는?' + 링크(utm_source=share). 결과는 안 넣음
+    [].forEach.call(document.querySelectorAll('.vshare[data-share="' + id + '"]'), function (sh) {
+      if (sh.getAttribute("data-on")) return;
+      sh.setAttribute("data-on", "1");
+      var og = document.querySelector('meta[property="og:url"]');
+      var url = (og ? og.content : location.href.split(/[?#]/)[0]) + "?utm_source=share";
+      var lab = sh.getAttribute("data-l" + v) || v.toUpperCase(), text = "나는 " + lab + " 찍었는데, 결과는? 👉";
+      sh.querySelector(".vshare-t").textContent = "내 선택 ‘" + lab + "’만 담아서 보내요. 결과는 안 알려 줘요.";
+      function ev(m) { if (window.gtag) gtag("event", "share", { method: m, content_type: "poll", item_id: id }); }
+      var nat = sh.querySelector(".vs-native");
+      if (navigator.share) {
+        nat.hidden = false;
+        nat.addEventListener("click", function () {
+          navigator.share({ title: document.title, text: text, url: url }).then(function () { ev("native"); }, function () {});
+        });
+      }
+      sh.querySelector(".vs-copy").addEventListener("click", function () {
+        var all = text + " " + url;
+        function done() { say("공유 문구를 복사했어요"); ev("copy"); }
+        function old() {
+          var a = document.createElement("textarea"); a.value = all; a.setAttribute("readonly", "");
+          a.style.position = "fixed"; a.style.opacity = "0"; document.body.appendChild(a); a.select();
+          var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(a); if (ok) done(); else say("주소창의 주소를 복사해 주세요");
+        }
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(all).then(done, old); else old();
+      });
+      sh.hidden = false;
+    });
+  }
   var voter = get("dhc-voter");
   if (!voter) { voter = uuid(); put("dhc-voter", voter); }
   [].forEach.call(document.querySelectorAll(".poll[data-poll]"), function (box) {
@@ -274,6 +309,7 @@
         bar.querySelector("i").style.width = p[1] + "%";
         if (mine === p[0]) bar.classList.add("mine");
       });
+      if (mine && mode === "vote") shareOn(id, mine);
       if (btns) btns.hidden = true;
       res.hidden = false;
       meta.textContent = (n ? (far ? "지금까지 " + n.toLocaleString("ko-KR") + "명 참여" : n.toLocaleString("ko-KR") + "명이 골랐어요")

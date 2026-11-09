@@ -169,7 +169,7 @@
 <h3>점수 밖: 잠은 못 이겨요</h3>
 <p>처음엔 스마트폰과 잠을 붙여 봤는데, 42칸(나이대 × 요일 × 쓰는 정도) 어디서도 스마트폰이 이기지 못했어요. 평생으로는 잠 25년, 스마트폰 6.5년이에요.</p>
 <p>이 규칙과 가정이면 최종 판정은 스마트폰의 2승 1무예요. 20~40대에겐 스마트폰이 밥보다 확실히 길고, 약 50~58세는 비기고, 60대부터는 밥이 이겨요. 평생으로 쌓으면 스마트폰이 1.12배로 아슬아슬하게 앞서는 박빙이에요.</p>
-</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 밥은 2024년 조사, 스마트폰은 2025년 조사(2026년 11월 9일 받음)예요. 조건은 2026년 11월 9일, 계산하기 전에 정했어요.</p>
+</section></div><div class="vshare" data-share="phone-sleep" data-la="스마트폰" data-lb="밥 먹기" hidden><p class="vshare-k">친구는 어느 쪽일까요?</p><p class="vshare-t">내가 고른 쪽만 담아서 보내요. 결과는 안 알려 줘요.</p><div class="vshare-b"><button type="button" class="btn dark vs-native" hidden>공유하기</button><button type="button" class="btn vs-copy">링크 복사</button></div></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 밥은 2024년 조사, 스마트폰은 2025년 조사(2026년 11월 9일 받음)예요. 조건은 2026년 11월 9일, 계산하기 전에 정했어요.</p>
 <div class="src-cards"><div class="src"><p class="src-h"><span>통계청</span></p><ul><li><div class="src-t">생활시간조사 연령대별 평균시간<small>KOSIS DT_1TS202004</small><p>2024 나이대별 식사 및 간식·식사·간식∙음료·수면(요일평균·평일·토·일)</p></div><a class="src-go" href="https://kosis.kr/statHtml/statHtml.do?orgId=101&amp;tblId=DT_1TS202004" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li><li><div class="src-t">생활시간조사 평균시간(10세 이상)<small>KOSIS DT_1TS202001</small><p>10세 이상 식사 및 간식·수면</p></div></li></ul></div><div class="src"><p class="src-h"><span>방송미디어통신위원회</span><b>방송매체 이용행태조사</b></p><ul><li><div class="src-t">스마트폰 이용행태 조사(공공데이터포털 15146904)<p>2015~2025 나이대별 스마트폰 이용시간·이용률</p></div></li></ul></div><div class="src"><p class="src-h"><span>통계청</span></p><ul><li><div class="src-t">완전생명표<small>KOSIS DT_1B42</small><p>2024 10세 기대여명</p></div></li></ul></div></div>
 </div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
 <ul>
@@ -250,6 +250,41 @@
            + d.getUTCHours() + "시" + (m ? " " + m + "분" : "");
   }
   function endless(x) { return Date.parse(x.closes_at) >= Date.UTC(2090, 0, 1); }  // 마감 없이 받는 투표(2099년 등): 마감 문구 숨김
+  function say(msg) {
+    var t = document.querySelector(".toast");
+    if (!t) return;
+    t.textContent = msg; t.classList.add("on"); clearTimeout(t.t); t.t = setTimeout(function () { t.classList.remove("on"); }, 1800);
+  }
+  function shareOn(id, v) {  // 투표 뒤 공유: '나는 ○○ 찍었는데, 결과는?' + 링크(utm_source=share). 결과는 안 넣음
+    [].forEach.call(document.querySelectorAll('.vshare[data-share="' + id + '"]'), function (sh) {
+      if (sh.getAttribute("data-on")) return;
+      sh.setAttribute("data-on", "1");
+      var og = document.querySelector('meta[property="og:url"]');
+      var url = (og ? og.content : location.href.split(/[?#]/)[0]) + "?utm_source=share";
+      var lab = sh.getAttribute("data-l" + v) || v.toUpperCase(), text = "나는 " + lab + " 찍었는데, 결과는? 👉";
+      sh.querySelector(".vshare-t").textContent = "내 선택 ‘" + lab + "’만 담아서 보내요. 결과는 안 알려 줘요.";
+      function ev(m) { if (window.gtag) gtag("event", "share", { method: m, content_type: "poll", item_id: id }); }
+      var nat = sh.querySelector(".vs-native");
+      if (navigator.share) {
+        nat.hidden = false;
+        nat.addEventListener("click", function () {
+          navigator.share({ title: document.title, text: text, url: url }).then(function () { ev("native"); }, function () {});
+        });
+      }
+      sh.querySelector(".vs-copy").addEventListener("click", function () {
+        var all = text + " " + url;
+        function done() { say("공유 문구를 복사했어요"); ev("copy"); }
+        function old() {
+          var a = document.createElement("textarea"); a.value = all; a.setAttribute("readonly", "");
+          a.style.position = "fixed"; a.style.opacity = "0"; document.body.appendChild(a); a.select();
+          var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(a); if (ok) done(); else say("주소창의 주소를 복사해 주세요");
+        }
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(all).then(done, old); else old();
+      });
+      sh.hidden = false;
+    });
+  }
   var voter = get("dhc-voter");
   if (!voter) { voter = uuid(); put("dhc-voter", voter); }
   [].forEach.call(document.querySelectorAll(".poll[data-poll]"), function (box) {
@@ -263,6 +298,7 @@
         bar.querySelector("i").style.width = p[1] + "%";
         if (mine === p[0]) bar.classList.add("mine");
       });
+      if (mine && mode === "vote") shareOn(id, mine);
       if (btns) btns.hidden = true;
       res.hidden = false;
       meta.textContent = (n ? (far ? "지금까지 " + n.toLocaleString("ko-KR") + "명 참여" : n.toLocaleString("ko-KR") + "명이 골랐어요")

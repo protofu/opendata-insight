@@ -97,8 +97,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 
 /* 독자 투표 칸 (엉뚱한 비교 예고·결과 글). JS가 집계를 받아야만 보임 */
 .poll { --odd: #a12d68; --odd-bg: #f8eef3; margin: 34px 0; padding: 22px 22px 18px; border-radius: 16px; background: var(--odd-bg); }
-:root[data-theme="dark"] .poll { --odd: #f08cbc; --odd-bg: #24191f; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .poll { --odd: #f08cbc; --odd-bg: #24191f; } }
+:root[data-theme="dark"] .poll, :root[data-theme="dark"] .vshare { --odd: #f08cbc; --odd-bg: #24191f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .poll, :root:not([data-theme="light"]) .vshare { --odd: #f08cbc; --odd-bg: #24191f; } }
+/* 투표 뒤 공유 칸 (결과 바로 아래) */
+.vshare { --odd: #a12d68; --odd-bg: #f8eef3; margin: 30px 0; padding: 20px 22px; border-radius: 16px; border: 2px solid var(--odd); }
+.vshare[hidden] { display: none; }
+.vshare-k { margin: 0 !important; font: 800 19px/1.4 var(--serif) !important; letter-spacing: -.02em; color: var(--ink); }
+.vshare-t { margin: 4px 0 14px !important; font-size: 14.5px !important; color: var(--ink-2); }
+.vshare-b { display: flex; gap: 10px; flex-wrap: wrap; }
+.vshare-b .btn { min-width: 128px; }
 .poll[hidden], .poll [hidden] { display: none !important; }
 .poll-k { margin: 0 !important; color: var(--odd); font: 800 13px var(--sans) !important; letter-spacing: .06em; }
 .poll-q { margin: 6px 0 16px; font: 800 21px/1.45 var(--serif); letter-spacing: -.03em; color: var(--ink); }

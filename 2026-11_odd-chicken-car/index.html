@@ -147,7 +147,7 @@
 <figure class="fig"><a href="chart_odd_chicken_cpi.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_chicken_cpi.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_chicken_cpi.png" alt="차트" loading=lazy></picture></a></figure>
 <h3>치킨 값은 10년 새 43% 올랐어요</h3>
 <p>통계청 소비자물가지수의 '치킨' 품목은 2015년 90.2에서 2025년 128.9가 됐어요. 이 글은 치킨 값과 차값을 모두 지금 값으로 맞춰 계산했어요. 둘이 오르는 속도가 다르면 판정도 조금씩 움직여요.</p>
-</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 도축 마릿수는 2025년, 인구는 2025년 추계, 생명표는 2024년, 치킨 값과 차값은 2026년 11월 8일 확인한 값이에요. 처음 조건은 2026년 11월 8일 계산하기 전에 정했고, 같은 날 두 번의 검토 뒤 계산을 고쳤어요(아래).</p>
+</section></div><div class="vshare" data-share="chicken-car" data-la="살 수 있다" data-lb="못 산다" hidden><p class="vshare-k">친구는 어느 쪽일까요?</p><p class="vshare-t">내가 고른 쪽만 담아서 보내요. 결과는 안 알려 줘요.</p><div class="vshare-b"><button type="button" class="btn dark vs-native" hidden>공유하기</button><button type="button" class="btn vs-copy">링크 복사</button></div></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 도축 마릿수는 2025년, 인구는 2025년 추계, 생명표는 2024년, 치킨 값과 차값은 2026년 11월 8일 확인한 값이에요. 처음 조건은 2026년 11월 8일 계산하기 전에 정했고, 같은 날 두 번의 검토 뒤 계산을 고쳤어요(아래).</p>
 <div class="src-cards"><div class="src"><p class="src-h"><span>한국농촌경제연구원</span></p><ul><li><div class="src-t">육계 도축 마릿수, 닭고기 소비·생산 (농업전망 2026 5장)<p>2025년 육계 7억 7,565만 마리, 소비 776.8천 t·생산 616.3천 t</p></div></li></ul></div><div class="src"><p class="src-h"><span>통계청</span></p><ul><li><div class="src-t">성 및 연령별 추계인구<small>KOSIS DT_1BPA001</small><p>2025년 10세 이상 인구 48,697,765명(총인구 51,684,564명)</p></div></li><li><div class="src-t">2024 생명표<small>KOSIS DT_1B42</small><p>10세 기대여명 73.97년, 20세·5세 기대여명</p></div></li></ul></div><div class="src"><p class="src-h"><span>BBQ 황금올리브치킨 가격 인상 발표 보도(YTN, 2024-05-22)</span></p><ul><li><div class="src-t">치킨 한 마리 가격<p>23,000원</p></div></li></ul></div><div class="src"><p class="src-h"><span>한국소비자단체협의회 물가감시센터</span></p><ul><li><div class="src-t">배달비 조사 (2022년 12월)<p>가장 흔한 배달비 3,000~5,000원</p></div></li></ul></div><div class="src"><p class="src-h"><span>기아, 현대자동차</span></p><ul><li><div class="src-t">차값 (2026년 11월 기준 공식 가격표)<p>경차 기아 레이 트렌디 1,555만, 중형 기아 K5 2.0 스마트 셀렉션 2,763만, 쏘나타 2.0 프리미엄 2,876만, 준대형 현대 그랜저 2.5 프리미엄 4,245만 원</p></div></li></ul></div><div class="src"><p class="src-h"><span>통계청</span></p><ul><li><div class="src-t">소비자물가지수 '치킨'<small>KOSIS DT_1J22001</small><p>2015~2025년 치킨 값 흐름</p></div><a class="src-go" href="https://kosis.kr/statHtml/statHtml.do?orgId=101&amp;tblId=DT_1J22001" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div></div>
 </div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
 <ul>
@@ -229,6 +229,41 @@
            + d.getUTCHours() + "시" + (m ? " " + m + "분" : "");
   }
   function endless(x) { return Date.parse(x.closes_at) >= Date.UTC(2090, 0, 1); }  // 마감 없이 받는 투표(2099년 등): 마감 문구 숨김
+  function say(msg) {
+    var t = document.querySelector(".toast");
+    if (!t) return;
+    t.textContent = msg; t.classList.add("on"); clearTimeout(t.t); t.t = setTimeout(function () { t.classList.remove("on"); }, 1800);
+  }
+  function shareOn(id, v) {  // 투표 뒤 공유: '나는 ○○ 찍었는데, 결과는?' + 링크(utm_source=share). 결과는 안 넣음
+    [].forEach.call(document.querySelectorAll('.vshare[data-share="' + id + '"]'), function (sh) {
+      if (sh.getAttribute("data-on")) return;
+      sh.setAttribute("data-on", "1");
+      var og = document.querySelector('meta[property="og:url"]');
+      var url = (og ? og.content : location.href.split(/[?#]/)[0]) + "?utm_source=share";
+      var lab = sh.getAttribute("data-l" + v) || v.toUpperCase(), text = "나는 " + lab + " 찍었는데, 결과는? 👉";
+      sh.querySelector(".vshare-t").textContent = "내 선택 ‘" + lab + "’만 담아서 보내요. 결과는 안 알려 줘요.";
+      function ev(m) { if (window.gtag) gtag("event", "share", { method: m, content_type: "poll", item_id: id }); }
+      var nat = sh.querySelector(".vs-native");
+      if (navigator.share) {
+        nat.hidden = false;
+        nat.addEventListener("click", function () {
+          navigator.share({ title: document.title, text: text, url: url }).then(function () { ev("native"); }, function () {});
+        });
+      }
+      sh.querySelector(".vs-copy").addEventListener("click", function () {
+        var all = text + " " + url;
+        function done() { say("공유 문구를 복사했어요"); ev("copy"); }
+        function old() {
+          var a = document.createElement("textarea"); a.value = all; a.setAttribute("readonly", "");
+          a.style.position = "fixed"; a.style.opacity = "0"; document.body.appendChild(a); a.select();
+          var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(a); if (ok) done(); else say("주소창의 주소를 복사해 주세요");
+        }
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(all).then(done, old); else old();
+      });
+      sh.hidden = false;
+    });
+  }
   var voter = get("dhc-voter");
   if (!voter) { voter = uuid(); put("dhc-voter", voter); }
   [].forEach.call(document.querySelectorAll(".poll[data-poll]"), function (box) {
@@ -242,6 +277,7 @@
         bar.querySelector("i").style.width = p[1] + "%";
         if (mine === p[0]) bar.classList.add("mine");
       });
+      if (mine && mode === "vote") shareOn(id, mine);
       if (btns) btns.hidden = true;
       res.hidden = false;
       meta.textContent = (n ? (far ? "지금까지 " + n.toLocaleString("ko-KR") + "명 참여" : n.toLocaleString("ko-KR") + "명이 골랐어요")

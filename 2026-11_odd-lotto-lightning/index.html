@@ -135,7 +135,7 @@
 <h3>벼락은 어디서 맞을까</h3>
 <p>행정안전부 자료에서 사상자 46명 가운데 27명(59%)은 산에서, 10명(22%)은 논밭 같은 트인 곳에서 벼락을 맞았어요. 44명은 감전이고, 2명은 벼락으로 난 불에 다친 경우예요. 한국에는 1년에 벼락이 평균 12만 4,374번 떨어지지만(기상청 낙뢰연보, 2009~2018), 사람에게 닿는 건 그중 극히 일부예요.</p>
 <p>결국 한국에서는 로또 1등이 벼락보다 훨씬 흔해요. 1년에 실제로 생긴 수는 85배, 평생 확률로도 55배예요. 박빙은 '로또 한 장 vs 벼락 1년' 하나뿐이고, 이 판도 한국 신고 통계로는 로또가 이겨요.</p>
-</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 로또 당첨 통계는 2026년 11월 9일에 받은 1246회(2026년 10월 17일 추첨)까지예요. 조건은 2026년 11월 9일, 계산하기 전에 정했어요.</p>
+</section></div><div class="vshare" data-share="lotto-lightning" data-la="로또 1등" data-lb="벼락 맞기" hidden><p class="vshare-k">친구는 어느 쪽일까요?</p><p class="vshare-t">내가 고른 쪽만 담아서 보내요. 결과는 안 알려 줘요.</p><div class="vshare-b"><button type="button" class="btn dark vs-native" hidden>공유하기</button><button type="button" class="btn vs-copy">링크 복사</button></div></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 로또 당첨 통계는 2026년 11월 9일에 받은 1246회(2026년 10월 17일 추첨)까지예요. 조건은 2026년 11월 9일, 계산하기 전에 정했어요.</p>
 <div class="src-cards"><div class="src"><p class="src-h"><span>동행복권(복권위원회 수탁사업자) 누리집</span></p><ul><li><div class="src-t">로또6/45 회차별 당첨 통계<p>1등 당첨 수, 총판매액(1~1246회)</p></div></li></ul></div><div class="src"><p class="src-h"><span>행정안전부 보도자료(정책브리핑)</span></p><ul><li><div class="src-t">낙뢰사고 주의하세요!(2019-08-01)<p>2009~2018 낙뢰 사상자 46명, 장소·원인별</p></div></li></ul></div><div class="src"><p class="src-h"><span>행정안전부</span><b>재해연보</b></p><ul><li><div class="src-t">자연재난 원인별 피해<small>KOSIS DT_156003_014</small><p>2020~2024 낙뢰 인명피해</p></div></li></ul></div><div class="src"><p class="src-h"><span>기상청</span></p><ul><li><div class="src-t">낙뢰연보 2018<p>2009~2018 연평균 낙뢰 124,374회</p></div></li></ul></div><div class="src"><p class="src-h"><span>통계청</span></p><ul><li><div class="src-t">장래인구추계<small>KOSIS DT_1BPA001</small><p>2009~2025 인구</p></div></li><li><div class="src-t">생명표 2024<small>KOSIS DT_1B42</small><p>기대수명 83.7세, 19세 기대여명 65.1년</p></div></li></ul></div><div class="src"><p class="src-h"><span>미국 국립기상청(NWS)</span></p><ul><li><div class="src-t">Odds of Becoming a Lightning Victim<p>2009~2018 미국 연 270명(신고 사망 27 + 어림 부상 243), 1년 122만 명 중 1명</p></div></li></ul></div></div>
 </div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
 <ul>
@@ -216,6 +216,41 @@
            + d.getUTCHours() + "시" + (m ? " " + m + "분" : "");
   }
   function endless(x) { return Date.parse(x.closes_at) >= Date.UTC(2090, 0, 1); }  // 마감 없이 받는 투표(2099년 등): 마감 문구 숨김
+  function say(msg) {
+    var t = document.querySelector(".toast");
+    if (!t) return;
+    t.textContent = msg; t.classList.add("on"); clearTimeout(t.t); t.t = setTimeout(function () { t.classList.remove("on"); }, 1800);
+  }
+  function shareOn(id, v) {  // 투표 뒤 공유: '나는 ○○ 찍었는데, 결과는?' + 링크(utm_source=share). 결과는 안 넣음
+    [].forEach.call(document.querySelectorAll('.vshare[data-share="' + id + '"]'), function (sh) {
+      if (sh.getAttribute("data-on")) return;
+      sh.setAttribute("data-on", "1");
+      var og = document.querySelector('meta[property="og:url"]');
+      var url = (og ? og.content : location.href.split(/[?#]/)[0]) + "?utm_source=share";
+      var lab = sh.getAttribute("data-l" + v) || v.toUpperCase(), text = "나는 " + lab + " 찍었는데, 결과는? 👉";
+      sh.querySelector(".vshare-t").textContent = "내 선택 ‘" + lab + "’만 담아서 보내요. 결과는 안 알려 줘요.";
+      function ev(m) { if (window.gtag) gtag("event", "share", { method: m, content_type: "poll", item_id: id }); }
+      var nat = sh.querySelector(".vs-native");
+      if (navigator.share) {
+        nat.hidden = false;
+        nat.addEventListener("click", function () {
+          navigator.share({ title: document.title, text: text, url: url }).then(function () { ev("native"); }, function () {});
+        });
+      }
+      sh.querySelector(".vs-copy").addEventListener("click", function () {
+        var all = text + " " + url;
+        function done() { say("공유 문구를 복사했어요"); ev("copy"); }
+        function old() {
+          var a = document.createElement("textarea"); a.value = all; a.setAttribute("readonly", "");
+          a.style.position = "fixed"; a.style.opacity = "0"; document.body.appendChild(a); a.select();
+          var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(a); if (ok) done(); else say("주소창의 주소를 복사해 주세요");
+        }
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(all).then(done, old); else old();
+      });
+      sh.hidden = false;
+    });
+  }
   var voter = get("dhc-voter");
   if (!voter) { voter = uuid(); put("dhc-voter", voter); }
   [].forEach.call(document.querySelectorAll(".poll[data-poll]"), function (box) {
@@ -229,6 +264,7 @@
         bar.querySelector("i").style.width = p[1] + "%";
         if (mine === p[0]) bar.classList.add("mine");
       });
+      if (mine && mode === "vote") shareOn(id, mine);
       if (btns) btns.hidden = true;
       res.hidden = false;
       meta.textContent = (n ? (far ? "지금까지 " + n.toLocaleString("ko-KR") + "명 참여" : n.toLocaleString("ko-KR") + "명이 골랐어요")
