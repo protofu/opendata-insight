@@ -412,3 +412,34 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .src-t small { display: block; margin: 2px 0 0; }
   .lg-b { max-width: none; }
 }
+
+/* ── 대결 카드 (글 끝 '다음 대결', /vs/ 모음) — 질문·참여 수만, 결과는 안 보임 ── */
+.vs-next, .vs-c { --odd: #a12d68; --odd-bg: #f8eef3; }
+:root[data-theme="dark"] .vs-next, :root[data-theme="dark"] .vs-c { --odd: #f08cbc; --odd-bg: #24191f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .vs-next, :root:not([data-theme="light"]) .vs-c { --odd: #f08cbc; --odd-bg: #24191f; } }
+.vs-next { margin: 44px 0 8px; }
+.vs-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.vs-next .vs-c:nth-child(n+4) { display: none; }
+.vs-c { display: flex; flex-direction: column; gap: 8px; padding: 18px 18px 16px; border-radius: 16px; background: var(--odd-bg);
+        color: var(--ink); border: 2px solid transparent; transition: border-color .15s; }
+.vs-c:hover { border-color: var(--odd); }
+.vs-k { display: flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 800; letter-spacing: .06em; color: var(--odd); }
+.vs-mine { margin-left: auto; padding: 1px 8px; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: 11.5px; letter-spacing: 0; }
+.vs-mine[hidden] { display: none; }
+.vs-c h3 { margin: 0; font: 800 18.5px/1.45 var(--serif); letter-spacing: -.03em; }
+.vs-ab { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 14px; color: var(--ink-2); }
+.vs-ab b { display: inline-grid; place-items: center; width: 20px; height: 20px; margin-right: 5px; border-radius: 6px;
+           background: var(--surface); color: var(--ink); font-size: 11.5px; }
+.vs-ab i { font-style: normal; font-weight: 800; color: var(--odd); font-size: 12.5px; }
+.vs-m { margin: auto 0 0; padding-top: 6px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 10px; font-size: 13.5px; }
+.vs-n { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.vs-go { font-weight: 800; color: var(--ink); white-space: nowrap; }
+.vs-c.voted .vs-go { color: var(--ink-2); }
+@media (max-width: 760px) {
+  .vs-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .vs-c h3 { font-size: 17px; }
+}
+.cats a.nav-vs { font-weight: 800; color: var(--ink); }
+.vs-head .vs-count { margin-top: 10px; font-size: 14px; font-weight: 700; color: var(--ink); }
+.vs-head .vs-count[hidden] { display: none; }
+.vs-all { margin: 8px 0 64px; }
