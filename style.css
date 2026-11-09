@@ -443,3 +443,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .vs-head .vs-count { margin-top: 10px; font-size: 14px; font-weight: 700; color: var(--ink); }
 .vs-head .vs-count[hidden] { display: none; }
 .vs-all { margin: 8px 0 64px; }
+/* 대결 이름(크게) + 질문(작게), 최근 3개 '새 대결' */
+.vs-c h3 { font: 900 24px/1.25 var(--serif) !important; letter-spacing: -.04em; }
+.vs-q { margin: 0; font-size: 14.5px; line-height: 1.55; color: var(--ink-2); }
+.vs-new { padding: 2px 9px; border-radius: 999px; background: var(--odd); color: var(--bg); letter-spacing: .02em; }
