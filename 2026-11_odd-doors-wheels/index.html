@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>우리나라에는 문이 많을까, 바퀴가 많을까</title>
+<meta name="description" content="자동차는 문 넷, 바퀴 넷으로 거의 비겨요. 그럼 승부는 어디서 갈릴까요? 먼저 골라 주세요. 인터넷을 크게 갈라놓은 질문이에요. 문이 더 많을까요, 바퀴가 더 많을까요?">
+<meta property="og:title" content="우리나라에는 문이 많을까, 바퀴가 많을까">
+<meta property="og:description" content="자동차는 문 넷, 바퀴 넷으로 거의 비겨요. 그럼 승부는 어디서 갈릴까요? 먼저 골라 주세요. 인터넷을 크게 갈라놓은 질문이에요. 문이 더 많을까요, 바퀴가 더 많을까요?">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://protofu.github.io/opendata-insight/2026-11_odd-doors-wheels/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://protofu.github.io/opendata-insight/2026-11_odd-doors-wheels/">
+<meta property="og:site_name" content="FITAHW">
+<meta name="theme-color" content="#fbfbf9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="FITAHW" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="../style.css">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}})();</script><script>
+(function () {  // 투표 게이트: 그리기 전에 잠금 여부를 정해 깜빡임 없게. fetch가 없으면 가리지 않음
+  var d = document.documentElement, id = "doors-wheels";
+  if (!window.fetch) return;
+  d.classList.add("gate-on");
+  try { if (localStorage.getItem("dhc-vote:" + id) || sessionStorage.getItem("dhc-gate-skip:" + id)) d.classList.add("gate-open"); }
+  catch (e) { d.classList.add("gate-open"); }
+  window.dhcOpenGate = function (delay) {
+    d.classList.add("gate-open");
+    var g = document.getElementById("gated");
+    if (g && delay !== false) setTimeout(function () { g.scrollIntoView({ behavior: "smooth", block: "start" }); }, delay || 0);
+  };
+  setTimeout(function () { if (!d.classList.contains("poll-ok")) d.classList.add("gate-fail"); }, 9000);
+  document.addEventListener("click", function (e) {
+    if (!(e.target.closest && e.target.closest(".gate-skip"))) return;
+    try { sessionStorage.setItem("dhc-gate-skip:" + id, "1"); } catch (_) {}
+    window.dhcOpenGate(0);
+  });
+})();
+</script>
+</head>
+<body>
+<header class="head"><div class="wrap">
+  <a class="brand" href="../index.html" aria-label="FITAHW 피타우 홈"><b class="wm">FITAHW</b><span class="ko">피타우</span></a>
+  <nav class="util" aria-label="사이트"><a href="../about.html" class=hide-m>소개</a><a href="../archive/index.html" class=hide-m>자료실</a><a href="../data.html" class=hide-m>데이터</a></nav>
+  <a class="sub-btn" href="#subscribe">구독</a>
+  <button class="theme" type="button" aria-label="밝은 화면/어두운 화면 바꾸기" title="밝게/어둡게" hidden>◐</button>
+</div></header>
+<nav class="cats" aria-label="카테고리"><div class="wrap"><a href="../index.html">전체</a><a href="../category/work/index.html">일·이직</a><a href="../category/money/index.html">돈·자산</a><a href="../category/digital/index.html">디지털·크리에이터</a><a href="../category/society/index.html">가족·사회</a><a href="../category/life/index.html">생활·건강</a><a href="../category/business/index.html">창업·자영업</a><a href="../category/odd/index.html" aria-current=page>엉뚱한 비교</a></div></nav>
+<main>
+<article class="art">
+<span class="kick">엉뚱한 비교</span><h1>우리나라에는 문이 많을까, 바퀴가 많을까</h1>
+<p class="dek">자동차는 문 넷, 바퀴 넷으로 거의 비겨요. 그럼 승부는 어디서 갈릴까요? 먼저 골라 주세요.</p>
+<div class="byline"><span>FITAHW</span><span>읽는 데 8분</span><span>인구주택총조사·건축물통계·자동차 등록(KOSIS)</span><span class="sp"></span><a href="#evidence">근거</a><button type="button" class="pill" data-copy="https://protofu.github.io/opendata-insight/2026-11_odd-doors-wheels/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></div>
+<ul class="points"><li>인터넷을 크게 갈라놓은 질문이에요. 문이 더 많을까요, 바퀴가 더 많을까요?</li><li>공식 통계로 셀 수 있는 우리나라를 세어 봤어요. 집과 건물, 자동차, 자전거, 사무실 의자, 여행가방까지요.</li><li>무엇을 문과 바퀴로 칠지에 따라 세 판으로 겨뤘어요. 투표하면 결과가 바로 아래에 열려요.</li></ul><div class="body"><section class="sec"><h2>조건과 규칙</h2>
+<ul>
+<li><strong>문</strong>은 사람이 드나드는 문이에요. 집 현관과 방문, 화장실 문, 아파트 공용 문, 가게·공장·학교 같은 건물의 문, 자동차에서 사람이 타는 문이에요. 서랍은 문이 아니에요.</li>
+<li><strong>바퀴</strong>는 굴러가는 바퀴예요. 자동차·오토바이·자전거, 바퀴 달린 의자, 여행가방, 유모차 바퀴예요. 자동차 운전대는 바퀴가 아니에요.</li>
+<li>옷장·냉장고 같은 가구·가전 문과 장난감 바퀴는 마지막 판에서만 세요. 기계 속 톱니와 베어링은 세지 않아요.</li>
+<li>세계 전체는 공식 통계가 자동차 정도뿐이라, 통계로 셀 수 있는 우리나라로 겨뤄요.</li>
+</ul>
+<section class="poll" id="poll-doors-wheels" data-poll="doors-wheels" data-mode="vote" hidden><p class="poll-k">독자 투표</p><h3 class="poll-q">우리나라에는 문이 더 많을까, 바퀴가 더 많을까?</h3><div class="poll-btns"><button type="button" data-v="a"><b>A</b>문</button><button type="button" data-v="b"><b>B</b>바퀴</button></div><div class="poll-res" hidden><div class="poll-bar" data-v="a"><i></i><span class="poll-l"><b>A</b> 문</span><span class="poll-p"></span></div><div class="poll-bar" data-v="b"><i></i><span class="poll-l"><b>B</b> 바퀴</span><span class="poll-p"></span></div></div><p class="poll-meta" aria-live="polite"></p></section>
+</section></div><div class="gate-note"><p class="gate-k">데이터 결과는 투표 뒤에</p><p>A·B 중 하나를 고르면 데이터 결과가 열려요.</p><div class="gate-act"><a class="btn dark" href="#poll-doors-wheels">위에서 고르기 <span aria-hidden="true">↑</span></a><button type="button" class="btn gate-skip">결과 바로 보기</button></div></div><div class="gated" id="gated" data-gate="doors-wheels"><div class="body">
+<section class="sec"><h2>결과 요약</h2>
+<p><strong>3판 바퀴 1승 2무 → 최종 바퀴 판정승. 집만 보면 문이 많지만, 의자 밑까지 세면 바퀴가 살짝 앞서는 박빙이에요.</strong></p>
+<ol>
+<li>개수가 거의 정해진 것만 세면 바퀴가 1.12배로 이겨요. 집 현관과 자동차 문 1.16억 개, 자동차·오토바이·자전거 바퀴 1.30억 개예요.</li>
+<li>집 안 방문, 건물 문, 사무실 의자, 여행가방까지 다 넣으면 바퀴 3.30억 개, 문 2.83억 개예요. 바퀴가 앞서지만, 의자와 여행가방 개수를 센 통계가 없어서 무승부예요.</li>
+<li>가구 문과 장난감 바퀴까지 넣으면 둘 다 8.4억 개로 거의 똑같아요.</li>
+</ol>
+<section class="poll" data-poll="doors-wheels" data-mode="result" hidden><p class="poll-k">독자 예상 vs 데이터 결과</p><h3 class="poll-q">우리나라에는 문이 더 많을까, 바퀴가 더 많을까?</h3><div class="poll-res"><div class="poll-bar" data-v="a"><i></i><span class="poll-l"><b>A</b> 문</span><span class="poll-p"></span></div><div class="poll-bar ans" data-v="b"><i></i><span class="poll-l"><b>B</b> 바퀴<em>데이터 결과</em></span><span class="poll-p"></span></div></div><p class="poll-ans">데이터로 보면 <mark>바퀴</mark>. 바퀴 판정승(1승 2무)이에요. 집만 보면 문이 많지만, 의자와 여행가방 바퀴까지 세면 바퀴가 살짝 앞서요. 사실상 박빙이에요.</p><p class="poll-meta" aria-live="polite"></p></section>
+<figure class="fig"><a href="chart_odd_dw_rounds.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_dw_rounds.m.dark.png" media="(max-width: 560px) and (prefers-color-scheme: dark)"><source srcset="chart_odd_dw_rounds.m.png" media="(max-width: 560px)"><source srcset="chart_odd_dw_rounds.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_dw_rounds.png" alt="차트"></picture></a></figure>
+<p>숫자 두 개로 줄이면 이래요. 자동차만 놓고 보면 문 9,500만 개, 바퀴 1억 1,200만 개로 바퀴가 조금 많아요. 차 밖에서는 집과 건물의 문 1억 8,800만 개와, 바퀴 달린 의자·여행가방 바퀴 1억 9,400만 개가 맞서요.</p>
+</section><section class="sec">
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>판</th>
+<th>문</th>
+<th>바퀴</th>
+<th>바퀴 ÷ 문</th>
+<th>승자</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1판 개수가 거의 정해진 것만</td>
+<td>1.16억 개</td>
+<td>1.30억 개</td>
+<td>1.12배</td>
+<td>바퀴</td>
+</tr>
+<tr>
+<td>2판 생활 속 문·바퀴 전부</td>
+<td>2.83억 개</td>
+<td>3.30억 개</td>
+<td>1.17배</td>
+<td>무승부</td>
+</tr>
+<tr>
+<td>3판 가구·장난감까지</td>
+<td>8.39억 개</td>
+<td>8.35억 개</td>
+<td>1.00배</td>
+<td>무승부</td>
+</tr>
+<tr>
+<td><strong>최종</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>3판 바퀴 1승 2무 → 바퀴 판정승</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>통계가 없는 개수는 가능한 범위 안에서 값을 바꿔 가며 2만 번 셌어요. 표의 개수는 그 2만 번 가운데 딱 한가운데 값이에요. 2만 번 가운데 위아래 끝 5%씩을 뺀 나머지에서 바퀴가 많을 때도 있고 문이 많을 때도 있으면 무승부로 정했어요. 이 규칙과 가정이면 최종 승자는 바퀴예요. 다만 확실히 이긴 판은 하나이고, 나머지 둘은 무승부예요.</p>
+<h3>1판 개수가 거의 정해진 것만: 바퀴 승(1.12배)</h3>
+<p>문과 바퀴 양쪽에서 개수가 거의 정해진 것만 남겼어요. 문은 집마다 하나인 현관과 자동차 문, 바퀴는 자동차·오토바이·자전거 바퀴예요. 집 현관 2,130만 개와 자동차 문 9,510만 개를 더하면 1.16억 개, 자동차 바퀴 1억 1,220만 개에 오토바이와 자전거 바퀴를 더하면 1.30억 개예요. 2만 번 가운데 99.96%에서 바퀴가 많았어요.</p>
+<p>자동차 한 대에 문은 넷, 바퀴도 넷이라 거의 비겨요. 그런데 화물차는 문이 둘인데 바퀴는 넷에서 여섯이 넘고, 2인승이나 문이 셋인 차도 있어서 바퀴가 조금 앞서요. 여기에 오토바이 227만 대와 자전거가 바퀴를 보태요. 현관 2,130만 개가 그 차이를 다 메우지 못했어요.</p>
+<figure class="fig"><a href="chart_odd_dw_items.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_dw_items.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_dw_items.png" alt="차트" loading=lazy></picture></a></figure>
+<h3>2판 생활 속 문·바퀴 전부: 무승부(바퀴 1.17배)</h3>
+<p>집 안으로 들어가면 문이 확 늘어요. 2020년 인구주택총조사에서 우리 집 한 채의 방은 평균 3.8개였어요. 문 없는 거실을 빼면 방문이 세 개 안팎, 여기에 화장실 문과 베란다·다용도실 문을 더하면 집 한 채에 문이 6.6개예요. 집만 보면 문이 1억 4천만 개이고 바퀴는 하나도 없어요. 가게·공장·학교 같은 비주거 건물 287만 동의 문도 3,900만 개 더해져요.</p>
+<p>그런데 바퀴 쪽에 사무실 의자가 들어오면 판이 다시 뒤집혀요. 바퀴 달린 의자 바퀴가 1억 1,430만 개로 자동차 바퀴(1억 1,220만 개)보다 많아요. 사무 일을 하는 취업자 1,222만 명에게 의자가 하나씩, 집에도 책상 의자가 있다고 보고, 의자 하나에 바퀴 다섯 개를 곱했어요. 계산하다 가장 놀란 게 이거였어요. 바퀴 하면 자동차가 떠오르는데, 우리나라에서 가장 많은 바퀴는 사무실 의자 밑에 있을 수 있어요.</p>
+<p>여행가방 바퀴 7,920만 개까지 더하면 바퀴 3.30억 개, 문 2.83억 개로 바퀴가 1.17배예요. 2만 번 가운데 81%에서 바퀴가 많았지만, 의자와 여행가방 개수를 센 통계가 없어 가능한 폭이 넓어요. 그 폭 안에서 문이 많을 때도 있어서 무승부예요.</p>
+<figure class="fig"><a href="chart_odd_dw_swing.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_dw_swing.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_dw_swing.png" alt="차트" loading=lazy></picture></a></figure>
+<h3>판정을 흔드는 건 여행가방과 의자</h3>
+<p>2판을 가장 크게 흔드는 건 여행가방이에요. 가구당 여행가방을 0.5개, 바퀴 둘로 잡으면 바퀴 ÷ 문이 0.95배로 문 쪽이 되고, 2개에 바퀴 넷으로 잡으면 1.48배로 바퀴가 확실히 이겨요. 바퀴 달린 의자도 1.01배에서 1.32배까지 흔들어요. 문 쪽에서 가장 큰 가정은 비주거 건물 한 동의 문 수예요. 가장 적게 잡으면 1.31배, 가장 많이 잡으면 1.06배예요.</p>
+<p>예비 타이어도 바퀴로 치면 2,650만 개가 늘어 2판이 1.26배가 돼요. 그래도 범위가 넓어 무승부예요. 이 글은 '굴러가는 바퀴'만 세기로 해서 예비 타이어는 뺐어요.</p>
+<h3>3판 가구·장난감까지: 무승부(1.00배)</h3>
+<p>옷장·부엌 수납장·냉장고 문까지 문으로 치면 문이 8.39억 개로 늘어요. 가구·가전 문만 5.6억 개예요. 바퀴도 장난감 바퀴 2.4억 개, 이동식 서랍·청소기 같은 가구·가전 바퀴 2.6억 개가 더해져 8.35억 개예요. 두 쪽이 거의 같고 가능한 폭도 넓어서 무승부예요.</p>
+<h3>세계는 왜 판정하지 않았나</h3>
+<p>세계 전체로 넓히면 자동차는 국제자동차제조업협회가 집계하지만, 집과 건물의 문, 의자, 여행가방을 센 국제 통계는 없어요. 우리나라에서도 승부를 가른 게 바로 통계가 없는 항목이었어요. 그래서 세계는 판정하지 않았어요.</p>
+<p>결국 우리나라에서는 바퀴가 판정승을 거둬요. 집만 보면 문이 훨씬 많지만, 자동차에서 바퀴가 조금 앞서고 사무실 의자 밑까지 세면 바퀴가 살짝 앞서요. 이긴 판보다 비긴 판이 많은, 사실상 박빙이에요.</p>
+</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 통계는 2026년 11월 9일 KOSIS에서 받았어요. 조건과 범위는 같은 날, 계산하기 전에 정했어요.</p>
+<div class="src-cards"><div class="src"><p class="src-h"><span>통계청 인구주택총조사</span></p><ul><li><div class="src-t">주택의 종류별 주택<small>KOSIS DT_1JU1501</small><p>주택 2,018만 호, 아파트 1,329만 호</p></div></li><li><div class="src-t">거처의 종류별 평균사용방수<small>KOSIS DT_1PE2005</small><p>가구당 사용방수, 주택 아닌 거처 가구</p></div></li></ul></div><div class="src"><p class="src-h"><span>국토교통부 건축물통계</span></p><ul><li><div class="src-t">용도별 건축물 현황<small>KOSIS DT_MLTM_522</small><p>용도별 건물 동수</p></div></li></ul></div><div class="src"><p class="src-h"><span>국토교통부</span></p><ul><li><div class="src-t">자동차등록대수현황<small>KOSIS DT_MLTM_1244</small><p>차종별 등록대수</p></div></li><li><div class="src-t">이륜차신고현황<small>KOSIS DT_MLTM_7170</small><p>이륜차 대수</p></div></li></ul></div><div class="src"><p class="src-h"><span>통계청 인구주택총조사</span></p><ul><li><div class="src-t">교통수단 보유현황별 가구<small>KOSIS DT_1PH1023</small><p>자전거 보유 가구</p></div></li></ul></div><div class="src"><p class="src-h"><span>국제노동기구(KOSIS 국제통계)</span></p><ul><li><div class="src-t">직업별 취업자<small>KOSIS DT_2KAA353</small><p>관리자·전문가·사무 종사자</p></div></li></ul></div><div class="src"><p class="src-h"><span>행정안전부·통계청</span></p><ul><li><div class="src-t">연령별 주민등록연앙인구<small>KOSIS DT_1B040M5_1</small><p>0~4세, 0~14세 인구</p></div></li></ul></div></div>
+</div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
+<ul>
+<li><strong>집</strong>: 2025년 주택 2,018만 호와 주택이 아닌 거처(오피스텔 등) 109만 가구를 셌어요. 집마다 현관 1개, 방문은 평균 사용방수(주택 3.8개, 주택 아닌 거처 2.6개)에서 문 없는 거실 0.6~1개를 뺀 수예요. 화장실 문 1.2~1.8개, 다용도실·드레스룸·베란다 출입문 0.5~2개를 더했어요.</li>
+<li><strong>아파트 공용 문</strong>: 동 출입문·계단 방화문·옥상문을 아파트 한 호당 0.3~1개로 잡았어요.</li>
+<li><strong>비주거 건물</strong>: 건축물통계의 동수(상업용 143만, 공업용 35만, 교육·사회용 21만, 기타 89만)에 한 동의 문 수를 상업 4~30, 공업 3~15, 교육·사회 10~80, 창고·축사 같은 기타 1~4로 곱했어요.</li>
+<li><strong>자동차</strong>: 2025년 등록대수(승용 2,204만, 승합 63만, 화물 370만, 특수 15만)에 사람이 타는 문(승용 3.7~4, 승합 3~5, 화물·특수 2)과 바퀴(승용 4, 승합 4~6, 화물 4~6.5, 특수 6~14)를 곱했어요. 문 수는 차종마다 달라 범위로 잡은 가정이에요.</li>
+<li><strong>오토바이·자전거</strong>: 이륜차 신고 227만 대에 바퀴 2개. 자전거는 마지막 공식 조사인 2010년 인구주택총조사의 보유 가구(1대 259만, 2대 이상 117만)를 쓰고, 2대 이상은 2~3대, 그 뒤 변화를 0.8~1.6배로 잡았어요. 가구 단위 조사라 실제보다 적게 잡혔을 수 있고, 그렇다면 문 쪽에 유리해요.</li>
+<li><strong>바퀴 달린 의자</strong>: 관리자·전문가·사무 종사자 1,222만 명에 0.8~1.2개, 가구마다 0.2~0.8개를 더하고 바퀴 5개를 곱했어요. 사무 일을 하는 사람은 자기 책상 의자가 거의 하나씩 있다고 보고 아래 끝을 0.8개로 정했어요. 이 개수를 센 통계는 없어요.</li>
+<li><strong>여행가방</strong>: 가구당 0.5~2개, 바퀴 2~4개. <strong>유모차</strong>: 0~4세 126만 명에 0.6~1.2대, 바퀴 4개.</li>
+<li><strong>가구·장난감(3판)</strong>: 가구마다 부엌 수납장 문 8~25개, 옷장·붙박이장 문 2~10개, 냉장고·세탁기·오븐 문 2~5개. 0~14세 536만 명에 바퀴 달린 장난감 3~20개(바퀴 4개), 가구마다 가구·가전 바퀴 4~20개.</li>
+<li>같은 항목에 속한 범위(예: 상업·공업 건물의 문 수)는 2만 번 셀 때마다 함께 높거나 함께 낮게 뽑았어요.</li>
+</ul>
+</div></details><details id="ev-limits" open><summary>한계 6가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
+<ul>
+<li>1판도 무승부 경계에 가까워요. 문 쪽에 비주거 건물 문(동당 1개)과 아파트 공용 문의 가장 적은 값만 더해도 바퀴 1.06배로 무승부가 돼요. 집 현관은 빈집을 포함한 주택 수로 셌어요.</li>
+<li>바퀴 달린 의자, 여행가방, 유모차, 집 안 문 수, 건물 한 동의 문 수, 자동차 문 수는 센 통계가 없어 범위로 잡은 가정이에요. 2판과 3판의 무승부는 이 가정의 폭 때문이에요.</li>
+<li>자전거는 2010년 조사가 마지막이라 지금 대수를 범위로 잡았어요. 공공자전거는 넣지 않았어요.</li>
+<li>쇼핑 카트, 휠체어, 비행기·기차 바퀴는 넣지 않았어요. 대형마트 카트나 비행기 바퀴는 수천만 개 단위인 다른 항목에 비하면 작지만, 개수를 센 통계는 없어요.</li>
+<li>문도 엘리베이터 문, 지하철 출입문, 냉동창고 문처럼 세지 않은 게 있어요.</li>
+<li>우리나라만 셌어요. 세계 판정은 하지 않았어요.</li>
+</ul>
+</div></details></section><script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);var d=e&&e.closest("details");if(d){d.open=true;if(d!==e)e.scrollIntoView();}}addEventListener("hashchange",o);o();})();</script></div><section class="share-end"><p>카톡에 링크를 붙이면 숫자 카드랑 요약이 같이 떠요.</p><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/2026-11_odd-doors-wheels/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></section><section class="subscribe" id="subscribe"><div class="sub-t"><h2>새 글 나오면 받아 보기</h2><p>피드 리더 앱에 이 사이트 주소를 한 번 넣어 두면, 새 글이 올라올 때 앱에 떠요. 가입이나 메일 주소는 필요 없어요.</p></div><details class="how"><summary class="btn dark">받는 법 보기</summary><div class="how-in"><ol><li><b>피드 리더 앱을 하나 골라요.</b> 새 글을 모아 보여 주는 앱이에요. 예를 들면 <a href="https://feedly.com" target="_blank" rel="noopener">Feedly</a>나 <a href="https://www.inoreader.com" target="_blank" rel="noopener">Inoreader</a>가 있어요. 둘 다 무료고 웹·휴대폰에서 써요.</li><li><b>앱에서 '구독 추가'(+)를 누르고 아래 주소를 붙여 넣어요.</b></li><li><b>끝이에요.</b> 새 글이 올라오면 앱 목록에 떠요.</li></ol><div class="feed-addr"><code>https://protofu.github.io/opendata-insight/feed.xml</code><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/feed.xml" data-rel="../feed.xml" data-done="주소를 복사했어요" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>주소 복사</span></button></div><p class="how-alt">Feedly를 쓴다면 <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fprotofu.github.io%2Fopendata-insight%2Ffeed.xml" target="_blank" rel="noopener">여기를 눌러 바로 추가</a>할 수도 있어요.</p></div></details></section>
+</article>
+<section class="rel wrap"><div class="sec-h"><h2>이어서 읽을 만한 글</h2></div><div class="trio"><a class="card" href="../2026-11_odd-elevator-stairs/index.html"><span class="kick">엉뚱한 비교</span><h3>아파트 5층에 살면, 엘리베이터와 계단 중 뭐가 더 빠를까</h3><p>결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p></a><a class="card" href="../2026-11_odd-seoul-busan/index.html"><span class="kick">엉뚱한 비교</span><h3>서울 집 앞에서 부산 집 앞까지, KTX와 비행기 중 뭐가 더 빠를까</h3><p>결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p></a><a class="card" href="../2026-11_odd-gorilla-vs-men/index.html"><span class="kick">엉뚱한 비교</span><h3>수컷 고릴라 1마리는 한국 남자 몇 명분일까</h3><p>결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p></a></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <div><a class="brand" href="../index.html" aria-label="FITAHW 피타우 홈"><b class="wm">FITAHW</b><span class="ko">피타우</span></a>
+    <p>뉴스에 나온 숫자가 궁금하면 공공데이터 원본을 열어서 다시 계산해 봐요. 한 사람이 만드는 작은 사이트예요.</p>
+    <small>숫자는 전부 공개된 원자료에서 다시 계산했어요. 원인을 단정하진 않고, 투자·진로 조언도 아니에요.</small></div>
+  <div><h2>둘러보기</h2><ul><li><a href="../about.html">소개</a></li><li><a href="../archive/index.html">자료실</a></li><li><a href="../data.html">숫자 장부</a></li></ul></div>
+  <div><h2>받아 보기</h2><ul><li><a href="#subscribe">새 글 받는 법</a></li><li><a href="../feed.xml">RSS 주소</a></li></ul></div>
+</div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var toast = document.querySelector('.toast');
+  function say(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
+  }
+  function fallback(t, ok_) {
+    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
+    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(a); say(ok ? ok_ : '주소창의 주소를 복사해 주세요');
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var t = b.dataset.copy || (b.dataset.rel ? new URL(b.dataset.rel, location.href).href : location.href.split('#')[0]);
+      var ok_ = b.dataset.done || '링크를 복사했어요';
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(ok_); }, function () { fallback(t, ok_); });
+      else fallback(t, ok_);
+    });
+  });
+})();
+</script><script>
+(function () {
+  var API = "https://nesiqqzkvkxrcyzxtagh.supabase.co", KEY = "sb_publishable_71wZ1_loLKWiPxd070D5UQ_n8RK2q4u";
+  if (!window.fetch || !document.querySelectorAll) return;
+  function call(fn, body) {
+    var c = window.AbortController ? new AbortController() : null, t = c ? setTimeout(function () { c.abort(); }, 8000) : 0;
+    return fetch(API + "/rest/v1/rpc/" + fn, { method: "POST", headers: { apikey: KEY, "Content-Type": "application/json" },
+                                               body: JSON.stringify(body), signal: c ? c.signal : undefined })
+      .then(function (r) { clearTimeout(t); if (!r.ok) throw r.status; return r.json(); })
+      .then(function (j) { var x = Array.isArray(j) ? j[0] : j; if (!x || x.a == null) throw "no poll"; return x; });
+  }
+  function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function put(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function uuid() {
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (ch) {
+      var r = Math.random() * 16 | 0; return (ch === "x" ? r : (r & 3 | 8)).toString(16); });
+  }
+  function when(iso) {  // 한국 시각 '11월 10일(화) 0시' (자정을 '오전 12:00'으로 쓰면 헷갈려서 24시간제)
+    var t = Date.parse(iso); if (isNaN(t)) return "";
+    var d = new Date(t + 9 * 3600e3), m = d.getUTCMinutes();
+    return (d.getUTCMonth() + 1) + "월 " + d.getUTCDate() + "일(" + "일월화수목금토".charAt(d.getUTCDay()) + ") "
+           + d.getUTCHours() + "시" + (m ? " " + m + "분" : "");
+  }
+  function endless(x) { return Date.parse(x.closes_at) >= Date.UTC(2090, 0, 1); }  // 마감 없이 받는 투표(2099년 등): 마감 문구 숨김
+  var voter = get("dhc-voter");
+  if (!voter) { voter = uuid(); put("dhc-voter", voter); }
+  [].forEach.call(document.querySelectorAll(".poll[data-poll]"), function (box) {
+    var id = box.getAttribute("data-poll"), mode = box.getAttribute("data-mode"), mine = get("dhc-vote:" + id);
+    var btns = box.querySelector(".poll-btns"), res = box.querySelector(".poll-res"), meta = box.querySelector(".poll-meta");
+    function show(x, note) {
+      var a = +x.a || 0, b = +x.b || 0, n = a + b, pa = n ? Math.round(a * 100 / n) : 0, far = endless(x);
+      [["a", pa], ["b", n ? 100 - pa : 0]].forEach(function (p) {
+        var bar = res.querySelector('[data-v="' + p[0] + '"]');
+        bar.querySelector(".poll-p").textContent = n ? p[1] + "%" : "";
+        bar.querySelector("i").style.width = p[1] + "%";
+        if (mine === p[0]) bar.classList.add("mine");
+      });
+      if (btns) btns.hidden = true;
+      res.hidden = false;
+      meta.textContent = (n ? (far ? "지금까지 " + n.toLocaleString("ko-KR") + "명 참여" : n.toLocaleString("ko-KR") + "명이 골랐어요")
+                            : "아직 고른 사람이 없어요") + (note ? " · " + note : "");
+    }
+    var gated = mode !== "result" && document.querySelector('.gated[data-gate="' + id + '"]');
+    function fail() { if (gated) document.documentElement.classList.add("gate-fail"); }
+    call("poll_results", { p_poll: id }).then(function (x) {
+      box.hidden = false;
+      if (gated) document.documentElement.classList.add("poll-ok");
+      var far = endless(x);
+      if (mode === "result") return show(x, far ? "" : x.is_open ? when(x.closes_at) + "까지 받는 중" : "독자 투표 결과");
+      if (!x.is_open) { if (gated && window.dhcOpenGate) window.dhcOpenGate(false); return show(x, "투표가 끝났어요"); }
+      if (mine) return show(x, far ? "" : "마감 " + when(x.closes_at));
+      meta.textContent = (far ? "" : "마감 " + when(x.closes_at) + " · ") + "고르면 지금까지 비율이 바로 보여요";
+      [].forEach.call(btns.querySelectorAll("button"), function (b) {
+        b.addEventListener("click", function () {
+          [].forEach.call(btns.querySelectorAll("button"), function (o) { o.disabled = true; });
+          call("cast_vote", { p_poll: id, p_voter: voter, p_choice: b.getAttribute("data-v") }).then(function (y) {
+            if (y.is_open) { mine = b.getAttribute("data-v"); put("dhc-vote:" + id, mine); }
+            if (window.gtag) gtag("event", "poll_vote", { poll_id: id, choice: b.getAttribute("data-v") });
+            show(y, gated ? "아래에 데이터 결과가 열렸어요" : y.is_open ? "결과 글에서 데이터랑 맞춰 볼게요" : "투표가 막 끝났어요");
+            if (gated && window.dhcOpenGate) window.dhcOpenGate(900);
+          }).catch(function () {
+            [].forEach.call(btns.querySelectorAll("button"), function (o) { o.disabled = false; });
+            meta.textContent = "지금은 표가 안 들어가요. 잠시 뒤에 다시 눌러 주세요.";
+            fail();
+          });
+        });
+      });
+    }).catch(fail);
+  });
+  [].forEach.call(document.querySelectorAll("[data-poll-live]"), function (el) {
+    call("poll_results", { p_poll: el.getAttribute("data-poll-live") }).then(function (x) { if (x.is_open) el.hidden = false; })
+      .catch(function () {});
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var r = document.documentElement, b = document.querySelector('.theme');
+  var DARK = '(prefers-color-scheme: dark)';
+  function apply() {
+    var t = r.dataset.theme;
+    document.querySelectorAll('picture source').forEach(function (s) {
+      var m = s.dataset.m || (s.dataset.m = s.media);
+      if (m.indexOf(DARK) < 0) return;
+      s.media = t ? m.replace(DARK, t === 'dark' ? '(min-width: 0px)' : '(max-width: 0px)') : m;
+    });
+  }
+  if (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia(DARK).matches;
+      r.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', r.dataset.theme); } catch (e) {}
+      apply();
+    });
+  }
+  apply();
+})();
+</script>
+</body>
+</html>
