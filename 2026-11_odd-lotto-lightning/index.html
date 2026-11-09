@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6JLDJF1D5"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-H6JLDJF1D5');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>한국에서 로또 1등 되기 vs 벼락 맞기, 뭐가 더 흔할까</title>
+<meta name="description" content="결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요. &quot;로또 1등 될 확률은 벼락 맞을 확률보다 낮다&quot;는 말, 한 번은 들어 봤을 거예요.">
+<meta property="og:title" content="한국에서 로또 1등 되기 vs 벼락 맞기, 뭐가 더 흔할까">
+<meta property="og:description" content="결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요. &quot;로또 1등 될 확률은 벼락 맞을 확률보다 낮다&quot;는 말, 한 번은 들어 봤을 거예요.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://protofu.github.io/opendata-insight/2026-11_odd-lotto-lightning/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://protofu.github.io/opendata-insight/2026-11_odd-lotto-lightning/">
+<meta property="og:site_name" content="FITAHW">
+<meta name="theme-color" content="#fbfbf9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="FITAHW" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="../style.css">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}})();</script><script>
+(function () {  // 투표 게이트: 그리기 전에 잠금 여부를 정해 깜빡임 없게. fetch가 없으면 가리지 않음
+  var d = document.documentElement, id = "lotto-lightning";
+  if (!window.fetch) return;
+  d.classList.add("gate-on");
+  try { if (localStorage.getItem("dhc-vote:" + id) || sessionStorage.getItem("dhc-gate-skip:" + id)) d.classList.add("gate-open"); }
+  catch (e) { d.classList.add("gate-open"); }
+  window.dhcOpenGate = function (delay) {
+    d.classList.add("gate-open");
+    var g = document.getElementById("gated");
+    if (g && delay !== false) setTimeout(function () { g.scrollIntoView({ behavior: "smooth", block: "start" }); }, delay || 0);
+  };
+  setTimeout(function () { if (!d.classList.contains("poll-ok")) d.classList.add("gate-fail"); }, 9000);
+  document.addEventListener("click", function (e) {
+    if (!(e.target.closest && e.target.closest(".gate-skip"))) return;
+    try { sessionStorage.setItem("dhc-gate-skip:" + id, "1"); } catch (_) {}
+    window.dhcOpenGate(0);
+  });
+})();
+</script>
+</head>
+<body>
+<header class="head"><div class="wrap">
+  <a class="brand" href="../index.html" aria-label="FITAHW 피타우 홈"><b class="wm">FITAHW</b><span class="ko">피타우</span></a>
+  <nav class="util" aria-label="사이트"><a href="../about.html" class=hide-m>소개</a><a href="../archive/index.html" class=hide-m>자료실</a><a href="../data.html" class=hide-m>데이터</a></nav>
+  <a class="sub-btn" href="#subscribe">구독</a>
+  <button class="theme" type="button" aria-label="밝은 화면/어두운 화면 바꾸기" title="밝게/어둡게" hidden>◐</button>
+</div></header>
+<nav class="cats" aria-label="카테고리"><div class="wrap"><a href="../index.html">전체</a><a href="../category/work/index.html">일·이직</a><a href="../category/money/index.html">돈·자산</a><a href="../category/digital/index.html">디지털·크리에이터</a><a href="../category/society/index.html">가족·사회</a><a href="../category/life/index.html">생활·건강</a><a href="../category/business/index.html">창업·자영업</a><a href="../category/odd/index.html" aria-current=page>엉뚱한 비교</a></div></nav>
+<main>
+<article class="art">
+<span class="kick">엉뚱한 비교</span><h1>한국에서 로또 1등 되기 vs 벼락 맞기, 뭐가 더 흔할까</h1>
+<p class="dek">결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p>
+<div class="byline"><span>FITAHW</span><span>읽는 데 8분</span><span>동행복권 회차별 당첨 통계·행정안전부 낙뢰 사상자·통계청</span><span class="sp"></span><a href="#evidence">근거</a><button type="button" class="pill" data-copy="https://protofu.github.io/opendata-insight/2026-11_odd-lotto-lightning/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></div>
+<ul class="points"><li>"로또 1등 될 확률은 벼락 맞을 확률보다 낮다"는 말, 한 번은 들어 봤을 거예요.</li><li>정말 그럴까요? 한국에서 실제로 1년에 로또 1등이 몇 번 나오고, 몇 명이 벼락을 맞는지 공식 통계로 세어 봤어요.</li><li>실제로 생긴 수, 한 번의 확률, 평생의 확률 세 판으로 겨뤘어요. 투표하면 결과가 바로 아래에 열려요.</li></ul><div class="body"><section class="sec"><h2>조건과 규칙</h2>
+<ul>
+<li><strong>로또</strong>는 로또6/45 1등이에요. 동행복권이 공개한 회차별 1등 당첨 수와 판매 장수를 써요.</li>
+<li><strong>벼락</strong>은 벼락(낙뢰)으로 죽거나 다친 사람이에요. 행정안전부가 공개한 10년치 사상자 수를 써요.</li>
+<li>세 판으로 겨뤄요. 1년에 실제로 생긴 수, 로또 한 장과 벼락 1년의 확률, 그리고 평생의 확률이에요.</li>
+</ul>
+<section class="poll" id="poll-lotto-lightning" data-poll="lotto-lightning" data-mode="vote" hidden><p class="poll-k">독자 투표</p><h3 class="poll-q">한국에서 로또 1등 되기 vs 벼락 맞기, 뭐가 더 흔할까?</h3><div class="poll-btns"><button type="button" data-v="a"><b>A</b>로또 1등</button><button type="button" data-v="b"><b>B</b>벼락 맞기</button></div><div class="poll-res" hidden><div class="poll-bar" data-v="a"><i></i><span class="poll-l"><b>A</b> 로또 1등</span><span class="poll-p"></span></div><div class="poll-bar" data-v="b"><i></i><span class="poll-l"><b>B</b> 벼락 맞기</span><span class="poll-p"></span></div></div><p class="poll-meta" aria-live="polite"></p></section>
+</section></div><div class="gate-note"><p class="gate-k">데이터 결과는 투표 뒤에</p><p>A·B 중 하나를 고르면 데이터 결과가 열려요.</p><div class="gate-act"><a class="btn dark" href="#poll-lotto-lightning">위에서 고르기 <span aria-hidden="true">↑</span></a><button type="button" class="btn gate-skip">결과 바로 보기</button></div></div><div class="gated" id="gated" data-gate="lotto-lightning"><div class="body">
+<section class="sec"><h2>결과 요약</h2>
+<p><strong>3판 3승 0패(2판은 박빙) → 최종 로또 1등 승</strong></p>
+<ol>
+<li>한국에서는 로또 1등이 벼락보다 훨씬 흔해요. 같은 10년(2009~2018) 동안 로또 1등 당첨은 1년에 390장, 벼락 사상자는 1년에 4.6명이에요. 85배예요.</li>
+<li>다만 '로또 한 장'과 '벼락 1년'을 맞대면 1.35배로 박빙이에요. 벼락 사상자가 신고된 숫자의 1.35배면 비기고, 1.48배면 뒤집혀요.</li>
+<li>"로또가 벼락보다 어렵다"는 말은 한국 신고 통계로는 틀렸어요. 한국 사람도 미국 사람만큼 벼락을 맞는다고 가정하면, 로또 한 장끼리 비교할 때만 맞아요.</li>
+</ol>
+<p><strong>그래서?</strong> 한국에서는 해마다 로또 1등 당첨이 수백 장 나오고, 벼락 사상자는 손에 꼽아요. 로또 1등이 흔한 이유는 한 장의 확률이 높아서가 아니라 한 해에 수십억 장이 팔리기 때문이에요.</p>
+<section class="poll" data-poll="lotto-lightning" data-mode="result" hidden><p class="poll-k">독자 예상 vs 데이터 결과</p><h3 class="poll-q">한국에서 로또 1등 되기 vs 벼락 맞기, 뭐가 더 흔할까?</h3><div class="poll-res"><div class="poll-bar ans" data-v="a"><i></i><span class="poll-l"><b>A</b> 로또 1등<em>데이터 결과</em></span><span class="poll-p"></span></div><div class="poll-bar" data-v="b"><i></i><span class="poll-l"><b>B</b> 벼락 맞기</span><span class="poll-p"></span></div></div><p class="poll-ans">데이터로 보면 <mark>로또 1등</mark>. 1년에 로또 1등 당첨은 390장(2009~2018 평균), 벼락 사상자는 4.6명이에요. 다만 &#x27;로또 한 장 vs 벼락 1년&#x27;은 1.35배로 박빙이에요.</p><p class="poll-meta" aria-live="polite"></p></section>
+<figure class="fig"><a href="chart_odd_lotto_rounds.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_lotto_rounds.m.dark.png" media="(max-width: 560px) and (prefers-color-scheme: dark)"><source srcset="chart_odd_lotto_rounds.m.png" media="(max-width: 560px)"><source srcset="chart_odd_lotto_rounds.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_lotto_rounds.png" alt="차트"></picture></a></figure>
+<p>숫자 두 개로 줄이면 이래요. 로또 한 장이 1등이 될 확률은 814만 장 중 1장이에요. 그런데 2009~2018년 한국에서는 해마다 로또가 평균 31억 장 팔려서, 1등 당첨이 1년에 390장 나왔어요.</p>
+</section><section class="sec">
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>판</th>
+<th>로또 1등</th>
+<th>벼락</th>
+<th>승자</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1판 1년에 생긴 수</td>
+<td>390.5장</td>
+<td>4.6명</td>
+<td>로또 1등(85배)</td>
+</tr>
+<tr>
+<td>2판 한 장 vs 1년</td>
+<td>814만 장 중 1장</td>
+<td>1,099만 명 중 1명</td>
+<td>로또 1등(1.35배, 박빙)</td>
+</tr>
+<tr>
+<td>3판 평생</td>
+<td>2,408명 중 1명</td>
+<td>13만 1,265명 중 1명</td>
+<td>로또 1등(55배)</td>
+</tr>
+<tr>
+<td><strong>최종</strong></td>
+<td></td>
+<td></td>
+<td><strong>3판 3승 0패 → 로또 1등 승</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>이 규칙과 자료면 최종 승자는 로또 1등이에요. 세 판 모두 로또가 이겼어요. 다만 판마다 버티는 힘이 달라요. 1판과 3판은 벼락 쪽을 크게 늘려도 로또가 이기지만, 2판은 벼락 사상자가 조금만 더 있어도 뒤집혀요.</p>
+<h3>1판 1년에 생긴 수: 로또 1등 승(85배)</h3>
+<p>행정안전부가 2019년에 낸 자료를 보면, 2009~2018년 10년 동안 벼락으로 다치거나 숨진 사람은 모두 46명이에요. 1년에 4.6명이에요. 같은 10년 동안 로또 1등 당첨은 3,905장 나왔어요. 1년에 390장이에요. 85배 차이예요. 당첨 장 수라서, 한 사람이 같은 회차에 수동으로 같은 번호를 여러 장 사서 1등이 겹친 경우도 따로 셌어요.</p>
+<p>저도 이 숫자를 보고 놀랐어요. "벼락 맞을 확률보다 낮다"는 말을 워낙 많이 들어서, 적어도 비슷할 줄 알았거든요. 그런데 한국에서 벼락 사상자는 1년에 다섯 명 안팎이고, 로또 1등 당첨은 매주 7~8장씩 나와요.</p>
+<p>로또 1등 당첨은 해가 갈수록 늘었어요. 판매가 늘었기 때문이에요. 2025년에는 62억 장이 팔렸고 1등 당첨이 812장 나왔어요. 벼락 사상자 2009~2018년 연평균(4.6명)과 대면 176배예요. 2019년 뒤의 벼락 공식 합계는 찾지 못해서 같은 해끼리는 비교하지 못했어요.</p>
+<figure class="fig"><a href="chart_odd_lotto_years.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_lotto_years.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_lotto_years.png" alt="차트" loading=lazy></picture></a></figure>
+<h3>2판 한 장 vs 1년: 로또 1등 승(1.35배, 박빙)</h3>
+<p>여기서 통념이 나온 이유가 보여요. 로또 한 장이 1등이 될 확률은 814만 5,060장 중 1장이에요. 45개 숫자 가운데 6개를 고르는 방법의 수예요. 한국 사람 한 명이 1년 동안 벼락을 맞을 확률은 사상자 4.6명을 인구 5,054만 명으로 나눈 1,099만 명 중 1명이에요. 로또 한 장이 1.35배 흔해요. 무승부 기준(1.1배)을 겨우 넘었어요. 벼락 사상자가 신고된 숫자의 1.35배(1년에 6.2명)면 비기고, 1.48배(1년에 6.8명)면 벼락 쪽으로 뒤집혀요.</p>
+<p>로또를 1년에 한 장만 사는 사람은 드물어요. 매주 한 장씩 1년에 52장을 사면, 그해 1등이 될 확률은 벼락 1년의 70배예요.</p>
+<p>"로또가 벼락보다 어렵다"는 말은 대개 미국 숫자에서 왔어요. 미국 기상청은 미국인이 1년에 벼락을 맞을 확률을 122만 명 중 1명으로 계산해요. 이 숫자와 로또 한 장을 비교하면 벼락이 6.7배 흔해요. 같은 비교를 한국 신고 통계로 하면 결과가 뒤집혀요.</p>
+<h3>3판 평생: 로또 1등 승(55배)</h3>
+<p>로또는 19살부터 살 수 있어요. 그래서 로또는 19살부터, 벼락은 태어나서부터 셌어요. 19살의 기대여명은 65.1년이라, 그때부터 매주 한 장씩 사면 모두 3,383장이에요. 평생 한 번이라도 1등이 될 확률은 2,408분의 1이에요. 벼락은 태어나서 기대수명(83.7세)까지 따지면 13만 1,265분의 1이에요. 로또가 55배 흔해요. 한 달에 한 장만 사도 12.6배로 로또가 이겨요. 평생 벼락 맞을 확률과 같아지려면 로또를 평생 62장만 사면 돼요.</p>
+<figure class="fig"><a href="chart_odd_lotto_odds.png" title="원본 크기로 보기"><picture><source srcset="chart_odd_lotto_odds.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_odd_lotto_odds.png" alt="차트" loading=lazy></picture></a></figure>
+<h3>가정을 바꾸면</h3>
+<p>벼락 쪽부터 봐요. 행정안전부 숫자는 신고된 사상자라, 가볍게 다치고 신고하지 않은 사람은 빠졌을 수 있어요. 미국 기상청은 신고된 사망자 27명에 부상자를 사망자의 9배로 어림해 더해서, 미국에서 1년에 270명이 벼락을 맞는다고 봐요. 부상자 수는 잰 값이 아니라 어림이고, 미국은 땅이 넓고 벼락도 많아서 한국과 사정이 달라요. 그래도 한국 사람도 미국 사람만큼 벼락을 맞는다고 가정해 보면 1년에 41명이에요. 이 가정에서도 1판은 로또가 9.4배, 3판은 6.1배로 이겨요. 2판만 벼락이 6.7배로 뒤집혀요.</p>
+<p>로또 쪽도 봐요. 2판과 3판은 '로또를 산 사람' 기준이에요. 로또를 한 번도 안 사는 사람에게 로또 1등 확률은 0이지만, 벼락은 누구에게나 와요. 이 차이와 상관없이 비교되는 게 1판이에요. 1년에 실제로 생긴 수는 로또가 수십 배 많아요. 1판은 벼락 사상자가 신고된 숫자의 85배(1년에 390명)는 되어야 따라잡고, 93배(약 430명)는 넘어야 뒤집혀요. 미국만큼이라고 가정한 41명보다도 9배 많아요.</p>
+<h3>벼락은 어디서 맞을까</h3>
+<p>행정안전부 자료에서 사상자 46명 가운데 27명(59%)은 산에서, 10명(22%)은 논밭 같은 트인 곳에서 벼락을 맞았어요. 44명은 감전이고, 2명은 벼락으로 난 불에 다친 경우예요. 한국에는 1년에 벼락이 평균 12만 4,374번 떨어지지만(기상청 낙뢰연보, 2009~2018), 사람에게 닿는 건 그중 극히 일부예요.</p>
+<p>결국 한국에서는 로또 1등이 벼락보다 훨씬 흔해요. 1년에 실제로 생긴 수는 85배, 평생 확률로도 55배예요. 박빙은 '로또 한 장 vs 벼락 1년' 하나뿐이고, 이 판도 한국 신고 통계로는 로또가 이겨요.</p>
+</section></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 로또 당첨 통계는 2026년 11월 9일에 받은 1246회(2026년 10월 17일 추첨)까지예요. 조건은 2026년 11월 9일, 계산하기 전에 정했어요.</p>
+<div class="src-cards"><div class="src"><p class="src-h"><span>동행복권(복권위원회 수탁사업자) 누리집</span></p><ul><li><div class="src-t">로또6/45 회차별 당첨 통계<p>1등 당첨 수, 총판매액(1~1246회)</p></div></li></ul></div><div class="src"><p class="src-h"><span>행정안전부 보도자료(정책브리핑)</span></p><ul><li><div class="src-t">낙뢰사고 주의하세요!(2019-08-01)<p>2009~2018 낙뢰 사상자 46명, 장소·원인별</p></div></li></ul></div><div class="src"><p class="src-h"><span>행정안전부</span><b>재해연보</b></p><ul><li><div class="src-t">자연재난 원인별 피해<small>KOSIS DT_156003_014</small><p>2020~2024 낙뢰 인명피해</p></div></li></ul></div><div class="src"><p class="src-h"><span>기상청</span></p><ul><li><div class="src-t">낙뢰연보 2018<p>2009~2018 연평균 낙뢰 124,374회</p></div></li></ul></div><div class="src"><p class="src-h"><span>통계청</span></p><ul><li><div class="src-t">장래인구추계<small>KOSIS DT_1BPA001</small><p>2009~2025 인구</p></div></li><li><div class="src-t">생명표 2024<small>KOSIS DT_1B42</small><p>기대수명 83.7세, 19세 기대여명 65.1년</p></div></li></ul></div><div class="src"><p class="src-h"><span>미국 국립기상청(NWS)</span></p><ul><li><div class="src-t">Odds of Becoming a Lightning Victim<p>2009~2018 미국 연 270명(신고 사망 27 + 어림 부상 243), 1년 122만 명 중 1명</p></div></li></ul></div></div>
+</div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
+<ul>
+<li><strong>로또 1등</strong>: 동행복권 누리집 '지난 회차 당첨결과' 화면이 쓰는 공개 자료에서 1회(2002년 12월)부터 1246회(2026년 10월)까지 회차별 1등 당첨 수와 총판매액을 받았어요. 판매 장수는 판매액을 한 장 값 1,000원으로 나눴어요. 5등 당첨 수에 45를 곱하면 판매 장수와 거의 같아서, 판매액이 장수와 맞는지 확인했어요.</li>
+<li><strong>같은 기간</strong>: 벼락 공식 자료가 2009~2018년 10년치라, 로또도 이 기간 추첨분으로 셌어요.</li>
+<li><strong>벼락</strong>: 행정안전부 보도자료 「낙뢰사고 주의하세요!」(2019년 8월 1일)의 '최근 10년간(2009~2018) 사상자 46명'을 썼어요. 사망과 부상을 합친 숫자이고, 감전 44명과 화재 2명이 들어 있어요. 행정안전부 재해연보 표(2020~2024)에는 낙뢰 인명피해가 2020·2021년 0명으로만 나와요.</li>
+<li><strong>인구</strong>: 통계청 장래인구추계(2009~2018 평균 5,054만 명)를 썼어요.</li>
+<li><strong>로또 한 장의 확률</strong>: 45개 가운데 6개를 고르는 방법은 814만 5,060가지예요. 2009~2018년 실제 1등 당첨 수는 판매 장수로 기대되는 수의 1.025배라 이 확률과 맞아요.</li>
+<li><strong>평생</strong>: 로또는 19살부터 19살의 기대여명(65.1년) 동안 매주 1장(3,383장), 벼락은 태어나서 기대수명(83.7세)까지로 셌어요(통계청 2024 생명표). 한 번이라도 겪을 확률이에요.</li>
+<li><strong>판정</strong>: 판마다 더 흔한 쪽이 이겨요. 두 쪽 차이가 1.1배 미만이면 무승부예요.</li>
+<li><strong>잰 값과 가정</strong>: 로또 1등 당첨 수, 판매 장수, 벼락 사상자, 인구, 기대여명은 공식 통계예요. 평생 매주 1장, 한국도 미국만큼 벼락을 맞는다는 경우, 미국 부상자 수는 가정이나 어림이에요.</li>
+</ul>
+</div></details><details id="ev-limits" open><summary>한계 4가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
+<ul>
+<li>벼락 사상자는 신고된 숫자라 실제보다 적을 수 있어요. 한국의 신고 누락 비율을 잰 공식 자료는 찾지 못해서, 미국만큼이라고 가정한 경우를 함께 보여 드렸어요.</li>
+<li>행정안전부 10년 자료는 사망과 부상을 나누지 않았어요. 2019년 뒤 10년치 공식 합계도 찾지 못해서 2009~2018년을 썼어요.</li>
+<li>로또 1등은 당첨된 장 수예요. 한 사람이 같은 회차에 여러 장으로 1등이 되면 사람 수는 더 적어요.</li>
+<li>로또 1등이 흔한 건 많이 팔리기 때문이에요. 한 장의 확률은 늘 814만 장 중 1장이에요. 이 글은 숫자를 비교한 것이고 구매를 권하지 않아요.</li>
+</ul>
+</div></details></section><script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);var d=e&&e.closest("details");if(d){d.open=true;if(d!==e)e.scrollIntoView();}}addEventListener("hashchange",o);o();})();</script></div><section class="share-end"><p>카톡에 링크를 붙이면 숫자 카드랑 요약이 같이 떠요.</p><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/2026-11_odd-lotto-lightning/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></section><section class="subscribe" id="subscribe"><div class="sub-t"><h2>새 글 나오면 받아 보기</h2><p>피드 리더 앱에 이 사이트 주소를 한 번 넣어 두면, 새 글이 올라올 때 앱에 떠요. 가입이나 메일 주소는 필요 없어요.</p></div><details class="how"><summary class="btn dark">받는 법 보기</summary><div class="how-in"><ol><li><b>피드 리더 앱을 하나 골라요.</b> 새 글을 모아 보여 주는 앱이에요. 예를 들면 <a href="https://feedly.com" target="_blank" rel="noopener">Feedly</a>나 <a href="https://www.inoreader.com" target="_blank" rel="noopener">Inoreader</a>가 있어요. 둘 다 무료고 웹·휴대폰에서 써요.</li><li><b>앱에서 '구독 추가'(+)를 누르고 아래 주소를 붙여 넣어요.</b></li><li><b>끝이에요.</b> 새 글이 올라오면 앱 목록에 떠요.</li></ol><div class="feed-addr"><code>https://protofu.github.io/opendata-insight/feed.xml</code><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/feed.xml" data-rel="../feed.xml" data-done="주소를 복사했어요" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>주소 복사</span></button></div><p class="how-alt">Feedly를 쓴다면 <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fprotofu.github.io%2Fopendata-insight%2Ffeed.xml" target="_blank" rel="noopener">여기를 눌러 바로 추가</a>할 수도 있어요.</p></div></details></section>
+</article>
+<section class="rel wrap"><div class="sec-h"><h2>이어서 읽을 만한 글</h2></div><div class="trio"><a class="card" href="../2026-11_odd-cafe-chicken-cvs/index.html"><span class="kick">엉뚱한 비교</span><h3>한국에 카페, 치킨집, 편의점 중 뭐가 제일 많을까</h3><p>동네를 한 바퀴 돌면 셋 다 금방 눈에 띄어요. 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p></a><a class="card" href="../2026-11_odd-tissue-earth/index.html"><span class="kick">엉뚱한 비교</span><h3>한국인이 1년에 쓰는 화장지를 이으면 지구 몇 바퀴일까</h3><p>한 롤에 28m 안팎이에요. 그런 롤이 1년에 몇 개나 쓰일지 떠올려 보고 골라 주세요.</p></a><a class="card" href="../2026-11_odd-elevator-stairs/index.html"><span class="kick">엉뚱한 비교</span><h3>아파트 5층에 살면, 엘리베이터와 계단 중 뭐가 더 빠를까</h3><p>결과를 보기 전에 먼저 골라 주세요. 투표하면 독자 예상과 데이터 결과를 나란히 보여 드려요.</p></a></div></section>
+</main>
+<footer class="foot"><div class="wrap">
+  <div><a class="brand" href="../index.html" aria-label="FITAHW 피타우 홈"><b class="wm">FITAHW</b><span class="ko">피타우</span></a>
+    <p>뉴스에 나온 숫자가 궁금하면 공공데이터 원본을 열어서 다시 계산해 봐요. 한 사람이 만드는 작은 사이트예요.</p>
+    <small>숫자는 전부 공개된 원자료에서 다시 계산했어요. 원인을 단정하진 않고, 투자·진로 조언도 아니에요.</small></div>
+  <div><h2>둘러보기</h2><ul><li><a href="../about.html">소개</a></li><li><a href="../archive/index.html">자료실</a></li><li><a href="../data.html">숫자 장부</a></li></ul></div>
+  <div><h2>받아 보기</h2><ul><li><a href="#subscribe">새 글 받는 법</a></li><li><a href="../feed.xml">RSS 주소</a></li></ul></div>
+</div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var toast = document.querySelector('.toast');
+  function say(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
+  }
+  function fallback(t, ok_) {
+    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
+    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(a); say(ok ? ok_ : '주소창의 주소를 복사해 주세요');
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var t = b.dataset.copy || (b.dataset.rel ? new URL(b.dataset.rel, location.href).href : location.href.split('#')[0]);
+      var ok_ = b.dataset.done || '링크를 복사했어요';
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(ok_); }, function () { fallback(t, ok_); });
+      else fallback(t, ok_);
+    });
+  });
+})();
+</script><script>
+(function () {
+  var API = "https://nesiqqzkvkxrcyzxtagh.supabase.co", KEY = "sb_publishable_71wZ1_loLKWiPxd070D5UQ_n8RK2q4u";
+  if (!window.fetch || !document.querySelectorAll) return;
+  function call(fn, body) {
+    var c = window.AbortController ? new AbortController() : null, t = c ? setTimeout(function () { c.abort(); }, 8000) : 0;
+    return fetch(API + "/rest/v1/rpc/" + fn, { method: "POST", headers: { apikey: KEY, "Content-Type": "application/json" },
+                                               body: JSON.stringify(body), signal: c ? c.signal : undefined })
+      .then(function (r) { clearTimeout(t); if (!r.ok) throw r.status; return r.json(); })
+      .then(function (j) { var x = Array.isArray(j) ? j[0] : j; if (!x || x.a == null) throw "no poll"; return x; });
+  }
+  function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function put(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function uuid() {
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (ch) {
+      var r = Math.random() * 16 | 0; return (ch === "x" ? r : (r & 3 | 8)).toString(16); });
+  }
+  function when(iso) {  // 한국 시각 '11월 10일(화) 0시' (자정을 '오전 12:00'으로 쓰면 헷갈려서 24시간제)
+    var t = Date.parse(iso); if (isNaN(t)) return "";
+    var d = new Date(t + 9 * 3600e3), m = d.getUTCMinutes();
+    return (d.getUTCMonth() + 1) + "월 " + d.getUTCDate() + "일(" + "일월화수목금토".charAt(d.getUTCDay()) + ") "
+           + d.getUTCHours() + "시" + (m ? " " + m + "분" : "");
+  }
+  function endless(x) { return Date.parse(x.closes_at) >= Date.UTC(2090, 0, 1); }  // 마감 없이 받는 투표(2099년 등): 마감 문구 숨김
+  var voter = get("dhc-voter");
+  if (!voter) { voter = uuid(); put("dhc-voter", voter); }
+  [].forEach.call(document.querySelectorAll(".poll[data-poll]"), function (box) {
+    var id = box.getAttribute("data-poll"), mode = box.getAttribute("data-mode"), mine = get("dhc-vote:" + id);
+    var btns = box.querySelector(".poll-btns"), res = box.querySelector(".poll-res"), meta = box.querySelector(".poll-meta");
+    function show(x, note) {
+      var a = +x.a || 0, b = +x.b || 0, n = a + b, pa = n ? Math.round(a * 100 / n) : 0, far = endless(x);
+      [["a", pa], ["b", n ? 100 - pa : 0]].forEach(function (p) {
+        var bar = res.querySelector('[data-v="' + p[0] + '"]');
+        bar.querySelector(".poll-p").textContent = n ? p[1] + "%" : "";
+        bar.querySelector("i").style.width = p[1] + "%";
+        if (mine === p[0]) bar.classList.add("mine");
+      });
+      if (btns) btns.hidden = true;
+      res.hidden = false;
+      meta.textContent = (n ? (far ? "지금까지 " + n.toLocaleString("ko-KR") + "명 참여" : n.toLocaleString("ko-KR") + "명이 골랐어요")
+                            : "아직 고른 사람이 없어요") + (note ? " · " + note : "");
+    }
+    var gated = mode !== "result" && document.querySelector('.gated[data-gate="' + id + '"]');
+    function fail() { if (gated) document.documentElement.classList.add("gate-fail"); }
+    call("poll_results", { p_poll: id }).then(function (x) {
+      box.hidden = false;
+      if (gated) document.documentElement.classList.add("poll-ok");
+      var far = endless(x);
+      if (mode === "result") return show(x, far ? "" : x.is_open ? when(x.closes_at) + "까지 받는 중" : "독자 투표 결과");
+      if (!x.is_open) { if (gated && window.dhcOpenGate) window.dhcOpenGate(false); return show(x, "투표가 끝났어요"); }
+      if (mine) return show(x, far ? "" : "마감 " + when(x.closes_at));
+      meta.textContent = (far ? "" : "마감 " + when(x.closes_at) + " · ") + "고르면 지금까지 비율이 바로 보여요";
+      [].forEach.call(btns.querySelectorAll("button"), function (b) {
+        b.addEventListener("click", function () {
+          [].forEach.call(btns.querySelectorAll("button"), function (o) { o.disabled = true; });
+          call("cast_vote", { p_poll: id, p_voter: voter, p_choice: b.getAttribute("data-v") }).then(function (y) {
+            if (y.is_open) { mine = b.getAttribute("data-v"); put("dhc-vote:" + id, mine); }
+            if (window.gtag) gtag("event", "poll_vote", { poll_id: id, choice: b.getAttribute("data-v") });
+            show(y, gated ? "아래에 데이터 결과가 열렸어요" : y.is_open ? "결과 글에서 데이터랑 맞춰 볼게요" : "투표가 막 끝났어요");
+            if (gated && window.dhcOpenGate) window.dhcOpenGate(900);
+          }).catch(function () {
+            [].forEach.call(btns.querySelectorAll("button"), function (o) { o.disabled = false; });
+            meta.textContent = "지금은 표가 안 들어가요. 잠시 뒤에 다시 눌러 주세요.";
+            fail();
+          });
+        });
+      });
+    }).catch(fail);
+  });
+  [].forEach.call(document.querySelectorAll("[data-poll-live]"), function (el) {
+    call("poll_results", { p_poll: el.getAttribute("data-poll-live") }).then(function (x) { if (x.is_open) el.hidden = false; })
+      .catch(function () {});
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var r = document.documentElement, b = document.querySelector('.theme');
+  var DARK = '(prefers-color-scheme: dark)';
+  function apply() {
+    var t = r.dataset.theme;
+    document.querySelectorAll('picture source').forEach(function (s) {
+      var m = s.dataset.m || (s.dataset.m = s.media);
+      if (m.indexOf(DARK) < 0) return;
+      s.media = t ? m.replace(DARK, t === 'dark' ? '(min-width: 0px)' : '(max-width: 0px)') : m;
+    });
+  }
+  if (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia(DARK).matches;
+      r.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', r.dataset.theme); } catch (e) {}
+      apply();
+    });
+  }
+  apply();
+})();
+</script>
+</body>
+</html>
