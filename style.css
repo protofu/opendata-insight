@@ -486,3 +486,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   linear-gradient(to left, var(--bg) 30%, transparent) right / 40px 100% no-repeat local,
   radial-gradient(farthest-side at 0 50%, rgba(128,128,128,.35), transparent) left / 12px 100% no-repeat scroll,
   radial-gradient(farthest-side at 100% 50%, rgba(128,128,128,.35), transparent) right / 12px 100% no-repeat scroll; }
+/* 내가 투표한 카드에만 결과 배지 */
+.vs-res { padding: 1px 8px; border-radius: 999px; border: 1.5px solid var(--odd); color: var(--odd); font-size: 11.5px; letter-spacing: 0; white-space: nowrap; }
+.vs-res[hidden] { display: none; }
+.vs-k { flex-wrap: wrap; row-gap: 6px; }
