@@ -167,18 +167,18 @@
   });
   var fb = document.querySelector(".vs-filter");
   if (fb) {
-    var bs = [].slice.call(fb.querySelectorAll("button"));
+    var bs = [].slice.call(fb.querySelectorAll("button")), HASH = { tm: "testman", ins: "insight" };
     var setF = function (f, push) {
       bs.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-f") === f ? "true" : "false"); });
       cards.concat([].slice.call(document.querySelectorAll(".vs-all > .vs-c:not([data-vs])"))).forEach(function (c) {
-        c.hidden = f === "tm" && !c.hasAttribute("data-tm");
+        c.hidden = f !== "all" && !c.hasAttribute("data-" + f);
       });
-      if (push) { try { history.replaceState(null, "", f === "tm" ? "#testman" : location.pathname + location.search); } catch (e) {} }
+      if (push) { try { history.replaceState(null, "", HASH[f] ? "#" + HASH[f] : location.pathname + location.search); } catch (e) {} }
       if (push && window.gtag) gtag("event", "vs_filter", { filter: f });
     };
     bs.forEach(function (b) { b.addEventListener("click", function () { setF(b.getAttribute("data-f"), true); }); });
     fb.hidden = false;
-    if (location.hash === "#testman") setF("tm", false);
+    for (var k in HASH) if (location.hash === "#" + HASH[k] && fb.querySelector('[data-f="' + k + '"]')) setF(k, false);
   }
   var cnt = document.querySelector("[data-vs-count]");
   if (cnt && cards.length) {

@@ -490,3 +490,43 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .vs-res { padding: 1px 8px; border-radius: 999px; border: 1.5px solid var(--odd); color: var(--odd); font-size: 11.5px; letter-spacing: 0; white-space: nowrap; }
 .vs-res[hidden] { display: none; }
 .vs-k { flex-wrap: wrap; row-gap: 6px; }
+/* 쇼츠 인사이트 카드: 투표 없는 보통 글 — 분홍 대결 칸과 구분 */
+.vs-c.vs-ins { background: var(--surface); border: 1.5px solid var(--hair); }
+.vs-c.vs-ins:hover { border-color: var(--ink); }
+.vs-ins .vs-k { color: var(--ink); }
+.vs-ins .vs-k::before { content: ""; width: 8px; height: 8px; background: var(--mark); }
+.vs-ins h3 { font-size: 21px !important; line-height: 1.35 !important; }
+/* 내 ○○ 해 찾기 (## 내 … 찾기 + 연도 표). JS 꺼지면 .yf 숨김·표 그대로 */
+.yf { margin: 18px 0 14px; padding: 18px 18px 16px; border-radius: 16px; background: var(--surface); border: 1.5px solid var(--ink); }
+.yf[hidden] { display: none; }
+.yf-l { display: block; margin: 0 0 8px; font-size: 13px; font-weight: 800; letter-spacing: .04em; color: var(--ink-2); }
+.yf-sel { width: 100%; min-height: 50px; padding: 0 44px 0 14px; border-radius: 12px; border: 1.5px solid var(--hair); background: var(--bg); color: var(--ink);
+          font: 800 19px var(--sans); appearance: none; -webkit-appearance: none; cursor: pointer;
+          background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+          background-position: right 20px center, right 14px center; background-size: 6px 6px; background-repeat: no-repeat; }
+.yf-sel:focus-visible { outline: 3px solid var(--mark); outline-offset: 2px; }
+.yf-card { margin-top: 14px; }
+.yf-hint { margin: 0; padding: 14px 0 4px; color: var(--muted); font-size: 15px; }
+.yf-y { margin: 0 0 10px; font: 800 17px var(--sans); color: var(--ink-2); }
+.yf-y b { font: 900 34px/1 var(--serif); color: var(--ink); letter-spacing: -.02em; margin-right: 2px; box-shadow: inset 0 -.28em 0 var(--mark); }
+.yf-card dl { margin: 0; display: grid; grid-template-columns: minmax(0, 1fr); }
+.yf-card dl > div { display: flex; justify-content: space-between; align-items: baseline; gap: 4px 14px; padding: 11px 0; border-top: 1px solid var(--hair); }
+.yf-card dt { font-size: 14px; color: var(--ink-2); line-height: 1.45; }
+.yf-card dd { margin: 0; font: 800 17px var(--sans); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.yf-card .na dd { font-weight: 500; font-size: 14px; color: var(--muted); }
+.yf-act { margin-top: 10px; }
+.yf-act [hidden] { display: none; }
+.yf-all { margin: 6px 0 0; }
+.yf-all summary { cursor: pointer; font-size: 14.5px; font-weight: 700; color: var(--ink-2); padding: 8px 0; }
+@media (min-width: 760px) {
+  .yf-card dl { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 28px; }
+}
+@media (max-width: 380px) {
+  .yf-card dl > div { flex-direction: column; align-items: flex-start; }
+  .yf-card dd { text-align: left; white-space: normal; }
+}
+.yf-d { margin: -2px 0 12px; font: 800 16px var(--sans); color: var(--ink); }
+.yf-d span { font-weight: 600; font-size: 13.5px; color: var(--ink-2); margin-right: 4px; }
+.yf-more { margin-top: 10px; }
+.yf-more[open] summary { margin-bottom: 6px; }
+.sec[data-yf] .table-wrap[hidden] { display: none; }
