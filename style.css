@@ -618,3 +618,20 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .art .sec > h2 { display: inline; background: linear-gradient(transparent 62%, var(--mark) 62% 92%, transparent 92%); }
 :root[data-theme="dark"] .art .sec > h2 { background: linear-gradient(transparent 84%, var(--mark) 84% 97%, transparent 97%); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .art .sec > h2 { background: linear-gradient(transparent 84%, var(--mark) 84% 97%, transparent 97%); } }
+
+/* 홈 '이번 주 차트' (디자인 참조 3주차, pm OK 2026-11-13): 차트는 자르지 않고 통째로(라벨 반쪽 걸림 없음) */
+.wk { margin: 8px 0 28px; }
+.wk .sec-h { display: flex; justify-content: space-between; align-items: baseline; }
+.wk-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.wc { display: block; color: inherit; text-decoration: none; border: 1.5px solid var(--hair); border-radius: 14px; overflow: hidden; background: var(--bg); }
+.wc:hover .wc-t { text-decoration: underline; }
+.wc-ph { display: block; aspect-ratio: 16 / 9; background: var(--bg); border-bottom: 1px solid var(--hair); }
+.wc-ph img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.wc-cap { margin: 8px 12px 2px; font: 700 17px/1.25 var(--hand); color: var(--ink-2);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.wc-cap::before { content: "↑ "; color: var(--accent-2); }
+.wc-t { margin: 0 12px 10px; font-size: 14px; font-weight: 700; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 640px) {
+  .wk-row { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 82%; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 4px; }
+  .wc { scroll-snap-align: start; }
+}
