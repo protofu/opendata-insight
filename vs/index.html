@@ -84,6 +84,8 @@
     var fresh = all.filter(function (c) { return !c.classList.contains("voted"); });
     var done = all.filter(function (c) { return c.classList.contains("voted"); });
     fresh.concat(done).forEach(function (c) { g.appendChild(c); });
+    var go = box.nextElementSibling;
+    if (go && go.hasAttribute("data-go-next") && fresh[0]) go.href = fresh[0].getAttribute("href");
     var from = box.getAttribute("data-next");
     all.forEach(function (c) {
       c.addEventListener("click", function () {
