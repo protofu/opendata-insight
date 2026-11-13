@@ -530,3 +530,54 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .yf-more { margin-top: 10px; }
 .yf-more[open] summary { margin-bottom: 6px; }
 .sec[data-yf] .table-wrap[hidden] { display: none; }
+
+/* ── 크레용 브랜드 v1 (2026-11-13, pm 승인): 쇼츠와 같은 노랑·손글씨·실험맨 ──
+   지면 배경(--bg)은 그대로 = 차트 배경. 크림 공책은 머리 띠에만. 손글씨(Gaegu)는 라벨에만, 제목·본문·메뉴 글꼴은 그대로 */
+:root { --paper: #f8f3e7; --paper-line: rgba(110, 140, 200, .18); --hand: "Gaegu", var(--sans); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper: #1d1f1b; --paper-line: rgba(255, 255, 255, .06); } }
+:root[data-theme="dark"] { --paper: #1d1f1b; --paper-line: rgba(255, 255, 255, .06); }
+.head, .cats, .mission-band { background: repeating-linear-gradient(to bottom, transparent 0 31px, var(--paper-line) 31px 32px), var(--paper); }
+.mission-band { border-bottom: 2px dashed var(--hair); }
+/* 로고: 실험맨 얼굴 + 노란 형광펜 */
+.brand { align-items: center; }
+.tm-face { width: 34px; height: 34px; flex: none; border-radius: 50%; border: 2px solid var(--ink); background: #ffd23f url("tm-face.png") center / cover; }
+.foot .tm-face { width: 28px; height: 28px; }
+.brand .wm { box-shadow: none; background: linear-gradient(transparent 55%, var(--mark) 55% 92%, transparent 92%); padding: 0 .1em; margin-left: 0; }
+:root[data-theme="dark"] .brand .wm { background: linear-gradient(transparent 82%, var(--mark) 82% 96%, transparent 96%); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .brand .wm { background: linear-gradient(transparent 82%, var(--mark) 82% 96%, transparent 96%); } }
+.brand .ko { font: 700 16px/1 var(--hand); letter-spacing: 0; }
+/* 첫 줄: 실험맨 말풍선 */
+.mission { padding: 22px 0 18px; display: flex; align-items: center; justify-content: flex-start; flex-wrap: nowrap; gap: 14px; }
+.tm-hero { width: 92px; height: auto; flex: none; border-radius: 14px; }
+.bub { position: relative; min-width: 0; background: var(--surface); border: 2.5px solid var(--ink); border-radius: 22px 26px 20px 24px; padding: 10px 16px; }
+.bub::before { content: ""; position: absolute; left: -13px; top: 22px; border: 7px solid transparent; border-right: 13px solid var(--ink); border-left: 0; }
+.bub p { margin: 4px 0 0; font: 600 14px/1.5 var(--sans); color: var(--ink-2); }
+.bub .bub-t { margin: 0; font: 700 clamp(23px, 3.2vw, 30px)/1.15 var(--hand); color: var(--ink); word-break: keep-all; letter-spacing: -.04em; }
+.bub .bub-t em { font-style: normal; color: var(--accent-2); white-space: nowrap; }
+@media (max-width: 560px) { .tm-hero { width: 64px; } .bub { padding: 8px 12px; } .bub p { font-size: 13px; } .tm-face { width: 28px; height: 28px; } }
+/* 손글씨는 라벨에만 */
+.kick, .eyebrow, .lf-k, .sec-h h2, .odd-live, .vs-k { font-family: var(--hand) !important; letter-spacing: 0 !important; }
+.kick { font-size: 18px; font-weight: 700; } .kick .tag { font-family: var(--sans); }
+.eyebrow, .odd-h .eyebrow { font-size: 19px; font-weight: 700; }
+.sec-h h2 { font-size: 30px; font-weight: 700; }
+.lf-k { font-size: 16px; font-weight: 700; background: var(--mark); color: #16181d; border-radius: 999px; }
+.vs-k { font-size: 17px; }
+.cats a[aria-current] { box-shadow: none; background: linear-gradient(transparent 50%, var(--mark) 50% 88%, transparent 88%); }
+/* 대결 색: 분홍 → 크레용 노랑 (글자에 쓰는 --odd는 진한 호박색, 다크에선 노랑) */
+.odd, .vs-next, .vs-c, .poll, .vshare { --odd: #8a5a00; --odd-bg: #fff4c7; }
+:root[data-theme="dark"] :is(.odd, .vs-next, .vs-c, .poll, .vshare) { --odd: #ffd23f; --odd-bg: #2a2715; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) :is(.odd, .vs-next, .vs-c, .poll, .vshare) { --odd: #ffd23f; --odd-bg: #2a2715; } }
+/* 대결 카드: 쇼츠 크레용 표지 + 손그림 테두리 */
+.odd-c { border: 2px solid var(--ink); border-radius: 16px 14px 18px 12px; box-shadow: 3px 3px 0 var(--ink); grid-template-columns: 120px minmax(0, 1fr); }
+.odd-ph.cv { background: none; border: 2px solid var(--ink); }
+.odd-ph.cv img { width: 100%; height: 100%; object-fit: cover; }
+.odd-live { background: none; color: var(--ink); border: 1.5px solid var(--ink); font-size: 15px; padding: 0 9px; }
+.vs-cv { margin: -6px -6px 4px; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 10px; border: 2px solid var(--ink); background: var(--paper); }
+.vs-cv img { display: block; width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) { .vs-cv { aspect-ratio: 16 / 9; } .vs-cv img { object-position: 50% 30%; } }
+@media (max-width: 560px) { .odd-c { grid-template-columns: 96px minmax(0, 1fr); } }
+:root[data-theme="dark"] .cats a[aria-current] { color: #16181d; background: var(--mark); border-radius: 6px; padding: 0 6px; align-self: center; height: 28px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cats a[aria-current] { color: #16181d; background: var(--mark); border-radius: 6px; padding: 0 6px; align-self: center; height: 28px; } }
+:root[data-theme="dark"] .odd-c { box-shadow: 3px 3px 0 #000; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .odd-c { box-shadow: 3px 3px 0 #000; } }
+.vs-grid { align-items: start; }
