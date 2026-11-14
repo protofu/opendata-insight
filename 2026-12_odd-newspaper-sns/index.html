@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6JLDJF1D5"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-H6JLDJF1D5');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>신문 보기 vs SNS 교제, 하루에 한 사람이 더 많은 쪽은 어디일까</title>
+<meta name="description" content="아침 신문을 펼치는 사람과 SNS로 안부를 주고받는 사람. 어느 쪽이 더 흔할지는 나이마다 다를 수 있어요. 먼저 골라 주세요. 조사한 날 하루 동안 &#x27;신문 보기&#x27;를 한 사람과 &#x27;SNS로 사람을 사귄(교제한)&#x27; 사람, 더 많은 쪽은 어디일까요?">
+<meta property="og:title" content="신문 보기 vs SNS 교제, 하루에 한 사람이 더 많은 쪽은 어디일까">
+<meta property="og:description" content="아침 신문을 펼치는 사람과 SNS로 안부를 주고받는 사람. 어느 쪽이 더 흔할지는 나이마다 다를 수 있어요. 먼저 골라 주세요. 조사한 날 하루 동안 &#x27;신문 보기&#x27;를 한 사람과 &#x27;SNS로 사람을 사귄(교제한)&#x27; 사람, 더 많은 쪽은 어디일까요?">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://protofu.github.io/opendata-insight/2026-12_odd-newspaper-sns/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://protofu.github.io/opendata-insight/2026-12_odd-newspaper-sns/">
+<meta property="og:site_name" content="FITAHW">
+<meta name="theme-color" content="#fbfbf9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="FITAHW" href="../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="../style.css">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}})();</script><script>
+(function () {  // 투표 게이트: 그리기 전에 잠금 여부를 정해 깜빡임 없게. fetch가 없으면 가리지 않음
+  var d = document.documentElement, id = "newspaper-sns";
+  if (!window.fetch) return;
+  d.classList.add("gate-on");
+  try { if (localStorage.getItem("dhc-vote:" + id) || sessionStorage.getItem("dhc-gate-skip:" + id)) d.classList.add("gate-open"); }
+  catch (e) { d.classList.add("gate-open"); }
+  window.dhcOpenGate = function (delay) {
+    d.classList.add("gate-open");
+    var g = document.getElementById("gated");
+    if (g && delay !== false) setTimeout(function () { g.scrollIntoView({ behavior: "smooth", block: "start" }); }, delay || 0);
+  };
+  setTimeout(function () { if (!d.classList.contains("poll-ok")) d.classList.add("gate-fail"); }, 9000);
+  document.addEventListener("click", function (e) {
+    if (!(e.target.closest && e.target.closest(".gate-skip"))) return;
+    try { sessionStorage.setItem("dhc-gate-skip:" + id, "1"); } catch (_) {}
+    window.dhcOpenGate(0);
+  });
+})();
+</script>
+</head>
+<body>
+<header class="head"><div class="wrap">
+  <a class="brand" href="../index.html" aria-label="FITAHW 피타우 홈"><i class="tm-face" aria-hidden="true"></i><b class="wm">FITAHW</b><span class="ko">피타우</span></a>
+  <nav class="util" aria-label="사이트"><a href="../about.html" class=hide-m>소개</a><a href="../archive/index.html" class=hide-m>자료실</a><a href="../data.html" class=hide-m>데이터</a></nav>
+  <a class="sub-btn" href="#subscribe">구독</a>
+  <button class="theme" type="button" aria-label="밝은 화면/어두운 화면 바꾸기" title="밝게/어둡게" hidden>◐</button>
+</div></header>
+<nav class="cats" aria-label="카테고리"><div class="wrap"><a href="../index.html">전체</a><a class="nav-vs" href="../vs/index.html" aria-current=page>대결</a><a href="../category/work/index.html">일·이직</a><a href="../category/money/index.html">돈·자산</a><a href="../category/digital/index.html">디지털·크리에이터</a><a href="../category/society/index.html">가족·사회</a><a href="../category/life/index.html">생활·건강</a><a href="../category/business/index.html">창업·자영업</a></div></nav>
+<main>
+<article class="art vote-top">
+<span class="kick">엉뚱한 비교</span><h1>신문 보기 vs SNS 교제, 하루에 한 사람이 더 많은 쪽은 어디일까</h1>
+<p class="dek">아침 신문을 펼치는 사람과 SNS로 안부를 주고받는 사람. 어느 쪽이 더 흔할지는 나이마다 다를 수 있어요. 먼저 골라 주세요.</p>
+<div class="byline"><span>FITAHW</span><span>읽는 데 5분</span><span class="sp"></span><a href="#evidence">근거</a><button type="button" class="pill" data-copy="https://protofu.github.io/opendata-insight/2026-12_odd-newspaper-sns/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></div>
+<section class="poll" id="poll-newspaper-sns" data-poll="newspaper-sns" data-mode="vote" hidden><p class="poll-k">독자 투표</p><h3 class="poll-q">신문 보기 vs SNS 교제, 하루에 한 사람이 더 많은 쪽은?</h3><div class="poll-btns"><button type="button" data-v="a"><b>A</b>신문 보기</button><button type="button" data-v="b"><b>B</b>SNS 교제</button></div><div class="poll-res" hidden><div class="poll-bar" data-v="a"><i></i><span class="poll-l"><b>A</b> 신문 보기</span><span class="poll-p"></span></div><div class="poll-bar" data-v="b"><i></i><span class="poll-l"><b>B</b> SNS 교제</span><span class="poll-p"></span></div></div><p class="poll-meta" aria-live="polite"></p></section><details class="rules"><summary>이 대결의 규칙 자세히 <small>(자료·판정 기준)</small></summary><div class="note"><p class="pt-h"><i class="tm-face" aria-hidden="true"></i>3줄 요약</p><ul class="points"><li>조사한 날 하루 동안 '신문 보기'를 한 사람과 'SNS로 사람을 사귄(교제한)' 사람, 더 많은 쪽은 어디일까요?</li><li>국가데이터처 생활시간조사(2024)의 '행위자 비율'로 20대, 40대, 60세 이상 세 나이대를 같은 잣대로 견줘요.</li><li>비율이 1.1배 이상 차이 나야 승부가 나요. 아니면 무승부예요.</li></ul></div><div class="body"><section class="sec"><h2>조건과 규칙</h2>
+<ul>
+<li><strong>자료</strong>: 국가데이터처 생활시간조사(2024, 10세 이상), 요일 평균 <strong>행위자 비율</strong>(%). <strong>조사한 날 그 일을 한 번이라도 일지에 적은 사람의 비율</strong>이에요. 얼마나 오래 했는지가 아니에요.</li>
+<li><strong>신문</strong>: '신문 보기'예요.</li>
+<li><strong>SNS 교제</strong>: '사회관계망을 통한 교제'예요. SNS로 다른 사람과 소식을 주고받은 일이에요. 문자·메일 교제와 만나서 하는 교제는 따로 세요.</li>
+<li>한 사람이 같은 날 둘 다 적었을 수 있어요.</li>
+<li><strong>세 판</strong>: 20대(20~29세), 40대, 60세 이상.</li>
+<li><strong>판정</strong>: 그 나이대에서 비율이 큰 쪽이 이겨요. 큰 쪽 ÷ 작은 쪽이 1.1배 미만이면 무승부예요(표본조사라 작은 차이는 가르지 않아요).</li>
+<li>이 규칙은 값을 보기 전에 정했어요.</li>
+</ul>
+
+</section></div></details><div class="gate-note"><p class="gate-k">데이터 결과는 투표 뒤에</p><p>A·B 중 하나를 고르면 데이터 결과가 열려요.</p><div class="gate-act"><a class="btn dark" href="#poll-newspaper-sns">위에서 고르기 <span aria-hidden="true">↑</span></a><button type="button" class="btn gate-skip">결과 바로 보기</button></div></div><div class="gated" id="gated" data-gate="newspaper-sns"><div class="body">
+<section class="sec"><h2>결과 요약</h2>
+<p><strong>신문 2승 1패 → 20대만 SNS, 40대부터는 신문</strong></p>
+<ol>
+<li>20대: 신문 3.8%, SNS 교제 14.9%로 SNS 승(3.92배).</li>
+<li>40대: 신문 8.9%, SNS 교제 4.5%로 신문 승(1.98배).</li>
+<li>60세 이상: 신문 6.9%, SNS 교제 0.6%로 신문 승(11.50배).</li>
+</ol>
+<p><strong>그래서?</strong> 20대와 40대 사이에서 이기는 쪽이 뒤집혔어요. 20대는 SNS 교제가 신문의 3.92배이고, 40대는 신문이 SNS 교제의 1.98배예요. 왜 그렇게 다른지는 이 표로 알 수 없어요.</p>
+<section class="poll" data-poll="newspaper-sns" data-mode="result" hidden><p class="poll-k">독자 예상 vs 데이터 결과</p><h3 class="poll-q">신문 보기 vs SNS 교제, 하루에 한 사람이 더 많은 쪽은?</h3><div class="poll-res"><div class="poll-bar ans" data-v="a"><i></i><span class="poll-l"><b>A</b> 신문 보기<em>데이터 결과</em></span><span class="poll-p"></span></div><div class="poll-bar" data-v="b"><i></i><span class="poll-l"><b>B</b> SNS 교제</span><span class="poll-p"></span></div></div><p class="poll-ans">데이터로 보면 <mark>신문 보기</mark>. 생활시간조사(2024) 행위자 비율로 20대는 SNS 교제 14.9% vs 신문 3.8%로 SNS, 40대는 신문 8.9% vs SNS 4.5%, 60세 이상은 신문 6.9% vs SNS 0.6%로 신문이 이겨 신문 2승 1패예요. 그날 일지에 적은 사람 비율이에요.</p><p class="poll-meta" aria-live="polite"></p></section><div class="note note-after"><p class="pt-h"><i class="tm-face" aria-hidden="true"></i>3줄 요약</p><ul class="points"><li>조사한 날 하루 동안 '신문 보기'를 한 사람과 'SNS로 사람을 사귄(교제한)' 사람, 더 많은 쪽은 어디일까요?</li><li>국가데이터처 생활시간조사(2024)의 '행위자 비율'로 20대, 40대, 60세 이상 세 나이대를 같은 잣대로 견줘요.</li><li>비율이 1.1배 이상 차이 나야 승부가 나요. 아니면 무승부예요.</li></ul></div><aside class="vs-top" aria-label="다음 대결"><p class="vs-top-k">같은 하루 시간 대결<span class="vs-prog" hidden></span></p><a class="vs-top-a" data-pos="top" href="../2026-12_odd-walk-exercise/index.html" data-vs="walk-exercise"><b class="vs-top-t">걷기 vs 운동</b><span class="vs-top-go">이것도 맞혀 볼래요? <span aria-hidden="true">→</span></span></a></aside>
+<figure class="fig"><a href="chart_newssns_rounds.png" title="원본 크기로 보기"><picture><source srcset="chart_newssns_rounds.m.dark.png" media="(max-width: 560px) and (prefers-color-scheme: dark)"><source srcset="chart_newssns_rounds.m.png" media="(max-width: 560px)"><source srcset="chart_newssns_rounds.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_newssns_rounds.png" alt="하루 일지에 신문과 SNS 교제를 적은 사람은 20대 3.8% 대 14.9%로 SNS, 40대 8.9% 대 4.5%, 60세 이상 6.9% 대 0.6%로 신문이 많아요"></picture></a><figcaption class="hand-cap">하루 일지에 신문과 SNS 교제를 적은 사람은 20대 3.8% 대 14.9%로 SNS, 40대 8.9% 대 4.5%, 60세 이상 6.9% 대 0.6%로 신문이 많아요</figcaption></figure>
+</section><section class="sec">
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>판</th>
+<th>신문 보기</th>
+<th>SNS 교제</th>
+<th>배수</th>
+<th>승</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 20대</td>
+<td>3.8%</td>
+<td>14.9%</td>
+<td>3.92배</td>
+<td>SNS 교제</td>
+</tr>
+<tr>
+<td>2. 40대</td>
+<td>8.9%</td>
+<td>4.5%</td>
+<td>1.98배</td>
+<td>신문</td>
+</tr>
+<tr>
+<td>3. 60세 이상</td>
+<td>6.9%</td>
+<td>0.6%</td>
+<td>11.50배</td>
+<td>신문</td>
+</tr>
+<tr>
+<td><strong>최종</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>신문 2승 1패</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3>1. 20대: 신문 3.8% vs SNS 교제 14.9%</h3>
+<p>20대는 SNS 교제가 3.92배예요. 100명 중 15명이 그날 SNS로 누군가와 소식을 주고받았다고 적었고, 신문을 본 사람은 4명이에요.</p>
+<h3>2. 40대: 신문 8.9% vs SNS 교제 4.5%</h3>
+<p>40대에서 뒤집혔어요(1.98배). 신문을 본 사람 비율은 세 판 중 40대가 가장 높아요.</p>
+<h3>3. 60세 이상: 신문 6.9% vs SNS 교제 0.6%</h3>
+<p>배수는 가장 커요(11.50배). SNS 교제가 0.6%로 아주 작아서 배수가 크게 나왔어요. 신문을 본 사람도 100명 중 7명이에요.</p>
+<h3>두 숫자 모두 작아요</h3>
+<p>가장 높은 값도 14.9%예요. 그래서 배수가 커 보여도 사람 수로는 100명 중 몇 명 차이예요. 60세 이상 11.50배는 6.9%와 0.6%의 차이예요.</p>
+<h3>5년 전과 견주면, 신문은 세 나이대 모두 줄었어요</h3>
+<p>2019년에도 20대는 SNS 교제(15.3%)가 신문(6.2%)보다 많았고, 40대(신문 11.2% vs 2.7%)와 60세 이상(7.9% vs 0.7%)은 신문이 많았어요. 신문을 본 사람은 2019년보다 20대 6.2%에서 3.8%, 40대 11.2%에서 8.9%, 60세 이상 7.9%에서 6.9%로 줄었어요. 40대 SNS 교제는 2.7%에서 4.5%가 됐어요. 이 표로는 왜 바뀌었는지 알 수 없어요.</p>
+<figure class="fig"><a href="chart_newssns_2019.png" title="원본 크기로 보기"><picture><source srcset="chart_newssns_2019.m.dark.png" media="(max-width: 560px) and (prefers-color-scheme: dark)"><source srcset="chart_newssns_2019.m.png" media="(max-width: 560px)"><source srcset="chart_newssns_2019.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_newssns_2019.png" alt="신문을 본 사람은 2019년에서 2024년 사이 20대 6.2%에서 3.8%, 40대 11.2%에서 8.9%, 60세 이상 7.9%에서 6.9%로 줄었어요" loading=lazy></picture></a><figcaption class="hand-cap">신문을 본 사람은 2019년에서 2024년 사이 20대 6.2%에서 3.8%, 40대 11.2%에서 8.9%, 60세 이상 7.9%에서 6.9%로 줄었어요</figcaption></figure>
+<h3>사람을 만나는 다른 방법까지 보면</h3>
+<p>같은 표에서 2024년 '대면 교제'를 적은 사람은 20대 35.9%, 40대 34.9%, 60세 이상 44.0%예요. '문자·메일 교제'는 19.0%, 11.0%, 7.8%예요. 세 나이대 모두 만나서 하는 교제가 가장 많아요.</p>
+<figure class="fig"><a href="chart_newssns_more.png" title="원본 크기로 보기"><picture><source srcset="chart_newssns_more.m.dark.png" media="(max-width: 560px) and (prefers-color-scheme: dark)"><source srcset="chart_newssns_more.m.png" media="(max-width: 560px)"><source srcset="chart_newssns_more.dark.png" media="(prefers-color-scheme: dark)"><img src="chart_newssns_more.png" alt="2024년 하루 일지에 교제를 적은 사람은 대면 교제가 20대 35.9%, 40대 34.9%, 60세 이상 44.0%로 문자·메일이나 SNS보다 많아요" loading=lazy></picture></a><figcaption class="hand-cap">2024년 하루 일지에 교제를 적은 사람은 대면 교제가 20대 35.9%, 40대 34.9%, 60세 이상 44.0%로 문자·메일이나 SNS보다 많아요</figcaption></figure>
+<h3>숫자를 다시 보며</h3>
+<p>'20대는 뉴스를 안 본다'는 뜻이 아니에요. 이 대결의 '신문 보기'는 생활시간조사의 한 분류일 뿐이고, 뉴스를 보는 다른 방법은 여기 들어 있지 않아요. 또 이 숫자는 그날 한 번이라도 적었는지예요. 나이대 차이는 같은 해 다른 나이 사람들의 일지라서, 사람이 나이 들며 바뀐다는 뜻도 아니에요. 여러분의 어제는 어느 쪽이었나요?</p>
+</section></div><div class="vshare" data-share="newspaper-sns" data-la="신문 보기" data-lb="SNS 교제" hidden><p class="vshare-k">친구는 어느 쪽일까요?</p><p class="vshare-t">내가 고른 쪽만 담아서 보내요. 결과는 안 알려 줘요.</p><div class="vshare-b"><button type="button" class="btn dark vs-native" hidden>공유하기</button><button type="button" class="btn vs-copy">링크 복사</button></div></div><section class="ev" id="evidence"><h2>이 숫자는 어디서 왔나요</h2><details id="ev-source" open><summary>출처</summary><div class="in ev-source"><p class="ev-base"><b>기준일</b> 2024년 생활시간조사 값이에요(5년마다 조사). KOSIS 값은 2026년 11월 14일에 받았어요.</p>
+<div class="src-cards"><div class="src"><p class="src-h"><span>국가데이터처</span><b>생활시간조사</b></p><ul><li><div class="src-t">행동분류별 행위자 비율<small>KOSIS DT_1TS202005</small><p>세 판, 2019년 비교, 다른 교제</p></div><a class="src-go" href="https://kosis.kr/statHtml/statHtml.do?orgId=101&amp;tblId=DT_1TS202005" target="_blank" rel="noopener">원본 보기 <span aria-hidden="true">↗</span></a></li></ul></div></div>
+</div></details><details id="ev-how" open><summary>어떻게 셌나요</summary><div class="in ev-how">
+<ul>
+<li><strong>자료</strong>: 국가데이터처 「생활시간조사」 행동분류별 행위자 비율(KOSIS DT_1TS202005), 2024년·2019년, 요일 평균, 나이대별 '신문 보기'와 '사회관계망을 통한 교제'(%).</li>
+<li><strong>행위자 비율</strong>: 조사한 날 그 행동을 시간일지에 한 번이라도 적은 사람의 비율이에요.</li>
+<li><strong>판정</strong>: 큰 쪽 ÷ 작은 쪽이 1.1배 이상이면 승, 미만이면 무승부.</li>
+<li><strong>나이대</strong>: 2024년 표에 60대 칸 값이 비어 있어서, 미리 정한 대로 60세 이상 칸을 썼어요.</li>
+<li>규칙과 나이대는 값을 보기 전에 정했어요(docs/odd/pool_2611_dilemma.md '묶음 5 생활시간 추가').</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>20대</th>
+<th>40대</th>
+<th>60세 이상</th>
+<th>잰 것 / 가정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>신문 보기 2024</td>
+<td>3.8</td>
+<td>8.9</td>
+<td>6.9</td>
+<td>잰 것(%)</td>
+</tr>
+<tr>
+<td>사회관계망을 통한 교제 2024</td>
+<td>14.9</td>
+<td>4.5</td>
+<td>0.6</td>
+<td>잰 것(%)</td>
+</tr>
+<tr>
+<td>신문 보기 2019</td>
+<td>6.2</td>
+<td>11.2</td>
+<td>7.9</td>
+<td>잰 것(%)</td>
+</tr>
+<tr>
+<td>사회관계망을 통한 교제 2019</td>
+<td>15.3</td>
+<td>2.7</td>
+<td>0.7</td>
+<td>잰 것(%)</td>
+</tr>
+<tr>
+<td>무승부 기준</td>
+<td>1.1배 미만</td>
+<td></td>
+<td></td>
+<td>가정(값 보기 전에 정함)</td>
+</tr>
+</tbody>
+</table></div>
+</div></details><details id="ev-limits" open><summary>한계 6가지</summary><div class="in ev-limits"><p class="sec-note">이 데이터로 말할 수 없는 것</p>
+<ul>
+<li>그날 일지에 한 번이라도 적은 사람 비율이에요. 얼마나 오래 했는지는 알 수 없어요.</li>
+<li>값이 작아서(15% 아래) 작은 차이도 배수로는 크게 보여요. 60세 이상 SNS 교제 0.6%처럼 아주 작은 값은 표본에 따라 흔들릴 수 있어요.</li>
+<li>'신문 보기'가 종이 신문만인지 인터넷 신문도 들어가는지는 이 표의 이름만으로는 알 수 없어요.</li>
+<li>10분 단위 일지라 짧게 한 일은 적히지 않았을 수 있어요.</li>
+<li>나이대 차이는 같은 해 다른 나이 사람들의 일지예요. 사람이 나이 들며 바뀐다는 뜻은 아니에요.</li>
+<li>왜 그렇게 적었는지는 이 자료에 없어요.</li>
+</ul>
+</div></details></section><script>(function(){function o(){var h=location.hash.slice(1),e=h&&document.getElementById(h);var d=e&&e.closest("details");if(d){d.open=true;if(d!==e)e.scrollIntoView();}}addEventListener("hashchange",o);o();})();</script></div><section class="vs-next" data-next="newspaper-sns"><div class="sec-h"><h2>다음 대결</h2><a href="../vs/index.html">대결 다 보기 <span aria-hidden="true">→</span></a></div><p class="vs-prog" data-ser="하루 시간 대결" data-ids="book-mobilegame newspaper-sns pet-plant phone-sleep shop-store-online tv-video walk-exercise" hidden></p><div class="vs-grid"><a class="vs-c" data-same href="../2026-12_odd-walk-exercise/index.html" data-vs="walk-exercise" data-ser="하루 시간 대결"><div class="vs-paper" aria-hidden="true"><p class="pp-q">걷기·산책 vs 개인 운동, 하루에 한 사람이 더 많은 쪽은?</p><p class="pp-ab"><b class="pa">걷기</b><i>vs</i><b class="pb">운동</b></p><i class="tm-face pp-tm"></i></div><span class="vs-k">대결<span class="vs-tm vs-ser">하루 시간</span><span class="vs-mine" hidden>투표했어요</span><span class="vs-res" hidden>결과: 개인 운동</span></span><h3>걷기 vs 운동</h3><p class="vs-q">걷기·산책 vs 개인 운동, 하루에 한 사람이 더 많은 쪽은?</p><p class="vs-ab"><span><b>A</b>걷기·산책</span><i>vs</i><span><b>B</b>개인 운동</span></p><p class="vs-m"><span class="vs-n"></span><span class="vs-go">투표하러 가기 <span aria-hidden="true">→</span></span></p></a><a class="vs-c" data-same href="../2026-12_odd-tv-video/index.html" data-vs="tv-video" data-ser="하루 시간 대결"><div class="vs-paper" aria-hidden="true"><p class="pp-q">TV vs 영상, 하루에 본 사람이 더 많은 쪽은?</p><p class="pp-ab"><b class="pa">TV</b><i>vs</i><b class="pb">영상</b></p><i class="tm-face pp-tm"></i></div><span class="vs-k">대결<span class="vs-tm vs-ser">하루 시간</span><span class="vs-mine" hidden>투표했어요</span><span class="vs-res" hidden>TV 승</span></span><h3>TV vs 영상</h3><p class="vs-q">TV vs 영상, 하루에 본 사람이 더 많은 쪽은?</p><p class="vs-ab"><span><b>A</b>TV(실시간 방송)</span><i>vs</i><span><b>B</b>영상(다시보기·동영상)</span></p><p class="vs-m"><span class="vs-n"></span><span class="vs-go">투표하러 가기 <span aria-hidden="true">→</span></span></p></a><a class="vs-c" data-same href="../2026-12_odd-pet-plant/index.html" data-vs="pet-plant" data-ser="하루 시간 대결"><div class="vs-paper" aria-hidden="true"><p class="pp-q">반려동물 돌보기 vs 식물 돌보기, 하루에 한 사람이 더 많은 쪽은?</p><p class="pp-ab"><b class="pa">반려동물</b><i>vs</i><b class="pb">식물</b></p><i class="tm-face pp-tm"></i></div><span class="vs-k">대결<span class="vs-tm vs-ser">하루 시간</span><span class="vs-mine" hidden>투표했어요</span><span class="vs-res" hidden>반려동물 승</span></span><h3>반려동물 vs 식물</h3><p class="vs-q">반려동물 돌보기 vs 식물 돌보기, 하루에 한 사람이 더 많은 쪽은?</p><p class="vs-ab"><span><b>A</b>반려동물 돌보기</span><i>vs</i><span><b>B</b>식물 돌보기</span></p><p class="vs-m"><span class="vs-n"></span><span class="vs-go">투표하러 가기 <span aria-hidden="true">→</span></span></p></a><a class="vs-c" data-same href="../2026-12_odd-book-mobilegame/index.html" data-vs="book-mobilegame" data-ser="하루 시간 대결"><div class="vs-paper" aria-hidden="true"><p class="pp-q">책 읽기 vs 모바일 게임, 하루에 한 사람이 더 많은 쪽은?</p><p class="pp-ab"><b class="pa">책</b><i>vs</i><b class="pb">모바일 게임</b></p><i class="tm-face pp-tm"></i></div><span class="vs-k">대결<span class="vs-tm vs-ser">하루 시간</span><span class="vs-mine" hidden>투표했어요</span><span class="vs-res" hidden>책 승</span></span><h3>책 vs 모바일 게임</h3><p class="vs-q">책 읽기 vs 모바일 게임, 하루에 한 사람이 더 많은 쪽은?</p><p class="vs-ab"><span><b>A</b>책 읽기</span><i>vs</i><span><b>B</b>모바일 게임</span></p><p class="vs-m"><span class="vs-n"></span><span class="vs-go">투표하러 가기 <span aria-hidden="true">→</span></span></p></a><a class="vs-c" data-same href="../2026-12_odd-shop-store-online/index.html" data-vs="shop-store-online" data-ser="하루 시간 대결"><div class="vs-paper" aria-hidden="true"><p class="pp-q">매장 쇼핑 vs 온라인 쇼핑, 하루 시간일지에 적은 사람이 더 많은 쪽은?</p><p class="pp-ab"><b class="pa">매장</b><i>vs</i><b class="pb">온라인 쇼핑</b></p><i class="tm-face pp-tm"></i></div><span class="vs-k">대결<span class="vs-tm vs-ser">하루 시간</span><span class="vs-mine" hidden>투표했어요</span><span class="vs-res" hidden>매장 승</span></span><h3>매장 vs 온라인 쇼핑</h3><p class="vs-q">매장 쇼핑 vs 온라인 쇼핑, 하루 시간일지에 적은 사람이 더 많은 쪽은?</p><p class="vs-ab"><span><b>A</b>매장 쇼핑</span><i>vs</i><span><b>B</b>온라인 쇼핑</span></p><p class="vs-m"><span class="vs-n"></span><span class="vs-go">투표하러 가기 <span aria-hidden="true">→</span></span></p></a><a class="vs-c" data-same href="../2026-11_odd-phone-meal/index.html" data-vs="phone-sleep" data-ser="하루 시간 대결"><div class="vs-cv"><img src="../covers/2026-11_odd-phone-meal.jpg" alt="" loading="lazy" width="480" height="360"></div><span class="vs-k">대결<span class="vs-tm vs-ser">하루 시간</span><span class="vs-mine" hidden>투표했어요</span><span class="vs-res" hidden>스마트폰 승</span></span><h3>스마트폰 vs 밥</h3><p class="vs-q">한국인은 스마트폰 보는 시간이 더 길까, 밥 먹는 시간이 더 길까?</p><p class="vs-ab"><span><b>A</b>스마트폰</span><i>vs</i><span><b>B</b>밥 먹기</span></p><p class="vs-m"><span class="vs-n"></span><span class="vs-go">투표하러 가기 <span aria-hidden="true">→</span></span></p></a><a class="vs-c" href="../2026-12_odd-social-trust/index.html" data-vs="social-trust" data-ser="설문 대결"><div class="vs-paper" aria-hidden="true"><p class="pp-q">우리 사회, &#x27;믿을 수 있다&#x27; vs &#x27;믿을 수 없다&#x27; 더 많은 쪽은?</p><p class="pp-ab"><b class="pa">우리 사회, 믿을 수 있다</b><i>vs</i><b class="pb">없다</b></p><i class="tm-face pp-tm"></i></div><span class="vs-k">대결<span class="vs-tm vs-ser">설문</span><span class="vs-mine" hidden>투표했어요</span><span class="vs-res" hidden>믿을 수 있다 승</span></span><h3>우리 사회, 믿을 수 있다 vs 없다</h3><p class="vs-q">우리 사회, &#x27;믿을 수 있다&#x27; vs &#x27;믿을 수 없다&#x27; 더 많은 쪽은?</p><p class="vs-ab"><span><b>A</b>믿을 수 있다</span><i>vs</i><span><b>B</b>믿을 수 없다</span></p><p class="vs-m"><span class="vs-n"></span><span class="vs-go">투표하러 가기 <span aria-hidden="true">→</span></span></p></a><a class="vs-c" href="../2026-12_odd-donation-intent/index.html" data-vs="donation-intent" data-ser="설문 대결"><div class="vs-paper" aria-hidden="true"><p class="pp-q">앞으로 기부할 생각, &#x27;있다&#x27; vs &#x27;없다&#x27; 더 많은 쪽은?</p><p class="pp-ab"><b class="pa">기부할 생각, 있다</b><i>vs</i><b class="pb">없다</b></p><i class="tm-face pp-tm"></i></div><span class="vs-k">대결<span class="vs-tm vs-ser">설문</span><span class="vs-mine" hidden>투표했어요</span><span class="vs-res" hidden>없다 승</span></span><h3>기부할 생각, 있다 vs 없다</h3><p class="vs-q">앞으로 기부할 생각, &#x27;있다&#x27; vs &#x27;없다&#x27; 더 많은 쪽은?</p><p class="vs-ab"><span><b>A</b>있다</span><i>vs</i><span><b>B</b>없다</span></p><p class="vs-m"><span class="vs-n"></span><span class="vs-go">투표하러 가기 <span aria-hidden="true">→</span></span></p></a></div></section><a class="go-next" data-go-next href="../vs/index.html">다음 대결 바로 하기 <span aria-hidden="true">→</span></a><section class="share-end"><p>카톡에 링크를 붙이면 숫자 카드랑 요약이 같이 떠요.</p><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/2026-12_odd-newspaper-sns/" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>링크 복사</span></button></section><section class="subscribe" id="subscribe"><div class="sub-t"><h2>새 글 나오면 받아 보기</h2><p>피드 리더 앱에 이 사이트 주소를 한 번 넣어 두면, 새 글이 올라올 때 앱에 떠요. 가입이나 메일 주소는 필요 없어요.</p></div><details class="how"><summary class="btn dark">받는 법 보기</summary><div class="how-in"><ol><li><b>피드 리더 앱을 하나 골라요.</b> 새 글을 모아 보여 주는 앱이에요. 예를 들면 <a href="https://feedly.com" target="_blank" rel="noopener">Feedly</a>나 <a href="https://www.inoreader.com" target="_blank" rel="noopener">Inoreader</a>가 있어요. 둘 다 무료고 웹·휴대폰에서 써요.</li><li><b>앱에서 '구독 추가'(+)를 누르고 아래 주소를 붙여 넣어요.</b></li><li><b>끝이에요.</b> 새 글이 올라오면 앱 목록에 떠요.</li></ol><div class="feed-addr"><code>https://protofu.github.io/opendata-insight/feed.xml</code><button type="button" class="btn" data-copy="https://protofu.github.io/opendata-insight/feed.xml" data-rel="../feed.xml" data-done="주소를 복사했어요" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>주소 복사</span></button></div><p class="how-alt">Feedly를 쓴다면 <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fprotofu.github.io%2Fopendata-insight%2Ffeed.xml" target="_blank" rel="noopener">여기를 눌러 바로 추가</a>할 수도 있어요.</p></div></details></section>
+</article>
+</main>
+<footer class="foot"><div class="wrap">
+  <div><a class="brand" href="../index.html" aria-label="FITAHW 피타우 홈"><i class="tm-face" aria-hidden="true"></i><b class="wm">FITAHW</b><span class="ko">피타우</span></a>
+    <p>뉴스에 나온 숫자가 궁금하면 공공데이터 원본을 열어서 다시 계산해 봐요. 한 사람이 만드는 작은 사이트예요.</p>
+    <small>숫자는 전부 공개된 원자료에서 다시 계산했어요. 원인을 단정하진 않고, 투자·진로 조언도 아니에요.</small></div>
+  <div><h2>둘러보기</h2><ul><li><a href="../about.html">소개</a></li><li><a href="../archive/index.html">자료실</a></li><li><a href="../data.html">숫자 장부</a></li></ul></div>
+  <div><h2>받아 보기</h2><ul><li><a href="#subscribe">새 글 받는 법</a></li><li><a href="../feed.xml">RSS 주소</a></li></ul></div>
+</div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function () {
+  var toast = document.querySelector('.toast');
+  function say(msg) {
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(function () { toast.classList.remove('on'); }, 1600);
+  }
+  function fallback(t, ok_) {
+    var a = document.createElement('textarea'); a.value = t; a.setAttribute('readonly', '');
+    a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(a); say(ok ? ok_ : '주소창의 주소를 복사해 주세요');
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var t = b.dataset.copy || (b.dataset.rel ? new URL(b.dataset.rel, location.href).href : location.href.split('#')[0]);
+      var ok_ = b.dataset.done || '링크를 복사했어요';
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(function () { say(ok_); }, function () { fallback(t, ok_); });
+      else fallback(t, ok_);
+    });
+  });
+})();
+</script><script>
+(function () {
+  var API = "https://nesiqqzkvkxrcyzxtagh.supabase.co", KEY = "sb_publishable_71wZ1_loLKWiPxd070D5UQ_n8RK2q4u";
+  if (!window.fetch || !document.querySelectorAll) return;
+  function call(fn, body) {
+    var c = window.AbortController ? new AbortController() : null, t = c ? setTimeout(function () { c.abort(); }, 8000) : 0;
+    return fetch(API + "/rest/v1/rpc/" + fn, { method: "POST", headers: { apikey: KEY, "Content-Type": "application/json" },
+                                               body: JSON.stringify(body), signal: c ? c.signal : undefined })
+      .then(function (r) { clearTimeout(t); if (!r.ok) throw r.status; return r.json(); })
+      .then(function (j) { var x = Array.isArray(j) ? j[0] : j; if (!x || x.a == null) throw "no poll"; return x; });
+  }
+  function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function put(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function uuid() {
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (ch) {
+      var r = Math.random() * 16 | 0; return (ch === "x" ? r : (r & 3 | 8)).toString(16); });
+  }
+  function when(iso) {  // 한국 시각 '11월 10일(화) 0시' (자정을 '오전 12:00'으로 쓰면 헷갈려서 24시간제)
+    var t = Date.parse(iso); if (isNaN(t)) return "";
+    var d = new Date(t + 9 * 3600e3), m = d.getUTCMinutes();
+    return (d.getUTCMonth() + 1) + "월 " + d.getUTCDate() + "일(" + "일월화수목금토".charAt(d.getUTCDay()) + ") "
+           + d.getUTCHours() + "시" + (m ? " " + m + "분" : "");
+  }
+  function endless(x) { return Date.parse(x.closes_at) >= Date.UTC(2090, 0, 1); }  // 마감 없이 받는 투표(2099년 등): 마감 문구 숨김
+  function say(msg) {
+    var t = document.querySelector(".toast");
+    if (!t) return;
+    t.textContent = msg; t.classList.add("on"); clearTimeout(t.t); t.t = setTimeout(function () { t.classList.remove("on"); }, 1800);
+  }
+  function shareOn(id, v) {  // 투표 뒤 공유: '나는 ○○ 찍었는데, 결과는?' + 링크(utm_source=share). 결과는 안 넣음
+    [].forEach.call(document.querySelectorAll('.vshare[data-share="' + id + '"]'), function (sh) {
+      if (sh.getAttribute("data-on")) return;
+      sh.setAttribute("data-on", "1");
+      var og = document.querySelector('meta[property="og:url"]');
+      var url = (og ? og.content : location.href.split(/[?#]/)[0]) + "?utm_source=share";
+      var lab = sh.getAttribute("data-l" + v) || v.toUpperCase(), text = "나는 " + lab + " 찍었는데, 결과는? 👉";
+      sh.querySelector(".vshare-t").textContent = "내 선택 ‘" + lab + "’만 담아서 보내요. 결과는 안 알려 줘요.";
+      function ev(m) { if (window.gtag) gtag("event", "share", { method: m, content_type: "poll", item_id: id }); }
+      var nat = sh.querySelector(".vs-native");
+      if (navigator.share) {
+        nat.hidden = false;
+        nat.addEventListener("click", function () {
+          navigator.share({ title: document.title, text: text, url: url }).then(function () { ev("native"); }, function () {});
+        });
+      }
+      sh.querySelector(".vs-copy").addEventListener("click", function () {
+        var all = text + " " + url;
+        function done() { say("공유 문구를 복사했어요"); ev("copy"); }
+        function old() {
+          var a = document.createElement("textarea"); a.value = all; a.setAttribute("readonly", "");
+          a.style.position = "fixed"; a.style.opacity = "0"; document.body.appendChild(a); a.select();
+          var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(a); if (ok) done(); else say("주소창의 주소를 복사해 주세요");
+        }
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(all).then(done, old); else old();
+      });
+      sh.hidden = false;
+    });
+  }
+  var voter = get("dhc-voter");
+  if (!voter) { voter = uuid(); put("dhc-voter", voter); }
+  [].forEach.call(document.querySelectorAll(".poll[data-poll]"), function (box) {
+    var id = box.getAttribute("data-poll"), mode = box.getAttribute("data-mode"), mine = get("dhc-vote:" + id);
+    var btns = box.querySelector(".poll-btns"), res = box.querySelector(".poll-res"), meta = box.querySelector(".poll-meta");
+    function show(x, note) {
+      var a = +x.a || 0, b = +x.b || 0, n = a + b, pa = n ? Math.round(a * 100 / n) : 0, far = endless(x);
+      [["a", pa], ["b", n ? 100 - pa : 0]].forEach(function (p) {
+        var bar = res.querySelector('[data-v="' + p[0] + '"]');
+        bar.querySelector(".poll-p").textContent = n ? p[1] + "%" : "";
+        bar.querySelector("i").style.width = p[1] + "%";
+        if (mine === p[0]) bar.classList.add("mine");
+      });
+      if (mine && mode === "vote") shareOn(id, mine);
+      if (btns) btns.hidden = true;
+      res.hidden = false;
+      meta.textContent = (n ? (far ? "지금까지 " + n.toLocaleString("ko-KR") + "명 참여" : n.toLocaleString("ko-KR") + "명이 골랐어요")
+                            : "아직 고른 사람이 없어요") + (note ? " · " + note : "");
+    }
+    var gated = mode !== "result" && document.querySelector('.gated[data-gate="' + id + '"]');
+    function fail() { if (gated) document.documentElement.classList.add("gate-fail"); }
+    call("poll_results", { p_poll: id }).then(function (x) {
+      box.hidden = false;
+      if (gated) document.documentElement.classList.add("poll-ok");
+      var far = endless(x);
+      if (mode === "result") return show(x, far ? "" : x.is_open ? when(x.closes_at) + "까지 받는 중" : "독자 투표 결과");
+      if (!x.is_open) { if (gated && window.dhcOpenGate) window.dhcOpenGate(false); return show(x, "투표가 끝났어요"); }
+      if (mine) return show(x, far ? "" : "마감 " + when(x.closes_at));
+      meta.textContent = (far ? "" : "마감 " + when(x.closes_at) + " · ") + "고르면 지금까지 비율이 바로 보여요";
+      [].forEach.call(btns.querySelectorAll("button"), function (b) {
+        b.addEventListener("click", function () {
+          [].forEach.call(btns.querySelectorAll("button"), function (o) { o.disabled = true; });
+          call("cast_vote", { p_poll: id, p_voter: voter, p_choice: b.getAttribute("data-v") }).then(function (y) {
+            if (y.is_open) { mine = b.getAttribute("data-v"); put("dhc-vote:" + id, mine); }
+            if (window.gtag) gtag("event", "poll_vote", { poll_id: id, choice: b.getAttribute("data-v") });
+            show(y, gated ? "아래에 데이터 결과가 열렸어요" : y.is_open ? "결과 글에서 데이터랑 맞춰 볼게요" : "투표가 막 끝났어요");
+            if (gated && window.dhcOpenGate) window.dhcOpenGate(900);
+          }).catch(function () {
+            [].forEach.call(btns.querySelectorAll("button"), function (o) { o.disabled = false; });
+            meta.textContent = "지금은 표가 안 들어가요. 잠시 뒤에 다시 눌러 주세요.";
+            fail();
+          });
+        });
+      });
+    }).catch(fail);
+  });
+  [].forEach.call(document.querySelectorAll("[data-poll-live]"), function (el) {
+    call("poll_results", { p_poll: el.getAttribute("data-poll-live") }).then(function (x) { if (x.is_open) el.hidden = false; })
+      .catch(function () {});
+  });
+})();
+</script>
+<script>
+(function () {  // 대결 카드: 참여 수(결과는 안 보임), 내가 투표한 글 표시, '다음 대결'은 안 한 투표 먼저 3개
+  var API = "https://nesiqqzkvkxrcyzxtagh.supabase.co", KEY = "sb_publishable_71wZ1_loLKWiPxd070D5UQ_n8RK2q4u";
+  function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  var cards = [].slice.call(document.querySelectorAll(".vs-c[data-vs]"));
+  cards.forEach(function (c) {
+    var id = c.getAttribute("data-vs");
+    if (get("dhc-vote:" + id)) {
+      c.classList.add("voted"); c.querySelector(".vs-mine").hidden = false;
+      var rs = c.querySelector(".vs-res"); if (rs) rs.hidden = false;
+      c.querySelector(".vs-go").innerHTML = '결과 보기 <span aria-hidden="true">→</span>';
+    }
+  });
+  var tools = document.querySelector(".vs-tools"), fb = tools && tools.querySelector(".vs-filter");
+  if (fb) {
+    var bs = [].slice.call(fb.querySelectorAll("button")), HASH = { "s:실험맨 대결": "testman" }, cur = "all", q = "";
+    var inp = tools.querySelector("input"), none = tools.querySelector(".vs-none");
+    var pool = cards.concat([].slice.call(document.querySelectorAll(".vs-all > .vs-c:not([data-vs])")));
+    var norm = function (t) { return (t || "").replace(/[^가-힣a-zA-Z0-9]/g, "").toLowerCase(); };
+    var apply = function () {
+      var shown = 0;
+      pool.forEach(function (c) {
+        var okF = cur === "all" || (cur.indexOf("s:") === 0 && c.getAttribute("data-ser") === cur.slice(2));
+        var okQ = !q || norm(c.textContent).indexOf(q) >= 0;
+        c.hidden = !(okF && okQ); if (!c.hidden) shown++;
+      });
+      var ir = document.querySelector(".ins-row"); if (ir) ir.hidden = cur !== "all" || !!q;
+      if (none) none.hidden = shown > 0;
+    };
+    var setF = function (f, push) {
+      cur = f;
+      bs.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-f") === f ? "true" : "false"); });
+      apply();
+      if (push) { try { history.replaceState(null, "", HASH[f] ? "#" + HASH[f] : location.pathname + location.search); } catch (e) {} }
+      if (push && window.gtag) gtag("event", "vs_filter", { filter: f });
+    };
+    bs.forEach(function (b) { b.addEventListener("click", function () { setF(b.getAttribute("data-f"), true); }); });
+    var sent = false;
+    if (inp) inp.addEventListener("input", function () {
+      q = norm(inp.value); apply();
+      if (q && !sent && window.gtag) { sent = true; gtag("event", "vs_search", {}); }
+    });
+    tools.hidden = false;
+    for (var k in HASH) if (location.hash === "#" + HASH[k] && fb.querySelector('[data-f="' + k + '"]')) setF(k, false);
+  }
+  var cnt = document.querySelector("[data-vs-count]");
+  if (cnt && cards.length) {
+    var v = cards.filter(function (c) { return c.classList.contains("voted"); }).length;
+    var tot = +cnt.getAttribute("data-total") || cards.length;
+    cnt.textContent = (tot > cards.length ? "대결 " + tot + "개 중 투표 받는 대결 " + cards.length + "개" : "투표 받는 대결 " + cards.length + "개") + (v ? " · 내가 투표한 대결 " + v + "개" : "");
+    cnt.hidden = false;
+  }
+  [].forEach.call(document.querySelectorAll(".vs-next"), function (box) {
+    var g = box.querySelector(".vs-grid"), all = [].slice.call(g.children);
+    var fresh = all.filter(function (c) { return !c.classList.contains("voted"); });
+    var done = all.filter(function (c) { return c.classList.contains("voted"); });
+    var sm = function (c) { return c.hasAttribute("data-same"); }, nsm = function (c) { return !sm(c); };
+    var order = fresh.filter(sm).concat(fresh.filter(nsm), done.filter(sm), done.filter(nsm));  // 같은 계열 · 안 한 투표 먼저
+    order.forEach(function (c) { g.appendChild(c); });
+    var first = order.filter(function (c) { return !c.classList.contains("voted") && c.hasAttribute("data-vs"); })[0];
+    var go = box.nextElementSibling;
+    if (go && go.hasAttribute("data-go-next") && fresh[0]) go.href = order[0].getAttribute("href");
+    var from = box.getAttribute("data-next");
+    all.forEach(function (c) {
+      c.addEventListener("click", function () {
+        if (window.gtag) gtag("event", "next_click", { item_id: c.getAttribute("data-vs") || "", from_poll: from, pos: "end", same: sm(c) ? 1 : 0 });
+      });
+    });
+    var top = document.querySelector(".vs-top");  // 결과 아래 한 장: 같은 계열의 안 한 투표 첫 장으로 맞춤, 다 했으면 숨김
+    if (top) {
+      var a = top.querySelector(".vs-top-a");
+      if (first) {
+        a.href = first.getAttribute("href"); a.setAttribute("data-vs", first.getAttribute("data-vs"));
+        var h = first.querySelector("h3"); if (h) a.querySelector(".vs-top-t").textContent = h.textContent;
+        if (!sm(first)) top.querySelector(".vs-top-k").firstChild.nodeValue = "다음 대결";
+      } else if (a.getAttribute("data-vs") && get("dhc-vote:" + a.getAttribute("data-vs"))) { top.hidden = true; }
+      a.addEventListener("click", function () {
+        if (window.gtag) gtag("event", "next_click", { item_id: a.getAttribute("data-vs") || "", from_poll: from, pos: "top",
+                                                       same: first && !sm(first) ? 0 : 1 });
+      });
+    }
+    var pg = box.querySelector(".vs-prog");  // 계열 진행 표시: 브라우저 저장값만, 없거나 막히면 아무것도 안 보임
+    var prog = function () {
+      if (!pg) return;
+      try {
+        var ids = (pg.getAttribute("data-ids") || "").split(" ").filter(Boolean), m = 0;
+        ids.forEach(function (id) { if (localStorage.getItem("dhc-vote:" + id)) m++; });
+        var t = m ? pg.getAttribute("data-ser") + " " + ids.length + "편 중 " + m + "편 투표했어요" : "";
+        [pg, document.querySelector(".vs-top .vs-prog")].forEach(function (el) {
+          if (!el) return; el.textContent = t ? (el === pg ? t : " · " + ids.length + "편 중 " + m + "편 투표") : ""; el.hidden = !t;
+        });
+      } catch (e) { [].forEach.call(document.querySelectorAll(".vs-prog"), function (el) { el.hidden = true; }); }
+    };
+    prog();
+    [].forEach.call(document.querySelectorAll(".poll-btns button"), function (b) { b.addEventListener("click", function () { setTimeout(prog, 800); }); });
+  });
+  if (!window.fetch) return;
+  cards.forEach(function (c) {
+    fetch(API + "/rest/v1/rpc/poll_results", { method: "POST", headers: { apikey: KEY, "Content-Type": "application/json" },
+                                               body: JSON.stringify({ p_poll: c.getAttribute("data-vs") }) })
+      .then(function (r) { if (!r.ok) throw r.status; return r.json(); })
+      .then(function (j) {
+        var x = Array.isArray(j) ? j[0] : j; if (!x || x.a == null) return;
+        var n = (+x.a || 0) + (+x.b || 0), el = c.querySelector(".vs-n");
+        el.textContent = n ? n.toLocaleString("ko-KR") + "명 참여" : "첫 투표를 기다려요";
+        if (!x.is_open && !c.classList.contains("voted")) {
+          el.textContent += " · 투표 끝"; c.querySelector(".vs-go").innerHTML = '결과 보기 <span aria-hidden="true">→</span>';
+        }
+      }).catch(function () {});
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var r = document.documentElement, b = document.querySelector('.theme');
+  var DARK = '(prefers-color-scheme: dark)';
+  function apply() {
+    var t = r.dataset.theme;
+    document.querySelectorAll('picture source').forEach(function (s) {
+      var m = s.dataset.m || (s.dataset.m = s.media);
+      if (m.indexOf(DARK) < 0) return;
+      s.media = t ? m.replace(DARK, t === 'dark' ? '(min-width: 0px)' : '(max-width: 0px)') : m;
+    });
+  }
+  if (b) {
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      var dark = r.dataset.theme ? r.dataset.theme === 'dark' : matchMedia(DARK).matches;
+      r.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', r.dataset.theme); } catch (e) {}
+      apply();
+    });
+  }
+  apply();
+})();
+</script>
+</body>
+</html>

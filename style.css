@@ -7,7 +7,7 @@
   --hair: #e4e4df; --rule: #16181d; --mark: #ffe15a; --mark-ink: #16181d;
   --accent: #2a78d6; --accent-2: #e0592a; --link: #1f63b8; --warn: #b8481a;
   --band: #16181d; --band-ink: #fbfbf9;
-  --serif: "Noto Serif KR", "Nanum Myeongjo", "AppleMyungjo", serif;
+  --serif: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;  /* 개편 v3: 명조 대신 고딕 하나 */
   --sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, "Consolas", monospace;
   --wide: 1180px; --measure: 700px;
@@ -15,14 +15,14 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #121316; --surface: #1a1c20; --ink: #eceae4; --ink-2: #b3b2ac; --muted: #85848a;
+    --bg: #121316; --surface: #1a1c20; --ink: #f3f1ec; --ink-2: #d6d4ce; --muted: #a3a29c;
     --hair: #2b2d32; --rule: #eceae4; --mark: #ffd84a; --mark-ink: #121316;
     --accent: #6aa8f0; --accent-2: #ff8a5c; --link: #8bbcf2; --warn: #f2905f;
     --band: #1f2126; --band-ink: #eceae4; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #121316; --surface: #1a1c20; --ink: #eceae4; --ink-2: #b3b2ac; --muted: #85848a;
+  --bg: #121316; --surface: #1a1c20; --ink: #f3f1ec; --ink-2: #d6d4ce; --muted: #a3a29c;
   --hair: #2b2d32; --rule: #eceae4; --mark: #ffd84a; --mark-ink: #121316;
   --accent: #6aa8f0; --accent-2: #ff8a5c; --link: #8bbcf2; --warn: #f2905f;
   --band: #1f2126; --band-ink: #eceae4; color-scheme: dark;
@@ -459,7 +459,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 /* 실험맨 편 배지·필터 */
 .vs-tm { padding: 1px 8px; border-radius: 6px; border: 1.5px solid var(--ink); background: var(--mark); color: var(--mark-ink); letter-spacing: .02em; }
 .vs-c[hidden] { display: none; }
-.vs-filter { display: flex; gap: 8px; margin: 20px 0 14px; }
+.vs-filter { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 14px; }
 .vs-filter[hidden] { display: none; }
 .vs-filter button { font: 700 15px var(--sans); padding: 9px 16px; min-height: 42px; border-radius: 999px; border: 1.5px solid var(--hair);
                     background: transparent; color: var(--ink-2); cursor: pointer; }
@@ -663,3 +663,69 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .vs-top-go { font-weight: 800; font-size: 14.5px; white-space: nowrap; }
 .vs-top-a:hover .vs-top-go { text-decoration: underline; text-underline-offset: 3px; }
 .vs-next .vs-prog { margin: -6px 0 12px; font-size: 13.5px; font-weight: 700; color: var(--odd); }
+/* /vs/ 이름 찾기 칸 + 계열 필터 (디자인 참조 5주차 3·4번) */
+.vs-tools { margin-top: 20px; }
+.vs-tools[hidden], .vs-none[hidden] { display: none; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.vs-find input { box-sizing: border-box; width: 100%; max-width: 420px; min-height: 46px; padding: 10px 16px; border-radius: 999px;
+                 border: 2px solid var(--hair); background: var(--surface); color: var(--ink); font: 600 16px var(--sans); }
+.vs-find input:focus { outline: none; border-color: var(--ink); }
+.vs-none { margin: 8px 0 0; font-size: 14.5px; color: var(--ink-2); }
+.vs-ser { background: var(--surface); color: var(--ink-2); }
+
+/* ===== 사이트 개편 v3 (사용자 OK 2026-11-14, G:\sns\예비\사이트시안) =====
+   1) 글꼴 2종: 손글씨(Gaegu)는 로고 옆 '피타우'·실험맨 말풍선·종이 표지 'A vs B'에만. 나머지 라벨은 고딕 */
+.kick, .eyebrow, .lf-k, .sec-h h2, .odd-live, .vs-k, .poll-k, .note .pt-h, .hand-cap, .wc-cap, .pp-q, .ins-h,
+.poll-btns button b, .go-next, .note .points li::before { font-family: var(--sans) !important; letter-spacing: -.01em !important; }
+.sec-h h2 { font-weight: 800 !important; font-size: 20px !important; }
+.kick, .eyebrow, .vs-k { font-weight: 800 !important; font-size: 13px !important; }
+.poll-k { font-weight: 800 !important; font-size: 14px !important; }
+.note .pt-h { font-weight: 800 !important; font-size: 18px !important; }
+.note .points li::before { font-weight: 800 !important; font-size: 13px !important; }
+.go-next { font-weight: 800 !important; font-size: 18px !important; }
+.hand-cap { font: 500 15px/1.5 var(--sans) !important; color: var(--muted) !important; }
+.hand-cap::before { content: "" !important; }
+/* 3) 폰 본문: 17.5px, 줄간격 1.7 */
+@media (max-width: 560px) {
+  .body p, .body li, .art .dek, .note li { font-size: 17.5px !important; line-height: 1.7 !important; }
+  .body p { margin: 0 0 1.1em !important; }
+  .art h1 { font-size: 27px !important; line-height: 1.35 !important; }
+  .body h2 { font-size: 22px !important; }
+  .body h3 { font-size: 19px !important; }
+}
+/* 4) 홈 '이번 주 차트'·글 목록: 큰 숫자 + 질문 */
+.wc-num { padding-bottom: 4px; }
+.wc-big { display: block; width: fit-content; max-width: calc(100% - 32px); margin: 18px 16px 4px; font: 900 32px/1.15 var(--sans); letter-spacing: -.04em;
+          color: var(--ink); background: linear-gradient(transparent 62%, var(--mark) 62%); overflow-wrap: anywhere; }
+.wc-m { margin: 4px 16px 0; font-size: 14px; line-height: 1.45; color: var(--muted); }
+.wc-num .wc-t { margin: 8px 16px 16px !important; font: 700 16.5px/1.45 var(--sans) !important; }
+.ph-num { display: flex; flex-direction: column; justify-content: center; gap: 6px; aspect-ratio: 4 / 3; padding: 16px 18px; box-sizing: border-box;
+          background: var(--surface); border: 1.5px solid var(--hair); border-radius: 12px; overflow: hidden; }
+.ph-num .pn { width: fit-content; max-width: 100%; font: 900 clamp(26px, 6vw, 36px)/1.15 var(--sans); letter-spacing: -.04em; color: var(--ink);
+              background: linear-gradient(transparent 62%, var(--mark) 62%); overflow-wrap: anywhere; }
+.ph-num .pm { font-size: 13.5px; line-height: 1.45; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.mini .ph-num .pn { font-size: 24px; }
+/* 2) 대결 글: 투표 아래 '규칙 자세히' 접기. 투표 뒤엔 3줄 요약을 결과 바로 아래(.note-after)에 펼치고, 접은 칸의 3줄 요약은 숨김 */
+details.rules { margin: 18px 0 8px; border: 1.5px solid var(--hair); border-radius: 14px; padding: 2px 16px; background: var(--surface); }
+details.rules > summary { cursor: pointer; padding: 13px 0; font: 800 16px var(--sans); color: var(--ink); list-style: none; }
+details.rules > summary::-webkit-details-marker { display: none; }
+details.rules > summary small { font-weight: 600; color: var(--muted); }
+details.rules > summary::after { content: " ▾"; color: var(--muted); }
+details.rules[open] > summary::after { content: " ▴"; }
+details.rules .note { margin: 6px 0 14px !important; }
+details.rules > .body { margin-bottom: 8px; }
+.gate-open details.rules .note { display: none; }
+.note-after { display: none; }
+.gate-open .note-after, html:not(.gate-on) .note-after { display: block; margin: 22px 0 !important; }
+.ph-long .pn { font-size: clamp(19px, 4.4vw, 26px) !important; word-break: keep-all; }
+@media (max-width: 760px) {
+  .trio .ph-num, .mini .ph-num { padding: 10px 12px; gap: 4px; }
+  .trio .ph-num .pn, .mini .ph-num .pn { font-size: 22px; }
+  .trio .ph-long .pn, .mini .ph-long .pn { font-size: 15px !important; }
+  .trio .ph-num .pm, .mini .ph-num .pm { font-size: 12px; -webkit-line-clamp: 2; }
+}
+@media (max-width: 760px) { .trio .ph-long .pm, .mini .ph-long .pm { display: none; } }
+@media (min-width: 761px) { .trio .ph-num { aspect-ratio: 16 / 9; } }
+/* 다크: 큰 숫자 형광펜을 옅게 (흰 글자와 대비) */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) :is(.wc-big, .ph-num .pn) { background: linear-gradient(transparent 62%, rgba(255, 216, 74, .32) 62%); } }
+:root[data-theme="dark"] :is(.wc-big, .ph-num .pn) { background: linear-gradient(transparent 62%, rgba(255, 216, 74, .32) 62%); }
