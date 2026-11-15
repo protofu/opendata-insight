@@ -183,7 +183,7 @@
   function ymd(d) { return d.getUTCFullYear() + ("0" + (d.getUTCMonth() + 1)).slice(-2) + ("0" + d.getUTCDate()).slice(-2); }
   var now = kst(0), day = ymd(now), md = (now.getUTCMonth() + 1) + "/" + now.getUTCDate();
   var h = 0; for (var i = 0; i < day.length; i++) h = (h * 31 + day.charCodeAt(i)) % 1000003;
-  var p = list[h % list.length], ev = "daily-" + day;
+  var p = null, ev = "daily-" + day;
   var no = Math.floor((Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) - Date.UTC(2026, 10, 15)) / 864e5) + 1;  // 회차: 2026-11-15(한국 시간)이 #1
   function streak() { var n = 0; while (n < 400 && get("dhc-daily:" + ymd(kst(n)))) n++; return n; }
   function call(fn, body) {
@@ -191,9 +191,9 @@
       .then(function (r) { if (!r.ok) throw r.status; return r.json(); })
       .then(function (j) { var x = Array.isArray(j) ? j[0] : j; if (!x || x.a == null) throw "no poll"; return x; });
   }
-  var top = '<div class="td-top"><span class="td-k">오늘의 숫자 대결 #' + no + '</span><span class="td-d">' + md + ' · 하루 한 판</span></div><h2 class="td-q">' + esc(p.q) + '</h2>';
+  function top() { return '<div class="td-top"><span class="td-k">오늘의 숫자 대결 #' + no + '</span><span class="td-d">' + md + ' · 하루 한 판</span></div><h2 class="td-q">' + esc(p.q) + '</h2>'; }
   function ask() {
-    box.innerHTML = top + '<div class="td-btns"><button type="button" data-v="a"><b>A</b>' + esc(p.a) + '</button><button type="button" data-v="b"><b>B</b>' + esc(p.b) + '</button></div>' +
+    box.innerHTML = top() + '<div class="td-btns"><button type="button" data-v="a"><b>A</b>' + esc(p.a) + '</button><button type="button" data-v="b"><b>B</b>' + esc(p.b) + '</button></div>' +
       '<p class="td-m">하나 고르면 바로 데이터 결과가 열려요.</p>';
     [].forEach.call(box.querySelectorAll("button"), function (b) {
       b.addEventListener("click", function () {
@@ -211,7 +211,7 @@
   function show(v, x) {
     var a = +x.a || 0, b = +x.b || 0, n = a + b, pa = n ? Math.round(a * 100 / n) : 0, s = streak();
     function bar(k, lab, pc) { return '<div class="td-bar' + (v === k ? " mine" : "") + '"><i style="width:' + pc + '%"></i><span><b>' + k.toUpperCase() + '</b> ' + esc(lab) + '</span><em>' + (n ? pc + "%" : "") + '</em></div>'; }
-    box.innerHTML = top + '<div class="td-res">' + bar("a", p.a, pa) + bar("b", p.b, n ? 100 - pa : 0) + '</div>' +
+    box.innerHTML = top() + '<div class="td-res">' + bar("a", p.a, pa) + bar("b", p.b, n ? 100 - pa : 0) + '</div>' +
       '<p class="td-ans"><span class="chip">데이터 결과</span> ' + esc(p.r) + (n ? ' <small>독자 ' + n.toLocaleString("ko-KR") + '명 참여</small>' : "") + '</p>' +
       '<div class="td-share"><button type="button" class="td-sh">결과 공유하기</button><a class="td-go" href="' + p.h + '">왜 그런지 보기 <span aria-hidden="true">→</span></a></div>' +
       '<p class="td-m">한국 시간 0시에 새 대결이 열려요 · ' + Math.max(s, 1) + '일 연속</p>';
@@ -226,10 +226,19 @@
       }, function () {});
     });
   }
-  var mine = get("dhc-daily:" + day) || get("dhc-vote:" + p.id);
-  box.hidden = false;
-  if (mine) { if (!get("dhc-daily:" + day)) put("dhc-daily:" + day, mine); call("poll_results", { p_poll: p.id }).then(function (x) { show(mine, x); }, function () { show(mine, {}); }); }
-  else ask();
+  // 서버에 투표가 있는 대결만: 오늘 순번부터 차례로 poll_results를 물어 처음 되는 것 (모두 같은 서버를 보니 모두 같은 문제). 10번 안에 없으면 칸을 숨김
+  function start(k) {
+    if (k >= Math.min(10, list.length)) return;
+    var c = list[(h + k) % list.length];
+    call("poll_results", { p_poll: c.id }).then(function (x) {
+      p = c;
+      var mine = get("dhc-daily:" + day) || get("dhc-vote:" + p.id);
+      box.hidden = false;
+      if (mine) { if (!get("dhc-daily:" + day)) put("dhc-daily:" + day, mine); show(mine, x); }
+      else ask();
+    }, function () { start(k + 1); });
+  }
+  start(0);
 })();
 </script>
 <script>
