@@ -683,7 +683,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .note .pt-h { font-weight: 800 !important; font-size: 18px !important; }
 .note .points li::before { font-weight: 800 !important; font-size: 13px !important; }
 .go-next { font-weight: 800 !important; font-size: 18px !important; }
-.hand-cap { font: 500 15px/1.5 var(--sans) !important; color: var(--muted) !important; }
+.hand-cap { font: 600 16px/1.55 var(--sans) !important; color: var(--ink) !important; margin-top: 10px !important; }  /* 읽기 개선 5(a), pm 11-15: 요지 문장은 본문 색으로 진하게 (출처는 차트 그림 안 작은 회색 줄) */
 .hand-cap::before { content: "" !important; }
 /* 3) 폰 본문: 17.5px, 줄간격 1.7 */
 @media (max-width: 560px) {
@@ -729,3 +729,11 @@ details.rules > .body { margin-bottom: 8px; }
 /* 다크: 큰 숫자 형광펜을 옅게 (흰 글자와 대비) */
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) :is(.wc-big, .ph-num .pn) { background: linear-gradient(transparent 62%, rgba(255, 216, 74, .32) 62%); } }
 :root[data-theme="dark"] :is(.wc-big, .ph-num .pn) { background: linear-gradient(transparent 62%, rgba(255, 216, 74, .32) 62%); }
+
+/* 폰 표(pm 11-15): '배수' 칸 숨겨 '승' 칸이 보이게, 넓은 표 위에 밀기 안내 */
+.tbl-hint { display: none; margin: 12px 0 -6px; font-size: 13px; color: var(--muted); text-align: right; }
+@media (max-width: 560px) {
+  .art .c-mul { display: none; }
+  .art table.t-fit { min-width: 0; }
+  .tbl-hint { display: block; }
+}
