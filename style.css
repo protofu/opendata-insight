@@ -786,3 +786,11 @@ details.rules > .body { margin-bottom: 8px; }
 .art .sec > h2, :root[data-theme="dark"] .art .sec > h2 { background: var(--crayon-line) no-repeat 0 100% / 100% .38em; padding-bottom: 2px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .art .sec > h2 { background: var(--crayon-line) no-repeat 0 100% / 100% .38em; } }
 .sec-h h2 { background: var(--crayon-line) no-repeat 0 100% / 100% .3em; padding-bottom: 3px; }
+
+/* 디자인 참조 6주차(pm OK 11-15): 오늘의 대결 7칸 연속 기록, 카드 날짜 */
+.td-st { display: flex; align-items: center; gap: 10px; margin: 10px 0 0; font: 700 12.5px/1 var(--sans); color: var(--muted); }
+.td-cells { display: inline-flex; gap: 5px; }
+.td-cells i { width: 16px; height: 16px; border: 1.5px solid var(--hair); border-radius: 4px; background: transparent; }
+.td-cells i.on { background: var(--crayon); border-color: var(--ink); }
+.td-cells i.now { border-color: var(--ink); border-width: 2px; }
+.vs-dt { font: 500 12px/1 var(--sans) !important; letter-spacing: 0 !important; color: var(--muted); }
