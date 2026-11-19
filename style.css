@@ -676,7 +676,7 @@ html:not(.poll-ok) .gate-act a { display: none; }  /* 11-15: 투표 칸이 보�
 .vs-none { margin: 8px 0 0; font-size: 14.5px; color: var(--ink-2); }
 .vs-ser { background: var(--surface); color: var(--ink-2); }
 
-/* ===== 사이트 개편 v3 (사용자 OK 2026-11-14, G:\sns\예비\사이트시안) =====
+/* ===== 사이트 개편 v3 (사용자 OK 2026-11-14, D:\sns\예비\사이트시안) =====
    1) 글꼴 2종: 손글씨(Gaegu)는 로고 옆 '피타우'·실험맨 말풍선·종이 표지 'A vs B'에만. 나머지 라벨은 고딕 */
 .kick, .eyebrow, .lf-k, .sec-h h2, .odd-live, .vs-k, .poll-k, .note .pt-h, .hand-cap, .wc-cap, .pp-q, .ins-h,
 .poll-btns button b, .go-next, .note .points li::before { font-family: var(--sans) !important; letter-spacing: -.01em !important; }
