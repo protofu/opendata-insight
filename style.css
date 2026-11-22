@@ -879,8 +879,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .page-head .sr-sns { margin-top: 12px; }
 .sr-all-list { padding: 34px 0 6px; }
 .sr-all-list ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--hair); }
-.sr-all-list li { display: flex; justify-content: space-between; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--hair); font-size: 17px; line-height: 1.45; }
-.sr-all-list li a { font-weight: 600; } .sr-all-list time { flex: none; color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; padding-top: 2px; }
+.sr-all-list li { border-bottom: 1px solid var(--hair); }
+.sr-all-list li a { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 12px 0; font-size: 17px; line-height: 1.45; color: inherit; text-decoration: none; }
+.sr-li-t b { display: block; font-weight: 600; } .sr-li-t small { display: block; margin-top: 3px; color: var(--muted); font-size: 14px; }
+.sr-all-list time { font-variant-numeric: tabular-nums; }
+.sr-all-list li img { flex: none; width: 48px; aspect-ratio: 9/16; height: auto; object-fit: cover; border-radius: 8px; border: 1px solid var(--card-edge); }
+.sr-trio.sr-one { grid-template-columns: min(56%, 220px); }
 .sr-all-list summary { cursor: pointer; padding: 14px 0; font-weight: 700; color: var(--ink-2); }
 .sr-followbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 26px 0 10px; padding: 16px; border-radius: 16px; background: var(--surface); border: 1px solid var(--hair); }
 .sr-followbar p { margin: 0; font-weight: 700; }
@@ -892,6 +896,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 @media (min-width: 760px) {
   .sr-hero-in { grid-template-columns: 1fr auto; align-items: center; padding-top: 40px; padding-bottom: 20px; }
   .sr-trio { order: 0; grid-template-columns: repeat(3, 180px); gap: 12px; }
+  .sr-trio.sr-one { grid-template-columns: 240px; }
   .sr-trio .sr-ov b { font-size: 15px; }
   .sr-hero h1 { font-size: 52px; }
   .sr-cta { grid-template-columns: repeat(2, 220px); }
