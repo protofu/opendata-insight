@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://protofu.github.io/opendata-insight/</loc><lastmod>2026-11-22</lastmod></url>
-<url><loc>https://protofu.github.io/opendata-insight/vs/</loc><lastmod>2026-11-22</lastmod></url>
-<url><loc>https://protofu.github.io/opendata-insight/archive/</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://protofu.github.io/opendata-insight/</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://protofu.github.io/opendata-insight/vs/</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://protofu.github.io/opendata-insight/archive/</loc><lastmod>2026-11-23</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/about.html</loc></url>
 <url><loc>https://protofu.github.io/opendata-insight/category/work/</loc><lastmod>2026-11-20</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/category/money/</loc><lastmod>2026-11-18</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/category/digital/</loc><lastmod>2026-11-20</lastmod></url>
-<url><loc>https://protofu.github.io/opendata-insight/category/society/</loc><lastmod>2026-11-22</lastmod></url>
-<url><loc>https://protofu.github.io/opendata-insight/category/life/</loc><lastmod>2026-11-21</lastmod></url>
+<url><loc>https://protofu.github.io/opendata-insight/category/society/</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://protofu.github.io/opendata-insight/category/life/</loc><lastmod>2026-11-23</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/category/business/</loc><lastmod>2026-11-05</lastmod></url>
-<url><loc>https://protofu.github.io/opendata-insight/category/odd/</loc><lastmod>2026-11-22</lastmod></url>
+<url><loc>https://protofu.github.io/opendata-insight/category/odd/</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://protofu.github.io/opendata-insight/2026-11_whatif-day/</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://protofu.github.io/opendata-insight/2026-11_jeju-blog-vs-visitors/</loc><lastmod>2026-11-23</lastmod></url>
+<url><loc>https://protofu.github.io/opendata-insight/2026-11_30s-parents-home/</loc><lastmod>2026-11-23</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_whatif-height/</loc><lastmod>2026-11-22</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_issue-housework-share-2026/</loc><lastmod>2026-11-22</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_winter-festival-calendar/</loc><lastmod>2026-11-21</lastmod></url>
@@ -34,12 +37,12 @@
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-lunch-coffee/</loc><lastmod>2026-11-14</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_suneung-then-now/</loc><lastmod>2026-11-12</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_work-myths-scorecard/</loc><lastmod>2026-11-11</lastmod></url>
-<url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-panda/</loc><lastmod>2026-11-10</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-delivery/</loc><lastmod>2026-11-10</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-exercise/</loc><lastmod>2026-11-10</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_testman-marriage/</loc><lastmod>2026-11-10</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-commute/</loc><lastmod>2026-11-10</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-gyeongbok-everland/</loc><lastmod>2026-11-10</lastmod></url>
+<url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-pool/</loc><lastmod>2026-11-10</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-grooming/</loc><lastmod>2026-11-10</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-giraffe/</loc><lastmod>2026-11-10</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-friends/</loc><lastmod>2026-11-10</lastmod></url>
@@ -50,11 +53,9 @@
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-screen/</loc><lastmod>2026-11-09</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_testman-lifetime-receipt/</loc><lastmod>2026-11-09</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-koala/</loc><lastmod>2026-11-09</lastmod></url>
-<url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-elephant/</loc><lastmod>2026-11-09</lastmod></url>
-<url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-cow/</loc><lastmod>2026-11-09</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-trash/</loc><lastmod>2026-11-09</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-cat/</loc><lastmod>2026-11-09</lastmod></url>
-<url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-tower/</loc><lastmod>2026-11-09</lastmod></url>
+<url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-testman-walk/</loc><lastmod>2026-11-09</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_korea-100-village/</loc><lastmod>2026-11-09</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-phone-meal/</loc><lastmod>2026-11-09</lastmod></url>
 <url><loc>https://protofu.github.io/opendata-insight/2026-11_odd-coffee-water/</loc><lastmod>2026-11-09</lastmod></url>
